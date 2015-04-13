@@ -1,0 +1,279 @@
+// Header
+// ======
+
+#fullWidth-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    .box-shadow(0px 2px 5px 0px fade(black, 15%));
+}
+
+.victoire-bo {
+    #fullWidth-header {
+        top: 40px;
+    }
+}
+
+@media all and (min-width: @screen-md-min) {
+    #fullWidth-header {
+        height: 90px;
+    }
+}
+
+@media all and (max-width: @screen-sm-max) {
+    #fullWidth-header {
+        height: 70px;
+    }
+}
+
+@media all and (max-width: @screen-xs-max) {
+    #fullWidth-header {
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+}
+
+
+
+// Image container
+// ===============
+
+@media all and (max-width: @screen-sm-max) {
+    #fullWidth-header--imgContainer {
+        margin-top: 0px;
+
+        img {
+            max-height: 30px;
+        }
+    }
+}
+
+
+
+// Touch Menu Trigger
+// ==================
+
+@media all and (max-width: @screen-sm-max) and (min-width: @screen-sm-min) {
+    #fullWidth-header--touchMenu--trigger {
+        margin-top: (70px - 40px) / 2;
+    }
+}
+
+@media all and (max-width: @screen-xs-max) {
+    #fullWidth-header--touchMenu--trigger {
+        margin-top: 12px;
+    }
+}
+
+
+
+// Nav Container
+// =============
+
+@media all and (min-width: @screen-md-min) {
+    #fullWidth-header--navContainer {
+        float: left;
+
+        .nav {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media all and (max-width: @screen-sm-max) {
+    #fullWidth-header--navContainer {
+        .nav {
+            margin-top: 0;
+            margin-bottom: 0;
+            height: auto;
+
+            li {
+                display: block;
+
+                > a {
+                    font-size: 14px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    line-height: 50px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    text-transform: uppercase;
+                }
+
+                + li {
+                    border-top: 1px solid #ddd;
+                }
+            }
+
+            .dropdown-menu {
+                position: static;
+                float: none;
+                padding: 0;
+                display: none !important;
+                .box-shadow(none);
+
+                &.-in {
+                    display: block !important;
+                }
+
+                li {
+                    > a {
+                        line-height: 40px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+
+                    + li {
+                        border-top: 0;
+                    }
+                }
+            }
+        }
+
+        .navbar {
+            border: 0;
+            margin-bottom: 0;
+        }
+
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+
+
+// Button Container
+// ================
+
+@media all and (min-width: @screen-md-min) {
+    #fullWidth-header--buttonContainer {
+        float: right;
+        margin-top: 3.5px;
+        margin-bottom: 3.5px;
+    }
+}
+
+@media all and (min-width: @screen-lg-min) {
+    #fullWidth-header--buttonContainer {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media all and (max-width: @screen-md-max) and (min-width: @screen-md-min) {
+    #fullWidth-header--buttonContainer {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media all and (max-width: @screen-sm-max) {
+    #fullWidth-header--buttonContainer {
+        text-align: center;
+        border-top: 1px solid @blue;
+
+        .btn {
+            display: block;
+            height: 50px;
+            padding-top: 0;
+            padding-bottom: 0;
+            line-height: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: left;
+            .border-radius(0);
+        }
+    }
+}
+
+
+
+// Touch Menu
+// ==========
+
+@media all and (max-width: @screen-sm-max) {
+    #fullWidth-header--touchMenu {
+        position: fixed;
+        top: 70px;
+        background-color: fade(@blue, 90%);
+        display: none;
+        border: 1px solid;
+        border-color: @blue;
+        right: 0;
+        left: 0;
+        max-height: ~"calc(100% - 70px)";
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        &.is-in {
+            display: block;
+        }
+
+        .nav-bar {
+            .item {
+                display: block;
+
+                & + .item {
+                    margin-left: 0;
+                    border-top: 1px solid @blue;
+                }
+
+                a {
+                    display: block;
+                    color: @white;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    line-height: 50px;
+                    font-size: 14px;
+
+                    &:hover, &.hover, &.-hover, &.is-hover,
+                    &:active, &.active, &.-active, &.is-active,
+                    &:focus, &.focus, &.-focus, &.is-focus {
+                        color: @green;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .victoire-bo {
+        #fullWidth-header--touchMenu {
+            top: 110px;
+            max-height: ~"calc(100% - 110px - 50px)";
+        }
+    }
+}
+
+
+
+// Touch Menu Background
+// =====================
+
+#touch-menu-background {
+    display: none;
+}
+
+@media all and (max-width: @screen-sm-max) {
+    #touch-menu-background {
+        background-color: fade(#41413F, 0%);
+        .transition(background-color 200ms ease);
+
+        &.-in {
+            display: block;
+            position: fixed;
+            background-color: fade(#41413F, 90%);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.btn {
+    .border-radius(3px);
+    font-family: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 9px 35px;
+    border-width: 0;
+    .transition(all 200ms ease);
+
+    &.btn-large {
+        padding: 14px 30px;
+    }
+}
+
+.btn-default {
+    &.btn-framed {
+        background-color: transparent;
+        border-color: @white;
+        color: @white;
+        border-width: 1px;
+        font-weight: normal;
+
+        &.-anthracite {
+            border-color: #bbb;
+            color: #333;
+
+            &:hover, &.hover, &.-hover, &.is-hover,
+            &:active, &.active, &.-active, &.is-active {
+                background-color: #bbb;
+                color: @white;
+            }
+        }
+
+        &.btn-large {
+            padding-top: 13px;
+            padding-bottom: 13px;
+        }
+
+        &:hover, &.hover, &.-hover, &.is-hover,
+        &:active, &.active, &.-active, &.is-active {
+            background-color: @white;
+            color: @blue;
+        }
+
+        &:focus, &.focus, &.-focus, &.is-focus {
+            outline: 0;
+            .box-shadow(0 0 0px 3px lighten(@blue, 50%));
+        }
+    }
+}
+
+.-homeBtn {
+    .btn {
+        width: 165px;
+        text-align: center;
+    }
+}

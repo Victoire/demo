@@ -1,0 +1,22 @@
+{% block subject %}{% endblock subject %}
+{% block body_html %}
+
+<div class="box" style="background-color:#eee;width:600px; font-family: arial, sans-serif">
+    <div class="logo" style="margin-top:20px;background-color: white;">
+        <img src="http://{{ app.request.host }}/bundles/apetemplate/img/email/header-email.jpg"/>
+    </div>
+
+    <div class="content" style="width: 540px; padding: 30px;background-color:white;" >
+        <p style="font-family: arial,sans-serif;"> {% block title %}{% endblock title %}</p>
+
+        {% block content %}
+        {% endblock content %}
+
+        {% block greetings %}
+        {% endblock greetings %}
+    </div>
+
+    {% block footer %}
+    {% endblock footer %}
+</div>
+{% endblock body_html %}

@@ -1,0 +1,78 @@
+.checkbox-custom {
+    display: none;
+
+    + label {
+        line-height:  @input-height-base;
+        display: inline-block;
+        position: relative;
+        padding-left: @checkbox-custom-label-leftSpace + @checkbox-custom-width;
+        cursor: pointer;
+
+        > * {
+            margin-left: @checkbox-custom-label-childElement_marginHorizontal;
+            margin-right: @checkbox-custom-label-childElement_marginHorizontal;
+        }
+
+        &:before {
+        }
+
+        &:before {
+            .box-sizing;
+            font-family: FontAwesome;
+            font-size: @checkbox-custom-witness-fontSize;
+            position: absolute;
+            left: 0;
+            content: '';
+            display: inline-block;
+            height: @checkbox-custom-height;
+            width: @checkbox-custom-width;
+            background-color: @checkbox-custom-backgroundColor;
+            border-width: @checkbox-custom-borderWidth;
+            border-style: solid;
+            border-color: @checkbox-custom-borderColor;
+            text-align: center;
+            color: @checkbox-custom-witness-color;
+            line-height: @checkbox-custom-height - 2;
+            margin-top: (@input-height-base - @checkbox-custom-height) / 2;
+            .radius(@checkbox-custom-radius);
+            .box-shadow(@checkbox-custom-boxShadow);
+        }
+
+        &:hover,
+        &:focus {
+            &:before {
+                .box-shadow(@checkbox-custom-hover-boxShadow);
+                background-color: @checkbox-custom-hover-backgroundColor;
+                border-color: @checkbox-custom-hover-borderColor;
+            }
+        }
+    }
+
+    &:checked {
+        + label {
+            &:before {
+                content: "\f00c";
+                .box-shadow(@checkbox-custom-checked-boxShadow);
+                background-color: @checkbox-custom-checked-backgroundColor;
+                border-color: @checkbox-custom-checked-borderColor;
+            }
+
+            &:hover,
+            &:focus {
+                &:before {
+                    .box-shadow(@checkbox-custom-hover-checked-boxShadow);
+                    background-color: @checkbox-custom-hover-checked-backgroundColor;
+                    border-color: @checkbox-custom-hover-checked-borderColor;
+                }
+            }
+        }
+    }
+
+    &:disabled {
+        + label {
+            &:before {
+                opacity: @checkbox-custom-disabled-opacity;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.nav-bar {
+    .clearfix();
+
+    ul& {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .item {
+
+        &,
+        & a {
+            display: inline-block;
+        }
+
+        a {
+            line-height: 19px;
+            font-size: 14px;
+            color: @grey;
+        }
+    }
+
+    &.-separated {
+        .item {
+            + .item {
+                margin-left: 5px;
+
+                &:before {
+                    margin-right: 5px;
+                    content: "-";
+                    color: @grey;
+                }
+            }
+        }
+    }
+
+    &.-header {
+        .item {
+            + .item {
+                margin-left: 32px;
+            }
+
+            a {
+                font-size: 16px;
+                line-height: 22px;
+                color: @white;
+                text-transform: uppercase;
+                font-weight: 300;
+
+                &:hover, &.hover, &.-hover, &.is-hover,
+                &:active, &.active, &.-active, &.is-active,
+                &:focus, &.focus, &.-focus, &.is-focus {
+                    color: @green;
+                }
+            }
+        }
+    }
+}

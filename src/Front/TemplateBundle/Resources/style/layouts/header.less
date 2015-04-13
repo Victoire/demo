@@ -1,0 +1,195 @@
+  ////////////
+ // Header //
+////////////
+
+// Desktop (first)
+//////////////////
+
+#header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+
+    > nav {
+        margin-bottom: -20px;
+    }
+}
+
+// Desktop
+//////////
+
+@media (min-width: @screen-md-min) {
+    #header-logo {
+        float: left;
+    }
+}
+
+
+// Tablet & Mobile
+//////////////////
+
+@media (max-width: @screen-sm-max) {
+    #header {
+        height: 80px;
+
+        .container {
+            width: auto;
+        }
+    }
+}
+
+
+
+
+
+
+  //////////
+ // Logo //
+//////////
+
+#header-logo {
+    display: inline-block;
+}
+
+// Tablet & Mobile //
+@xs2sm-header-logo-width: 100px;
+
+@media screen and (max-width: @screen-sm-max) {
+    #header-logo {
+        position: absolute;
+        left: 50%;
+        width: @xs2sm-header-logo-width;
+        margin-left: @xs2sm-header-logo-width * -0.5;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+  ///////////////
+ // Signature //
+///////////////
+
+@md-header-signature-height: 40px;
+
+#header-signature {
+    float: right;
+    margin-left: 20px;
+    margin-top: (63px - @md-header-signature-height) / 2;
+
+    img {
+        max-height: @md-header-signature-height;
+    }
+}
+
+// Tablet & Mobile //
+@media screen and (max-width: 991px) {
+    #header-signature {
+        right: 15px;
+        position: absolute;
+        top: 50%;
+    }
+}
+
+@sm-header-signature-height: 40px;
+
+// Tablet \\
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #header-signature {
+        margin-top: @sm-header-signature-height * -0.5;
+
+        img {
+            max-height: @sm-header-signature-height;
+        }
+    }
+}
+
+
+
+@xs-header-signature-height: 35px;
+
+// Mobile \\
+@media screen and (max-width: 767px) {
+    #header-signature {
+        margin-top: @xs-header-signature-height * -0.5;
+
+        img {
+            max-height: @xs-header-signature-height;
+        }
+    }
+}
+
+
+
+
+
+
+
+  ///////////////
+ // Link list //
+///////////////
+
+// Desktop (first)
+//////////////////
+
+#header-linkList {
+    margin-left: 240px;
+}
+
+@media only screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    #header-linkList {
+        margin-left: 170px;
+        > li {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        li {
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+
+
+  ////////////////////////////
+ // Content (under header) //
+////////////////////////////
+
+#content {
+    padding-top: 77px;
+}
+
+
+
+
+
+
+  /////////////
+ // Trigger //
+/////////////
+
+#header-links-list-trigger {
+    &:extend(.btn);
+    background-color: transparent;
+    padding: 0;
+    color: blue;
+    margin-top: 15.5px;
+
+    i {
+        font-size: 35px;
+    }
+}

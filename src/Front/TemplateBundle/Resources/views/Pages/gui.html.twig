@@ -1,0 +1,98 @@
+{% extends '::frontLayout.html.twig' %}
+
+
+{% block content %}
+
+    <!-- Navigation Cover -->
+    <div id="container" style="margin-top: 70px;">
+        <div id="wrap">
+            <div class="container_right">
+                <div id="feature_slider" class="clearfix">
+
+                    <div id="previous_article" class="article_navigation">
+                        <a href="#">
+                            <div id="prev-article-tab" class="article_tab"> 
+                                <div class="tab-container"> 
+                                    <div class="prev-article"><i class="fa fa-angle-left"></i></div>
+                                </div>
+                            </div>
+                            <div class="articleHeader">
+                                <div class="cover" style="background-image: url('/uploads/media/54f5b2851f946.jpeg')"></div>
+                            </div>
+                        </a> 
+                    </div>
+
+                    <div id="articleWrap" class="withCover">
+                        <div class="articleHeader item">
+                            <div class="cover" style="background-image: url('/uploads/media/54f5b27093e47.jpeg')"></div>
+                            <header id="page_header">
+                                <h1 class="page_title">GOLF</h1>
+                            </header>
+                        </div>
+                        <div id="articleContent" class="clearfix">
+                        </div>
+                    </div>
+
+                    <div id="next_article" class="article_navigation">
+                        <a href="#">
+                            <div id="next-article-tab" class="article_tab"> 
+                                <div class="tab-container">
+                                    <div class="next-article"><i class="fa fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="articleHeader">
+                                <div class="cover" style="background-image: url('/uploads/media/54f5b27c73497.jpeg')"></div>
+                            </div>
+                        </a> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thumbnails Page Sports -->
+    <div class="container GUI-space">
+
+        <div class="grid row">
+            <div class="pull-left col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="sectionSport">
+                    <a href="#">
+                        <div class="sportName">
+                            <h2>Aquagym</h2>
+                        </div>  
+                        <img src="/uploads/media/54f463bd769d6.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="sectionSport">
+                    <a href="#">
+                        <div class="sportName">
+                            <h2>Badminton</h2>
+                        </div>  
+                        <img src="/uploads/media/54f463d9a4ee7.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pull-left col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="sectionSport">
+                    <a href="#">
+                        <div class="sportName">
+                            <h2>Basket</h2>
+                        </div>  
+                        <img src="/uploads/media/54f463f410ca1.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}
+
+{% block javascript_bottom %}
+    {{ parent() }}
+{% endblock javascript_bottom %}

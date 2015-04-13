@@ -1,0 +1,51 @@
+label {
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.form-control {
+    font-size: 16px;
+    height: 40px;
+    .box-shadow(inset 0px 1px 5px 0px fade(black, 25%));
+}
+
+#membership-formwrapper {
+    width: 617px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 44px;
+
+    > label {
+        font-family: OpenSans-Semibold;
+        font-size: 15px;
+        color: #5e5d5d;
+        line-height: 20px;
+        margin-bottom: 11px;
+    }
+}
+
+
+// Placeholder text
+.placeholder(@color: @input-color-placeholder) {
+  // Firefox
+  &::-moz-placeholder {
+  	font-weight: lighter;
+    color: @color;
+    opacity: 1; // See https://github.com/twbs/bootstrap/pull/11526
+  }
+
+  // Internet Explorer 10+
+  &:-ms-input-placeholder {
+  	font-weight: lighter;
+  	color: @color;
+  }
+
+  // Safari and Chrome
+  &::-webkit-input-placeholder {
+  	font-weight: lighter;
+  	color: @color;
+  }
+}

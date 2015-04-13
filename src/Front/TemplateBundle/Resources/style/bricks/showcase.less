@@ -1,0 +1,117 @@
+.showcase {
+  margin-bottom: 15px;
+  background-color: @background-light;
+  height: auto;
+  border: 1px solid @line-light;
+  .showcaseInfos{
+
+    .h2{
+      font-size: 36px;
+      margin: 0;
+    }
+    .h3{
+      font-size: 20px;
+      font-weight: lighter;
+      padding: 0;
+      margin: 0;
+    }
+    p{
+      margin-top: 30px;
+      text-align: justify;
+      line-height: 1.6em;
+      font-weight: lighter;
+    }
+    button{
+      float: right;
+    }
+  }
+
+  .showcasePicture{
+
+    .carousel-indicators{
+      position: relative;
+      padding: 0;
+      text-align: left;
+      width: 100%;
+      left: 0%;
+      margin-left: 0%;
+      bottom: 0;
+      li{
+        border: 1px solid @redventus;
+        border-radius: 0px;
+        width: 20px;
+        height: 10px;
+        margin: 0;
+      }
+      .active {
+        background-color: @redventus;
+        width: 20px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0.8;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+@media (min-width: 1200px) {
+  .showcaseInfos{
+    padding: 15px 15px 15px 0px;
+  }
+  .showcasePicture{
+    padding: 15px 0px 15px 15px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .showcaseInfos{
+    padding: 15px 15px 15px 0px;
+  }
+  .showcasePicture{
+    padding: 15px 0px 15px 15px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .showcaseInfos{
+    padding: 15px 0px 15px 0px;
+  }
+  .showcasePicture{
+    padding: 15px 0px 15px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .showcaseInfos{
+    padding: 15px 0px 15px 0px;
+  }
+  .showcasePicture{
+    padding: 15px 0px 15px 0px;
+  }
+}
+
+
+
+

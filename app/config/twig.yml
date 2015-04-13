@@ -1,0 +1,9 @@
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+    form:
+        resources:
+            - 'AvAwesomeShortcutsBundle::fields.html.twig'
+            - ':Form:fields.html.twig'

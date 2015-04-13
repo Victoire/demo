@@ -1,0 +1,29 @@
+{% extends '::frontLayout.html.twig' %}
+
+{% block header %}
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            {#{ cms_slot_widgets('header_xxx') }#}
+        </div>
+    </div>
+
+    <nav class="container header-main">
+        <div class="header-logo">
+            {{ cms_slot_widgets('header_logo') }}
+        </div>
+    </nav>
+</header>
+
+{% endblock %}
+
+{% block content %}
+    {{ cms_slot_widgets('breadcrumb') }}
+    {{ cms_slot_widgets('main_content') }}
+{% endblock content %}
+
+{% block footer %}
+<footer class="footer">
+    {#{ cms_slot_widgets('footer_xxx') }#}
+</footer>
+{% endblock %}

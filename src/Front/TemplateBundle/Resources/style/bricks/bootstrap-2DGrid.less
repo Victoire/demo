@@ -1,0 +1,86 @@
+.grid {
+    margin-right: @2Dgrid-gutterDefault-size * -0.5;
+    margin-left: @2Dgrid-gutterDefault-size * -0.5;
+
+    > * {
+        padding-top: @2Dgrid-gutterDefault-size * 0.5;
+        padding-bottom: @2Dgrid-gutterDefault-size * 0.5;
+    }
+}
+
+ul,
+ol {
+    &.grid {
+        &:extend(.list-unstyled);
+        margin-bottom: 0;
+    }
+}
+
+
+.grid-generator(@2Dgrid_GeneratorLimit);
+.grid-generator(@counter) when (@counter > 0) {
+    .grid-generator((@counter - 1)); // next iteration
+
+    .grid {
+        &.grid-@{counter},
+        &.grid-xs-@{counter} {
+            margin-left: @counter * -0.5px;
+            margin-right: @counter * -0.5px;
+
+            > * {
+                padding-top: @counter * 0.5px;
+                padding-bottom: @counter * 0.5px;
+                padding-left: @counter * 0.5px;
+                padding-right: @counter * 0.5px;
+            }
+        }
+    }
+
+    @media (min-width: @2Dgrid-screen-sm-min) {
+        .grid {
+            &.grid-sm-@{counter} {
+                margin-left: @counter * -0.5px;
+                margin-right: @counter * -0.5px;
+
+                > * {
+                    padding-top: @counter * 0.5px;
+                    padding-bottom: @counter * 0.5px;
+                    padding-left: @counter * 0.5px;
+                    padding-right: @counter * 0.5px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: @2Dgrid-screen-md-min) {
+        .grid {
+            &.grid-md-@{counter} {
+                margin-left: @counter * -0.5px;
+                margin-right: @counter * -0.5px;
+
+                > * {
+                    padding-top: @counter * 0.5px;
+                    padding-bottom: @counter * 0.5px;
+                    padding-left: @counter * 0.5px;
+                    padding-right: @counter * 0.5px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: @2Dgrid-screen-lg-min) {
+        .grid {
+            &.grid-lg-@{counter} {
+                margin-left: @counter * -0.5px;
+                margin-right: @counter * -0.5px;
+
+                > * {
+                    padding-top: @counter * 0.5px;
+                    padding-bottom: @counter * 0.5px;
+                    padding-left: @counter * 0.5px;
+                    padding-right: @counter * 0.5px;
+                }
+            }
+        }
+    }
+}

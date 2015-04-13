@@ -1,0 +1,15 @@
+{% extends 'VictoireCoreBundle::_modal.html.twig' %}
+
+
+{% block modal_container_classes %}{{ parent() }} vic-view-modal{% endblock modal_container_classes %}
+
+{% block modal_header_title %}
+Modifier un appartement
+{% endblock modal_header_title %}
+{% block modal_body_content %}
+
+    {{ form(edit_form) }}
+
+    {{ form(delete_form) }}
+
+{% endblock modal_body_content %}

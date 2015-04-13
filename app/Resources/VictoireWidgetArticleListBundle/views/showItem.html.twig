@@ -1,0 +1,19 @@
+{% set url = path('victoire_core_page_show_by_id', {'viewId': item.pattern.id, 'entityId': item.id }) %}
+
+<div class="article-item">
+    {% if item.image is defined and item.image != '' %}
+    <div class="cover" style="background-image:url({{ item.image|imagine_filter('blog_list_preview') }})"></div>
+    {% endif %}
+
+    <div class="body">
+        <h3 class="date">{{ item.publishedAt ? item.publishedAt|localizeddate("medium", "none") }}</h3>
+
+        <h2 class="title"><a href="{{ url }}">{{ item.name }}</a></h2>
+
+        <p class="description">{{ item.description }}</p>
+
+        <div class="text-xs-center text-sm-right">
+            <a href="{{ url }}" class="btn btn-default btn-framed -anthracite">{{ 'front.blog.readMore.label'|trans({}, 'victoire')|raw }}</a>
+        </div>
+    </div>
+</div>

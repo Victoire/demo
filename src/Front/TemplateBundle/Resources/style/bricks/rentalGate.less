@@ -1,0 +1,91 @@
+.rental-gate {
+    display: block;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: @white;
+    overflow: hidden;
+    .transition(all 200ms ease);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: fade(@green, 50%);
+        opacity: 0;
+        .transition(opacity 200ms ease);
+    }
+
+    &:after {
+        .transition(all 200ms ease);
+        content: attr(data-hover);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        .transform(translate3d(-50%, -50%, 0), rotate(-45deg));
+        border: 2px solid @white;
+        padding: 7px 10px;
+        color: @white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 16px;
+        display: inline-block;
+        opacity: 0;
+    }
+
+    &:hover, &.hover, &.-hover, &.-hover,
+    &:active, &.active, &.-active, &.-active {
+        color: @white;
+        .box-shadow(0 0 0 10px fade(@green, 50%));
+
+        &:before{
+            opacity: 1;
+        }
+
+        &:after {
+            opacity: 1;
+            .transform(translate3d(-50%, -50%, 0), rotate(0deg));
+        }
+
+        .title {
+            .transform(translate3d(0, 100%, 0));
+        }
+
+        .surface {
+            .transform(translate3d(100%, -100%, 0));
+        }
+    }
+
+    .surface,
+    .title {
+        background-color: fade(@blue, 70%);
+        position: absolute;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        .transition(transform 200ms ease);
+    }
+
+    .surface {
+        top: 0;
+        right: 0;
+        padding-top: 10px;
+        padding-right: 22px;
+        padding-bottom: 10px;
+        padding-left: 22px;
+    }
+
+    .title {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+}

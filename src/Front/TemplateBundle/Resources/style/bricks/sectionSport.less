@@ -1,0 +1,26 @@
+.sectionSport {
+    position: relative;
+    background-size: 100% auto;
+    background-position: center;
+    display: block;
+    height: @sectionSport_height;
+
+    .sportName {
+        position: absolute;
+        bottom: 0;
+        color: @sectionSport-name_height;
+        background-color: @sectionSport-name_backgroundColor;
+        width: 100%;
+        height: @sectionSport-name_height;
+        margin: 0;
+        text-align: center;
+        font-size: @sectionSport-name_fontSize;
+        padding: @sectionSport-name_padding;
+        font-weight: bold;
+    }
+
+    &:hover, .hover
+    &:active, .active {
+        opacity: @sectionSport-name_opacity-_state;
+    }
+}

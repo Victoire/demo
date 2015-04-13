@@ -1,0 +1,37 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+{% trans_default_domain "victoire" %}
+
+{% block content %}
+
+	{% if linkType != 'none' %}
+	    {% if linkType == 'page' %}
+	        {% set link = path('victoire_core_page_show', {'url' : page.url}) %}
+	        {% set target = '_parent' %}
+	    {% else %}
+	        {% set link = url %}
+	        {% set target = '_blank' %}
+	    {% endif %}
+	        <a href="{{ link }}" target="{{ target }}">
+	{% endif %}
+	{% if image.url == null %}
+	   {{ 'The image was not found'|trans }}
+	{% else %}
+	  {% if (entity != null or mode == 'static') %}
+	  	{# TODO Use imagine to generate small pictures image|vic_imagine_filter(mode|default('inset'), width, height) #}
+	<div class="sectionSport">
+        <div class="sportName">
+            <h2>{{ legend }}</h2>
+        </div>  
+        <img src="{{ image.url }}" title="{{ title }}" alt="{{ alt }}" style="{% if width %}width: {{ width }}; {% endif %}{% if height %}height: {{ height }};{% endif %}"{% if width %} width="{{ width }}"{% endif %}{% if height %} height="{{ height }}"{% endif %}/>
+	</div>
+	  {% else %}
+	   {{ image.url }}
+	{% endif %}
+
+	{% endif %}
+
+	{% if linkType != 'none' %}
+	</a>
+	{% endif %}
+
+{% endblock content %}

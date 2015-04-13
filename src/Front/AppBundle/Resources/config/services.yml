@@ -1,0 +1,8 @@
+services:
+
+    #  ==================  MENU ================== #
+    app.rental_menu_listener:
+        class: Front\AppBundle\Listener\RentalMenuListener
+        arguments: ["@victoire_core.admin_menu_builder"]
+        tags:
+            - { name: kernel.event_listener, event: victoire_core.build_menu, method: addGlobal, priority: 70 }

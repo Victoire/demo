@@ -1,0 +1,31 @@
+victoire_core:
+    watch_view_cache: %victoire_core.watch_view_cache%
+    user_class: "Victoire\Bundle\UserBundle\Entity\User"
+    templates:
+        layout: "::layout.html.twig"
+    layouts:
+        fullWidth: "Contenu unique"
+        home: "Accueil"
+    slots:
+        header_logo:
+            max: 1
+            widgets:
+                Image: ~
+
+        header_menu:
+            max: 1
+            widgets:
+                Menu: ~
+
+        header_btn:
+            max: 1
+            widgets:
+                Button: ~
+
+victoire_i18n:
+    available_locales:
+        fr: fr
+    locale_pattern: domain
+    locale_pattern_table:
+        demo.victoire.com: fr
+        demo.victoire.dev: fr

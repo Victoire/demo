@@ -1,0 +1,82 @@
+figure.effect-honey {
+    background: @redventus;
+    color: white;
+    .box-shadow (0px 5px 7px 0px rgba(0,0,0,0.20));
+    cursor: pointer;
+}
+
+figure.effect-honey img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-honey:hover img {
+    opacity: 0.5;
+}
+
+figure.effect-honey figcaption::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    content: '';
+    -webkit-transform: translate3d(0,10px,0);
+    transform: translate3d(0,10px,0);
+}
+
+figure.effect-honey h2 {
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em 1em;
+    width: 100%;
+    text-align: left;
+    -webkit-transform: translate3d(0,-30px,0);
+    transform: translate3d(0,-30px,0);
+}
+
+figure.effect-honey h2 i {
+    font-style: normal;
+    font-weight: lighter;
+    float: left;
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-30px,0);
+    transform: translate3d(0,-30px,0);
+}
+
+figure.effect-honey figcaption::before,
+figure.effect-honey h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.effect-honey:hover figcaption::before,
+figure.effect-honey:hover h2,
+figure.effect-honey:hover h2 i {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.teamMember {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  figure.effect-honey h2 {
+    padding: 1em 1.5em;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  figure.effect-honey h2 {
+    font-size: 24px;
+  }
+}

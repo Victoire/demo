@@ -1,0 +1,13 @@
+{% extends 'VictoireWidgetTextBundle::show.html.twig' %}
+
+
+{% block content %}
+    {# if the current object has a timestamp, that means it's a data #}
+    {% if content.timestamp is defined %}
+        {{ ('<' ~ headingLevel ~ ' class="' ~ headingStyle|default(headingLevel)  ~ ' text-' ~ align ~ '">' ~ content|localizeddate("medium", "none", null, null, "d LLLL yyyy") ~ '</' ~ headingLevel ~ '>')|raw }}
+    {% else %}
+        {{ ('<' ~ headingLevel ~ ' class="' ~ headingStyle|default(headingLevel)  ~ ' text-' ~ align ~ '">' ~ content|raw|nl2br ~ '</' ~ headingLevel ~ '>')|raw }}
+    {% endif %}
+{% endblock content %}
+
+

@@ -1,0 +1,9 @@
+{
+  "name": "appventus_website",
+  "dependencies": {
+    "bootstrap": "3.3.1",
+    "font-awesome": "master",
+    "retinajs": "master",
+    "eonasdan-bootstrap-datetimepicker": "3.1.3"
+  }
+}

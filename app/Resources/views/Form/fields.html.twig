@@ -1,0 +1,167 @@
+{% extends 'MopaBootstrapBundle:Form:fields.html.twig' %}
+
+{% block help_label %}
+    <span class="help-block">{{ help_label|trans({}, translation_domain)|raw }}</span>
+{% endblock help_label %}
+
+{% block choice_widget_expanded %}
+{% spaceless %}
+    <div>
+    {% for child in form %}
+        {{ form_widget(child, {'attr': {'class': 'customRadio'}}) }}
+            {{ form_label(child) }}
+    {% endfor %}
+    </div>
+    {{ block('form_help')}}
+{% endspaceless %}
+{% endblock choice_widget_expanded %}
+
+ {% block checkbox_row %}
+    {{- form_errors(form) -}}
+    {{- form_widget(form) -}}
+{% endblock checkbox_row %}
+{% block checkbox_widget %}
+    {% set attr = attr|merge({'class': 'checkbox-custom'}) %}
+    {% spaceless %}
+        {% if label is not sameas(false) and label is empty %}
+            {% set label = name|humanize %}
+        {% endif %}
+        {% if form.parent != null and 'choice' not in form.parent.vars.block_prefixes %}
+            <div
+            {%- if widget_type == 'inline-btn' %} class="btn-group" data-toggle="buttons"
+            {%- else %} class="checkbox"
+            {%- endif %}>
+        {% endif %}
+        <input type="checkbox" {{ block('widget_attributes') }}{% if value is defined %} value="{{ value }}"{% endif %}{% if checked %} checked="checked"{% endif %}/>
+        {% if form.parent != null and 'choice' not in form.parent.vars.block_prefixes and label_render %}
+            {% if widget_type == 'inline-btn' %}
+                {% set label_attr = attr|default({}) %}
+                {% if checked %}
+                    {% set label_attr = label_attr|merge({'class': 'active ' ~ attr.class|default('')}) %}
+                {% endif %}
+            {% endif %}
+            {{ block('form_label') }}
+        {% endif %}
+        {% if form.parent != null and 'choice' not in form.parent.vars.block_prefixes %}
+            </div>
+        {% endif %}
+    {% endspaceless %}
+{% endblock checkbox_widget %}
+
+{% block toggle_checkbox_row %}
+    {% spaceless %}
+        {% if form.parent != null and 'choice' not in form.parent.vars.block_prefixes %}
+            <div class="form-group">
+        {% endif %}
+
+                {{ block('toggle_checkbox_widget') }}
+
+        {% if form.parent != null and 'choice' not in form.parent.vars.block_prefixes %}
+            </div>
+        {% endif %}
+    {% endspaceless %}
+{% endblock toggle_checkbox_row %}
+
+
+{% block toggle_checkbox_widget %}
+    {% spaceless %}
+        <input
+            type="checkbox"
+            class="toggle-switch"
+            {{ block('widget_attributes') }}
+            {% if value is defined %}
+                value="{{ value }}"
+            {% endif %}
+            {% if checked %}
+                checked="checked"
+            {% endif %}
+        />
+
+        {% if form.parent != null and 'choice' not in form.parent.vars.block_prefixes and label_render %}
+            {% if widget_type == 'inline-btn' %}
+                {% set label_attr = attr|default({}) %}
+
+                {% if checked %}
+                    {% set label_attr = label_attr|merge({'class': 'active ' ~ attr.class|default('')}) %}
+                {% endif %}
+            {% endif %}
+
+            <label{% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}
+            {%- if label is not sameas(false) and label is empty %} class="blank-label"{% endif %}
+            for="{{ id }}"
+            >
+                {% if widget_checkbox_label in ['both', 'widget'] %}
+                    {{ label|trans({}, translation_domain)|raw }}
+                {% endif %}
+            </label>
+        {% endif %}
+    {% endspaceless %}
+{% endblock toggle_checkbox_widget %}
+
+{% block date_widget %}
+{{ parent() }}
+{% if widget == 'single_text' %}
+    {% if datepicker is defined %}
+        {# eonasdan-bootstrap-datetimepicker init script #}
+        <script>
+            $(function(){
+                var datetimepicker = $('#{{id}}').parent();
+                $(datetimepicker).datetimepicker({
+                    pickTime: false,
+                    language: '{{ app.request.locale }}'
+                });
+
+                // Restore value from hidden input
+                var date = moment($('#{{ id }}').val()).format("DD/MM/YYYY");
+                $(datetimepicker).data("DateTimePicker").setDate(date);
+            });
+        </script>
+    {% endif %}
+{% endif %}
+{% endblock date_widget %}
+
+
+{% block time_widget %}
+{{ parent() }}
+{% if widget == 'single_text' %}
+    {% if datepicker is defined %}
+        {# eonasdan-bootstrap-datetimepicker init script #}
+        <script>
+            $(function(){
+                var datetimepicker = $('#{{id}}').parent();
+                $(datetimepicker).datetimepicker({
+                    pickDate: false,
+                    language: '{{ app.request.locale }}'
+                });
+
+                // Restore value from hidden input
+                var date = moment($('#{{ id }}').val()).format("HH:mm");
+                $(datetimepicker).data("DateTimePicker").setDate(date);
+            });
+        </script>
+    {% endif %}
+{% endif %}
+{% endblock time_widget %}
+
+
+{% block datetime_widget %}
+{{ parent() }}
+{% if widget == 'single_text' %}
+    {% if datepicker is defined %}
+        {# eonasdan-bootstrap-datetimepicker init script #}
+        <script>
+            $(function(){
+                var datetimepicker = $('#{{id}}').parent();
+
+                $(datetimepicker).datetimepicker({
+                    language: '{{ app.request.locale }}'
+                });
+
+                // Restore value from hidden input
+                var date = moment($('#{{ id }}').val()).format("DD/MM/YYYY HH:mm");
+                $(datetimepicker).data("DateTimePicker").setDate(date);
+            });
+        </script>
+    {% endif %}
+{% endif %}
+{% endblock datetime_widget %}

@@ -1,0 +1,20 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+
+
+{% block content %}
+    <div id="carousel-{{ widget.id }}" class="showcasePicture carousel slide carousel-fade" data-ride="carousel" data-interval="0">
+        <ol class="carousel-indicators">
+            {% for item in widget.sliderItems %}
+                <li data-target="#carousel-{{ widget.id }}" data-slide-to="{{ loop.index0 }}"{% if loop.first %} class="active"{% endif %}></li>
+            {% endfor %}
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            {% for item in widget.sliderItems %}
+
+                {% set params = loop.first ? {'class' : 'active'} : [] %}
+
+                {% include 'VictoireWidgetSliderBundle::showItem.html.twig' with params %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

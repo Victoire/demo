@@ -1,0 +1,28 @@
+security:
+    encoders:
+        Victoire\Bundle\UserBundle\Entity\User: sha512
+
+    providers:
+        fos_userbundle:
+            id: fos_user.user_provider.username
+
+    firewalls:
+        main:
+            pattern: ^/
+            form_login:
+                provider:        fos_userbundle
+                csrf_provider:   form.csrf_provider
+                failure_path: /login
+                check_path: /login_check
+                default_target_path: /
+            logout: true
+            anonymous: true
+            switch_user: ~
+
+    access_control:
+        - { path: ^/espace-prive, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/espace-prive/quovadis, roles: ROLE_CLIENT_QUOVADIS }
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    role_hierarchy:
+        ROLE_VICTOIRE_DEVELOPER: [ROLE_CLIENT_QUOVADIS]

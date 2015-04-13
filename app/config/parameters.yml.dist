@@ -1,0 +1,27 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: victoire_demo
+    database_user: root
+    database_password: root
+
+    mailer_transport: smtp
+    mailer_host: smtp.mailgun.org
+    mailer_user: postmaster@email.com
+    mailer_password: password
+
+    locale: fr
+    secret: 'thisisnotsecret'
+
+    debug_toolbar: true
+    debug_redirects: false
+    use_assetic_controller: false
+    shareThisPubKey: shareThisPubKey
+
+    node_path: /usr/local/bin/node
+    node_paths:
+        - /usr/local/lib/node_modules
+        - /usr/local/share/npm/lib/node_modules
+    victoire_core.watch_view_cache: false

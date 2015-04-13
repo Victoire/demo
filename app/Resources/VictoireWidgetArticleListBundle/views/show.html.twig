@@ -1,0 +1,43 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+
+{% block content %}
+{# Do not display content when no article to display #}
+
+
+
+{% if widget.globalLinkLabel is defined and widget.globalLinkUrl is defined %}
+<h3 class="h3 articleList-subHeading text-center"><a href="{{ widget.globalLinkUrl }}">{{ widget.globalLinkLabel }}</a></h3>
+{% elseif widget.globalLinkLabel is defined %}
+<h3 class="h3 articleList-subHeading text-center">{{ widget.globalLinkLabel }}</h3>
+{% endif %}
+
+{% if items|length or is_granted('ROLE_VICTOIRE') %}
+    {% if items|length %}
+    <div class="articleList clearfix">
+        {% for key, item in items %}
+        {% include "VictoireWidgetArticleListBundle::showItem.html.twig" with { item: item} %}
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="text-center">{{ 'widget.articlelist.empty'|trans({}, 'victoire') }}</p>
+    {% endif %}
+{% endif %}
+
+<nav class="pagerNavigation-container clearfix text-center">
+    <ul class="pagination">
+        <li>
+            <a{% if pager.hasPreviousPage %} data-toggle="ajax" data-update="vic-widget-{{widget.id}}-container" href="{{ path('victoire_core_widget_show', {id: widget.id, viewReferenceId: currentView.reference.id }|merge({filter: app.request.get('filter'), page: pager.currentPage - 1})) }}"{% else %} href="#"{% endif %} aria-label="Page précédente" {% if pager.hasPreviousPage %}disabled="disabled"{% endif %}>
+                <span aria-hidden="{% if pager.hasPreviousPage %}false{% else %}true{% endif %}">&laquo;</span>
+            </a>
+        </li>
+        {% for pageNumber in 1..pager.nbPages %}
+        <li><a data-toggle="ajax" data-update="vic-widget-{{widget.id}}-container" href="{{ path('victoire_core_widget_show', {id: widget.id, viewReferenceId: currentView.reference.id }|merge({filter: app.request.get('filter'), page: pageNumber})) }}">{{ pageNumber }}</a></li>
+        {% endfor %}
+        <li>
+            <a{% if pager.hasNextPage %} data-toggle="ajax" data-update="vic-widget-{{widget.id}}-container" href="{{ path('victoire_core_widget_show', {id: widget.id, viewReferenceId: currentView.reference.id }|merge({filter: app.request.get('filter'), page: pager.currentPage + 1})) }}"{% else %} href="#"{% endif %} aria-label="Page suivante">
+                <span aria-hidden="{% if pager.hasNextPage %}false{% else %}true{% endif %}">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+{% endblock content %}

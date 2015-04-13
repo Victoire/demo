@@ -1,0 +1,383 @@
+  //////////
+ // Font //
+//////////
+
+.font-underline {
+    text-decoration: underline;
+}
+
+.font-uppercase {
+    text-transform: uppercase;
+}
+
+.font-lowercase {
+    text-transform: lowercase;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+
+// Weight
+/////////
+
+.font-weight-light {
+    font-weight: lighter;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+
+
+
+  ////////////
+ // Shadow //
+////////////
+
+.text-shadow {
+    text-shadow: 0px 0px 10px fade(black, 75%);
+}
+
+
+
+  ///////////
+ // Color //
+///////////
+
+.color-white {
+    color: @white;
+
+    &.light {
+        color: @white-light;
+    }
+
+    &.dark {
+        color: @white-dark;
+    }
+
+    &.fade {
+        color: @white-fade;
+    }
+}
+
+
+
+
+  ////////////////
+ // Background //
+////////////////
+
+.bg-white {
+    background-color: @white;
+
+    &.light {
+        background-color: @white-light;
+    }
+
+    &.dark {
+        background-color: @white-dark;
+    }
+
+    &.fade {
+        background-color: @white-fade;
+    }
+}
+
+
+
+
+  //////////////
+ // Clearfix //
+//////////////
+
+// Desktop \\
+@media screen and (min-width: 1200px) {
+    .clearfix-lg {
+        .clearfix();
+    }
+}
+
+// Laptop \\
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .clearfix-md {
+        .clearfix();
+    }
+}
+
+// Tablet \\
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .clearfix-sm {
+        .clearfix();
+    }
+}
+
+// Mobile \\
+@media screen and (max-width: 767px) {
+    .clearfix-xs {
+        .clearfix();
+    }
+}
+
+
+
+
+  /////////////
+ // Display //
+/////////////
+
+// Block
+
+@media (min-width: 1200px) {
+    .block-lg {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .block-md {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .block-sm {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .block-xs {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+// Inline-block
+
+@media (min-width: 1200px) {
+    .inline-block-lg {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .inline-block-md {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .inline-block-sm {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767px) {
+    .inline-block-xs {
+        display: inline-block;
+    }
+}
+
+
+// Inline
+
+@media (min-width: 1200px) {
+    .inline-lg {
+        display: inline;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .inline-md {
+        display: inline;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .inline-sm {
+        display: inline;
+    }
+}
+
+@media (max-width: 767px) {
+    .inline-xs {
+        display: inline;
+    }
+}
+
+
+  ////////////////
+ // Text Align //
+////////////////
+
+// left
+
+@media (min-width: 1200px) {
+    .text-left-lg {
+        text-align: left;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .text-left-md {
+        text-align: left;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .text-left-sm {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-left-xs {
+        text-align: left;
+    }
+}
+
+
+// right
+
+@media (min-width: 1200px) {
+    .text-right-lg {
+        text-align: right;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .text-right-md {
+        text-align: right;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .text-right-sm {
+        text-align: right;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-right-xs {
+        text-align: right;
+    }
+}
+
+
+// center
+
+@media (min-width: 1200px) {
+    .text-center-lg {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .text-center-md {
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .text-center-sm {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-center-xs {
+        text-align: center;
+    }
+}
+
+
+
+
+// Colors
+// ------
+
+.bg-blue {
+    background-color: @blue;
+
+    &.-fade {
+        background-color: fade(@blue, 90%);
+    }
+}
+
+.color-blue {
+    color: @blue;
+}
+
+.bg-white {
+    background-color: @white;
+
+    &.-fade {
+        background-color: fade(@white, 90%);
+    }
+}
+
+.color-white {
+    color: @white;
+}
+
+.bg-green {
+    background-color: @green;
+
+    &.-fade {
+        background-color: fade(@green, 90%);
+    }
+}
+
+.color-green {
+    color: @green;
+}
+
+.bg-grey {
+    background-color: @grey;
+
+    &.-fade {
+        background-color: fade(@grey, 90%);
+    }
+}
+
+.color-grey {
+    color: @grey;
+}
+
+
+.text-xs-center  { text-align: center }
+.text-xs-left    { text-align: left }
+.text-xs-right   { text-align: right }
+.text-xs-justify { text-align: justify }
+
+@media all and (min-width: @screen-sm-min) {
+    .text-sm-center  { text-align: center }
+    .text-sm-left    { text-align: left }
+    .text-sm-right   { text-align: right }
+    .text-sm-justify { text-align: justify }
+}
+
+@media all and (min-width: @screen-md-min) {
+    .text-md-center  { text-align: center }
+    .text-md-left    { text-align: left }
+    .text-md-right   { text-align: right }
+    .text-md-justify { text-align: justify }
+}
+
+@media all and (min-width: @screen-lg-min) {
+    .text-lg-center  { text-align: center }
+    .text-lg-left    { text-align: left }
+    .text-lg-right   { text-align: right }
+    .text-lg-justify { text-align: justify }
+}

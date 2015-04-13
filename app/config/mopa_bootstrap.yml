@@ -1,0 +1,56 @@
+mopa_bootstrap:
+    form:
+        templating: true
+        render_optional_text:  false
+        render_required_asterisk:  true
+        horizontal:           false
+        horizontal_label_class:  ~
+        horizontal_label_offset_class:  ~
+        horizontal_input_wrapper_class:  ~
+        render_fieldset:      true
+        render_collection_item:  true
+        show_legend:          false
+        show_child_legend:    false
+        checkbox_label:       both
+        render_optional_text:  false
+        render_required_asterisk:  false
+        error_type:           ~
+        tabs:
+            class:                nav nav-tabs
+        help_widget:
+            popover:
+                title:                ~
+                content:              ~
+                trigger:              hover
+                toggle:               popover
+                placement:            right
+        help_label:
+            tooltip:
+                title:                ~
+                text:                 ~
+                icon:                 info-sign
+                placement:            top
+            popover:
+                title:                ~
+                content:              ~
+                text:                 ~
+                icon:                 info-sign
+                placement:            top
+        collection:
+            widget_remove_btn:
+                attr:
+                    class:                btn btn-default
+                label:                remove_item
+                icon:                 ~
+            widget_add_btn:
+                attr:
+                    class:                btn btn-default
+                label:                add_item
+                icon:                 ~
+    icons:
+
+        # Icon set to use
+        icon_set:             fontawesome4
+
+        # Alias for mopa_bootstrap_icon()
+        shortcut:             icon

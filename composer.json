@@ -1,0 +1,121 @@
+{
+    "name": "victoire/demo",
+    "license": "null",
+    "type": "project",
+    "description": "Kickstart you project with the Victoire demo",
+    "autoload": {
+        "psr-0": { "": "src/", "SymfonyStandard": "app/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.6.*",
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2",
+        "twig/extensions": "~1.0",
+        "symfony/assetic-bundle": "~2.3",
+        "symfony/swiftmailer-bundle": "~2.3",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/distribution-bundle": "~3.0",
+        "sensio/framework-extra-bundle": "~3.0",
+        "incenteev/composer-parameter-handler": "~2.0",
+
+        "appventus/assetic-injector-bundle" : "dev-master",
+        "appventus/ajax-bundle"             : "dev-master",
+        "appventus/alertify-bundle"         : "dev-master",
+        "appventus/avlist-bundle"           : "dev-master",
+        "appventus/swiftmailerdbbundle"     : "dev-master",
+        "appventus/spoolmailerbundle"       : "dev-master",
+        "appventus/shortcuts-bundle"        : "dev-master",
+        "appventus/datamigration-bundle"    : "dev-master",
+        "doctrine/doctrine-fixtures-bundle" : "dev-master",
+        "doctrine/data-fixtures"            : "dev-master",
+        "friendsofsymfony/user-bundle"      : "2.0.*dev",
+        "jms/i18n-routing-bundle"           : "~1.1@dev",
+        "jms/security-extra-bundle"         : "dev-master",
+        "jms/translation-bundle"            : "dev-master",
+        "knplabs/knp-menu"                  : "2.0.0-alpha1",
+        "knplabs/knp-menu-bundle"           : "2.0.0-alpha1",
+        "knplabs/gaufrette"                 : "v0.1.7",
+        "knplabs/knp-gaufrette-bundle"      : "v0.1.7",
+        "knplabs/knp-components"            : "dev-master",
+        "lexik/form-filter-bundle"          : "3.*@dev",
+        "liip/imagine-bundle"               : "1.0.*@dev",
+        "mopa/bootstrap-bundle"             : "dev-master",
+        "nelmio/alice"                      : "1.5.2",
+        "pagerfanta/pagerfanta"             : "1.0.*@dev",
+        "stof/doctrine-extensions-bundle"   : "1.2.*@dev",
+        "twbs/bootstrap"                    : "dev-master",
+        "victoire/victoire"                 : "dev-master",
+        "white-october/pagerfanta-bundle"   : "1.0.*@dev",
+
+        "appventus/breadcrumb-widget"        : "dev-master",
+        "appventus/button-widget"            : "dev-master",
+        "appventus/filter-widget"            : "dev-master",
+        "appventus/image-widget"             : "dev-master",
+        "appventus/listing-widget"           : "dev-master",
+        "appventus/menu-widget"              : "dev-master",
+        "appventus/simplecontactform-widget" : "dev-master",
+        "appventus/slider-widget"            : "dev-master",
+        "appventus/text-widget"              : "dev-master",
+        "appventus/title-widget"             : "dev-master",
+        "appventus/ckeditor-widget"          : "dev-master",
+        "appventus/file-widget"              : "dev-master",
+        "appventus/layout-widget"            : "dev-master",
+        "appventus/cover-widget"             : "dev-master",
+        "appventus/html-widget"              : "dev-master",
+        "appventus/markdown-widget"          : "dev-master",
+        "appventus/articlelist-widget"       : "dev-master",
+        "appventus/render-widget"            : "dev-master",
+        "appventus/disqus-widget"            : "dev-master",
+        "appventus/sitemap-widget"           : "dev-master",
+        "appventus/tab-widget"               : "dev-master",
+        "appventus/sharethis-widget"         : "dev-master"
+    },
+    "require-dev": {
+        "sensio/generator-bundle": "~2.3"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
+        ],
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap",
+            "cd vendor && if [ ! -f selenium-server-standalone-2.35.0.jar ]; then curl -O http://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar; fi"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap",
+            "cd vendor && if [ ! -f selenium-server-standalone-2.35.0.jar ]; then curl -O http://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar; fi"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        },
+        "branch-alias": {
+            "dev-master": "2.5-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}

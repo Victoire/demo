@@ -1,0 +1,30 @@
+liip_imagine:
+    driver:               gd
+    cache:                default
+    data_loader:          default
+    resolvers:
+       default:
+          web_path: ~
+    loaders:
+        default:
+            filesystem: ~
+    filter_sets:
+        cache: ~
+        thumb_out:
+            filters:
+                thumbnail: { size: [32, 32], mode: outbound } # Transforms 50x40 to 32x32, while cropping the width
+        thumb_in:
+            filters:
+                thumbnail: { size: [32, 32], mode: inset } # Transforms 50x40 to 32x26, no cropping
+        double_header_carousel:
+            filters:
+                thumbnail: { size: [1920, 670], mode: inset }
+        blog_list_preview:
+            quality: 100
+            filters:
+                thumbnail: { size: [650, 354], mode: outbound }
+
+        blog_show_preview:
+            quality: 100
+            filters:
+                thumbnail: { size: [1140, 500], mode: inset }

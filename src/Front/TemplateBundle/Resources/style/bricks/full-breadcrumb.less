@@ -1,0 +1,48 @@
+.full-breadcrumb {
+    background: @grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .box-shadow(inset 0px 0px 6px 0px rgba(0,0,0,0.25));
+
+    .breadcrumb {
+        margin-bottom: 0;
+        background-color: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+        .container-fixed();
+
+        @media (min-width: @screen-sm-min) {
+            width: @container-sm;
+        }
+        @media (min-width: @screen-md-min) {
+            width: @container-md;
+        }
+        @media (min-width: @screen-lg-min) {
+            width: @container-lg;
+        }
+
+        > li {
+            font-size: 14px;
+            line-height: 19px;
+            color: @grey-dark;
+
+            a {
+                color: @blue;
+                font-weight: bold;
+
+                &:hover, &.hover, &.-hover, &.is-hover,
+                &:active, &.active, &.-active, &.is-active {
+                    text-decoration: underline;
+                }
+            }
+
+            + li {
+                &:before {
+                    content: "\003E";
+                    color: @grey-dark;
+                    padding: 0 3px;
+                }
+            }
+        }
+    }
+}

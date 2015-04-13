@@ -1,0 +1,176 @@
+.sport-nav {
+    height: @sportNav_height;
+    .display(flex);
+
+    .siblingpage {
+        .flex(1 1 0);
+        background-size: auto 100%;
+        position: relative;
+
+        &:before {
+            content: "";
+            background-color: fade(white, 80%);
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            .transition(background-color 200ms ease);
+        }
+
+        &:after {
+            position: absolute;
+            font-family: FontAwesome;
+            height: @sportNav-after_height;
+            width: @sportNav-after_width;
+            background-color: @sportNav-after_backgroundColor;
+            top: 50%;
+            margin-top: @sportNav-after_height / 2 * -1;
+            font-size: @sportNav-after_fontSize;
+            text-align: center;
+            color: @sportNav-after_color;
+            line-height: @sportNav-after_height;
+            z-index: 2;
+            .transition(all 200ms ease);
+        }
+
+        &.-previous {
+            background-position: right;
+
+            &:after {
+                content: "\f104";
+                right: 0;
+            }
+        }
+
+        &.-next {
+            background-position: left;
+
+            &:after {
+                content: "\f105";
+                left: 0;
+            }
+        }
+
+        &:hover, &.hover, &.-hover, &.is-hover,
+        &:focus, &.focus, &.-focus, &.is-focus,
+        &:active, &.active, &.-active, &.is-active {
+            text-decoration: none;
+
+            &:before {
+                content: "";
+                background-color: fade(white, 0%);
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            &:after {
+                color: @sportNav-after_backgroundColor;
+                background-color: @sportNav-after_color;
+            }
+        }
+    }
+
+    .current {
+        .flex(0 0 @container-lg - @grid-gutter-width);
+        position: relative;
+        background-size: cover;
+    }
+
+    .title {
+        font-size: @sportNav-title_fontSize;
+        line-height: @sportNav-title_lineHeight;
+        font-weight: @sportNav-title_fontWeight;
+        color: @sportNav-title_color;
+        display: block;
+        text-align: center;
+        text-shadow: @sportNav-title_textShadow;
+        position: absolute;
+        .transform(translateX(-50%), translateY(-50%));
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media all and (max-width: @screen-md-max) {
+    .sport-nav {
+        .current {
+            .flex(0 0 @container-md - @grid-gutter-width);
+        }
+    }
+}
+
+@media all and (max-width: @screen-sm-max) {
+    .sport-nav {
+        display: block;
+        position: relative;
+
+        .current {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+        }
+
+        .siblingpage {
+            height: @sportNav-after_height;
+            width: @sportNav-after_width;
+            position: absolute;
+            top: 50%;
+            margin-top: @sportNav-after_height / 2 * -1;
+            z-index: 1;
+
+            &:before {
+                content: none;
+            }
+
+            &:after {
+                position: static;
+                display: block;
+                margin-top: 0;
+            }
+
+            &.-previous {
+                left: @sportNav-after_marginHorizontal__sm;
+            }
+
+            &.-next {
+                right: @sportNav-after_marginHorizontal__sm;
+            }
+
+            &:hover, &.hover, &.-hover, &.is-hover,
+            &:focus, &.focus, &.-focus, &.is-focus,
+            &:active, &.active, &.-active, &.is-active {
+                &:before {
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: @screen-xs-max) {
+    .sport-nav {
+        .title {
+            font-size: @sportNav-title_fontSize__xs;
+            line-height: @sportNav-title_lineHeight__xs;
+        }
+
+        .siblingpage {
+            &.-previous {
+                left: @sportNav-after_marginHorizontal__xs;
+            }
+
+            &.-next {
+                right: @sportNav-after_marginHorizontal__xs;
+            }
+        }
+    }
+}

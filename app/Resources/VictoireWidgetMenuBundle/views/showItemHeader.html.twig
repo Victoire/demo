@@ -1,0 +1,23 @@
+{% if menuItem.children|length > 0 %}
+        <li class="dropdown {% if depth > 0 %}submenu{% endif %}">
+            {{ _self.render_dropdown_link(menuItem, depth) }}
+                <ul class="dropdown-menu {% if depth > 0 %}submenu-show submenu-hide{% endif %}">
+                    {% for child in menuItem.children %}
+                        {% include 'VictoireWidgetMenuBundle::showItem.html.twig' with { 'menuItem': child, 'depth': depth + 1 } %}
+                    {% endfor %}
+                </ul>
+        </li>
+{% else %}
+    <li class="item">{{ vic_link(menuItem.link.parameters, menuItem.title) }}</li>
+{% endif %}
+
+{% macro render_dropdown_link(item, depth) %}
+    {% if item.linkType != 'page' %}
+        <a href="{{item.url}}">{{item.title}} {% if depth == 0 %}<b class="caret"></b>
+    {% endif %}</a>
+    {% else %}
+        <a href="{{ path('victoire_core_page_show', {'url' : item.page.url }) }}">{{item.title}} {% if depth == 0 %}<b class="caret"></b></a>
+    {% endif %}
+    {% endif %}
+{% endmacro %}
+

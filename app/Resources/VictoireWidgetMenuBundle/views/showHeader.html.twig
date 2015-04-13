@@ -1,0 +1,19 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+
+{% block content %}
+    <ul class="nav-bar -header">
+        {% spaceless %}
+        {% for child in widget.children %}
+            {% include 'VictoireWidgetMenuBundle::showItemHeader.html.twig' with { 'menuItem': child, 'depth': 0 } %}
+        {% endfor %}
+        {% endspaceless %}
+    </ul>
+
+    {% if app.request.isXmlHttpRequest %}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            initSubMenu();
+        });
+    </script>
+    {% endif %}
+{% endblock content %}

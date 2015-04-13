@@ -1,0 +1,40 @@
+{% extends ':Layout:layout.html.twig' %}
+
+{% block header %}
+    <header class="bg-blue -fade color-white" id="fullWidth-header">
+        <div class="container">
+            <div class="pull-left" id="fullWidth-header--imgContainer">
+                {{ cms_slot_widgets('header_logo') }}
+            </div>
+
+            <button class="btn btn-default btn-framed pull-right strong hidden-md hidden-lg" id="fullWidth-header--touchMenu--trigger">Menu <i class="fa fa-angle-down" id="fullWidth-header--touchMenu--witness"></i></button>
+
+            <div id="fullWidth-header--touchMenu">
+                <div id="fullWidth-header--navContainer">
+                    {{ cms_slot_widgets('header_menu') }}
+                </div>
+
+                <div id="fullWidth-header--buttonContainer">
+                    {{ cms_slot_widgets('header_btn') }}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        $(document).on('click', '#fullWidth-header--touchMenu--trigger', function(event) {
+            $('#fullWidth-header--touchMenu--witness').toggleClass('fa-angle-up').toggleClass('fa-angle-down');
+            $('#fullWidth-header--touchMenu').toggleClass('is-in');
+        });
+    </script>
+{% endblock header %}
+
+{% block content %}
+    <div id="fullWidth-content">
+        {{ parent() }}
+    </div>
+{% endblock content %}
+
+{% block footer %}
+    {{ cms_slot_widgets('footer') }}
+{% endblock footer %}

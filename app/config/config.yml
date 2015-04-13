@@ -1,0 +1,20 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: assetic.yml }
+    - { resource: av_awesome_spool_mailer.yml }
+    - { resource: doctrine.yml }
+    - { resource: framework.yml }
+    - { resource: fos_user.yml }
+    - { resource: jms_i18n_routing.yml }
+    - { resource: jms_translation.yml }
+    - { resource: liip_imagine.yml }
+    - { resource: mopa_bootstrap.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+    - { resource: stof_doctrine_extensions.yml }
+    - { resource: swiftmailer.yml }
+    - { resource: twig.yml }
+    - { resource: victoire_core.yml }
+    - { resource: victoire_widget_share_this.yml }
+    - { resource: @VictoireCoreBundle/Resources/config/config.yml }
+    - { resource: @VictoireTwigBundle/Resources/config/config.yml }

@@ -1,0 +1,18 @@
+body {
+    &.victoire-bo {
+        &[role="admin"] {
+            #fullWidth-content {
+                margin-top: 90px + 7.5px;
+            }
+        }
+    }
+}
+
+#fullWidth-content {
+    margin-top: 90px;
+    .clearfix();
+
+    @media all and (max-width: @screen-sm-max) {
+        margin-top: 70px;
+    }
+}

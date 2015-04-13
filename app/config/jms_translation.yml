@@ -1,0 +1,17 @@
+jms_translation:
+    configs:
+        app:
+            dirs:           ["%kernel.root_dir%/Resources", "%kernel.root_dir%/../src"]
+            output_dir:     "%kernel.root_dir%/Resources/translations"
+            excluded_names: ["*TestCase.php", "*Test.php"]
+            excluded_dirs:  ["Tests", "Features", "cache", "data", "logs"]
+            output_format:  yml
+
+services:
+    jms_translation.dumper.xliff_dumper:
+        class: "%jms_translation.dumper.xliff_dumper.class%"
+        calls:
+            - [ setSourceLanguage, [%jms_translation.source_language% ] ]
+            - [ setAddDate, [false] ]
+        tags:
+            -  { name: jms_translation.dumper, format: xliff }
