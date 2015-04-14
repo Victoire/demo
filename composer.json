@@ -48,6 +48,7 @@
         "twbs/bootstrap"                    : "dev-master",
         "victoire/victoire"                 : "dev-master",
         "white-october/pagerfanta-bundle"   : "1.0.*@dev",
+        "beberlei/doctrineextensions"       : "dev-master",
 
         "appventus/breadcrumb-widget"        : "dev-master",
         "appventus/button-widget"            : "dev-master",
