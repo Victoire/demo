@@ -1,4 +1,4 @@
-# demo
+# Victoire demo (standard-project)
 
 ##Install
 
@@ -21,3 +21,5 @@ Setup your virtualhost as usual and go to http://demo.victoire.dev/app_dev.php/l
 |Login|Password|
 |-----|--------|
 |`anakin@victoire.io`|test|
+
+[https://github.com/Victoire/victoire](https://github.com/Victoire/victoire)
