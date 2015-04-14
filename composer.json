@@ -1,10 +1,10 @@
 {
     "name": "victoire/demo",
-    "license": "null",
+    "license": "MIT",
     "type": "project",
     "description": "Kickstart you project with the Victoire demo",
     "autoload": {
-        "psr-0": { "": "src/", "SymfonyStandard": "app/" }
+        "psr-4": { "": "src/", "SymfonyStandard\\": "app/" }
     },
     "require": {
         "php": ">=5.3.3",
@@ -114,8 +114,7 @@
             "file": "app/config/parameters.yml"
         },
         "branch-alias": {
-            "dev-master": "2.5-dev"
+            "dev-master": "1.0-dev"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
