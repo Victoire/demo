@@ -3,7 +3,7 @@
 ##Install
 
 ```
-composer create-project victoire/demo myVictoire 1.0.*@dev
+composer create-project victoire/demo myVictoire "1.0.*@dev"
 ```
 
 Import the demo database in var/dump/db.sql
