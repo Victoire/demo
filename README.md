@@ -6,6 +6,13 @@
 composer create-project victoire/demo myVictoire "1.0.*@dev"
 ```
 
+Then, you have to edit app/config/victoire_core.yml and change domain names for yours:
+```
+    locale_pattern_table:
+        my_victoire.dev: fr
+        demo.victoire.fr: fr
+```
+
 Import the demo database in var/dump/db.sql
 
 or do it yourself by doing the usual stuff.
