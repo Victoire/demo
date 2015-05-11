@@ -24,4 +24,3 @@ parameters:
     node_paths:
         - /usr/local/lib/node_modules
         - /usr/local/share/npm/lib/node_modules
-    victoire_core.watch_view_cache: false
