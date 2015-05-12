@@ -6,29 +6,50 @@
 composer create-project victoire/demo myVictoire "1.0.*@dev"
 ```
 
-Then, you have to edit app/config/victoire_core.yml and change domain names for yours:
+##Domain names
+Change domain names for yours in app/config/victoire_core.yml
 ```
     locale_pattern_table:
-        my_victoire.dev: fr
+        demo.victoire.dev: fr
         demo.victoire.fr: fr
 ```
 
-Import the demo database in var/dump/db.sql
+##Database
+Create your database
+```
+php bin/console doctrine:database:create
+```
+And import the demo database with var/dump/db.sql
 
-or do it yourself by doing the usual stuff.
-
-    php bin/console doctrine:database:create
-    php bin/console doctrine:schema:create
-    php bin/console victoire:generate:view-cache --env=dev
-    php bin/console doctrine:fixtures:load --fixtures="vendor/victoire/victoire/Bundle/CoreBundle/DataFixtures/ORM"
-
+##Uploads
+Extract demo uploads in web folder
+```
+tar -zxvf var/dump/uploads.tar.gz -C web/
+```
+##Assets
+If you have not already installed less, run the following command
+```
+npm install -g less
+```
+Then dump assets
+```
+php bin/console assets:install web --symlink
+php bin/console mopa:bootstrap:symlink:less
+php bin/console assetic:dump
+```
+##Bower
+Install Bower packages
+```
+bower install
+```
+##APC
 *Careful* : please notice that Victoire needs APC in CLI mode. to do so, add these two lines in your php.ini config file
 
 ```ini
     apc.enabled = 1
     apc.enable_cli = 1
 ```
-
+##Login page
 Setup your virtualhost as usual and go to http://demo.victoire.dev/app_dev.php/login (assuming your local virtualhost is called demo.victoire.dev) and enter these credentials to start to test Victoire:
 
 |Login|Password|
