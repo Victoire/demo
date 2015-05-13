@@ -26,6 +26,11 @@ Extract demo uploads in web folder
 ```
 tar -zxvf var/dump/uploads.tar.gz -C web/
 ```
+##Bower
+Install Bower packages
+```
+bower install
+```
 ##Assets
 If you have not already installed less, run the following command
 ```
@@ -36,11 +41,6 @@ Then dump assets
 php bin/console assets:install web --symlink
 php bin/console mopa:bootstrap:symlink:less
 php bin/console assetic:dump
-```
-##Bower
-Install Bower packages
-```
-bower install
 ```
 ##APC
 *Careful* : please notice that Victoire needs APC in CLI mode. to do so, add these two lines in your php.ini config file
