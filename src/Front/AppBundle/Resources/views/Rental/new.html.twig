@@ -1,12 +1,12 @@
-{% extends 'VictoireCoreBundle::_modal.html.twig' %}
+{% extends 'VictoireCoreBundle::backendLayout.html.twig' %}
 
 
-{% block modal_container_classes %}{{ parent() }} vic-view-modal{% endblock modal_container_classes %}
+{% block container_class %}{{ parent() }} victoire-bo{% endblock container_class %}
 
-{% block modal_header_title %}
-Nouvel appartement
-{% endblock modal_header_title %}
-{% block modal_body_content %}
+{% block header_title %}
+    Nouvel appartement
+{% endblock header_title %}
+{% block content %}
     {{ form(form) }}
-{% endblock modal_body_content %}
+{% endblock content %}
 
