@@ -1,23 +1,22 @@
-{% extends 'VictoireCoreBundle::_modal.html.twig' %}
+{% extends 'VictoireCoreBundle::backendLayout.html.twig' %}
 
+{% block container_class %}{{ parent() }} victoire-bo{% endblock container_class %}
 
-{% block modal_container_classes %}{{ parent() }} vic-view-modal{% endblock modal_container_classes %}
-
-{% block modal_header_title %}
-Liste des appartements
-{% endblock modal_header_title %}
-{% block modal_body_content %}
+{% block header_title %}
+    Liste des appartements
+{% endblock header_title %}
+{% block content %}
 
     <table class="records_list">
         <thead>
-            <tr>
-                <th>Titre</th>
-            </tr>
+        <tr>
+            <th>Titre</th>
+        </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td><a data-toggle="vic-modal" href="{{ path('rental_edit', { 'id': entity.id }) }}">{{ entity.title }}</a></td>
+                <td><a href="{{ path('rental_edit', { 'id': entity.id }) }}">{{ entity.title }}</a></td>
             </tr>
         {% endfor %}
         </tbody>
@@ -25,10 +24,10 @@ Liste des appartements
 
     <div>
         {% spaceless %}
-        <a data-toggle="vic-modal" href="{{ path('rental_new') }}" class="btn btn-default">
-            Nouvel appartement
-        </a>
+            <a href="{{ path('rental_new') }}" class="btn btn-default">
+                Nouvel appartement
+            </a>
         {% endspaceless %}
     </div>
 
-{% endblock modal_body_content %}
+{% endblock content %}
