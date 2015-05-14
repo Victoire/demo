@@ -10,6 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Rental controller.
@@ -31,15 +32,11 @@ class RentalController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $entities = $em->getRepository('AppBundle:Rental')->findAll();
-        $response['success'] = true;
-        $response['html'] = $this->container->get('victoire_templating')->render(
-            'AppBundle:Rental:index.html.twig',
-            array(
-                'entities' => $entities,
-            )
+        $response = array(
+            'entities' => $entities,
         );
 
-        return new JsonResponse($response);
+        return $response;
     }
     /**
      * Creates a new Rental entity.
@@ -62,16 +59,12 @@ class RentalController extends Controller
             return $this->redirect($this->generateUrl('rental_index'));
         }
 
-        $response['success'] = true;
-        $response['html'] = $this->container->get('victoire_templating')->render(
-            'AppBundle:Rental:new.html.twig',
-            array(
+        $response = array(
             'entity' => $entity,
             'form'   => $form->createView(),
-            )
         );
 
-        return new JsonResponse($response);
+        return $response;
     }
 
     /**
@@ -89,10 +82,7 @@ class RentalController extends Controller
         ));
 
         $form->add('submit', 'submit', array(
-            'label' => 'Créer',
-            'attr' => array(
-                'data-toggle' => 'vic-modal',
-            ),
+            'label' => 'Créer'
         ));
 
         return $form;
@@ -110,16 +100,12 @@ class RentalController extends Controller
         $entity = new Rental();
         $form   = $this->createCreateForm($entity);
 
-        $response['success'] = true;
-        $response['html'] = $this->container->get('victoire_templating')->render(
-            'AppBundle:Rental:new.html.twig',
-            array(
+        $response = array(
             'entity' => $entity,
             'form'   => $form->createView(),
-            )
         );
 
-        return new JsonResponse($response);
+        return $response;
     }
 
     /**
@@ -142,34 +128,27 @@ class RentalController extends Controller
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
-        $response['success'] = true;
-        $response['html'] = $this->container->get('victoire_templating')->render(
-            'AppBundle:Rental:edit.html.twig',
-            array(
+        $response = array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
-            )
         );
 
-        return new JsonResponse($response);
+        return $response;
     }
 
     /**
-    * Creates a form to edit a Rental entity.
-    *
-    * @param Rental $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    */
+     * Creates a form to edit a Rental entity.
+     *
+     * @param Rental $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
     private function createEditForm(Rental $entity)
     {
         $form = $this->createForm(new RentalType(), $entity, array(
             'action' => $this->generateUrl('rental_update', array('id' => $entity->getId())),
             'method' => 'PUT',
-            'attr' => array(
-                'data-toggle' => 'vic-modal',
-            ),
         ));
 
         $form->add('submit', 'submit', array(
@@ -205,17 +184,13 @@ class RentalController extends Controller
             return $this->redirect($this->generateUrl('rental_edit', array('id' => $id)));
         }
 
-        $response['success'] = true;
-        $response['html'] = $this->container->get('victoire_templating')->render(
-            'AppBundle:Rental:edit.html.twig',
-            array(
+        $response = array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
-            )
         );
 
-        return new JsonResponse($response);
+        return $response;
     }
     /**
      * Deletes a Rental entity.
@@ -257,6 +232,6 @@ class RentalController extends Controller
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Supprimer'))
             ->getForm()
-        ;
+            ;
     }
 }

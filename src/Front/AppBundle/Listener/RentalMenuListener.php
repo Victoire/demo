@@ -38,8 +38,7 @@ class RentalMenuListener
         $this->mainItem
             ->addChild('menu.rental', array(
                 'route' => 'rental_index',
-            ))
-            ->setLinkAttribute('data-toggle', 'vic-modal');
+            ));
 
         return $this->mainItem;
     }

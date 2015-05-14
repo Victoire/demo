@@ -1,15 +1,14 @@
-{% extends 'VictoireCoreBundle::_modal.html.twig' %}
+{% extends 'VictoireCoreBundle::backendLayout.html.twig' %}
 
+{% block container_class %}{{ parent() }} victoire-bo{% endblock container_class %}
 
-{% block modal_container_classes %}{{ parent() }} vic-view-modal{% endblock modal_container_classes %}
-
-{% block modal_header_title %}
-Modifier un appartement
-{% endblock modal_header_title %}
-{% block modal_body_content %}
+{% block header_title %}
+    Modifier un appartement
+{% endblock header_title %}
+{% block content %}
 
     {{ form(edit_form) }}
 
     {{ form(delete_form) }}
 
-{% endblock modal_body_content %}
+{% endblock content %}
