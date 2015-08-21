@@ -3,7 +3,7 @@
 {% endblock doctype %}
 
 {% block html_tag %}
-<html lang="fr">
+<html ng-app="ngApp">
 {% endblock html_tag %}
 
     <head>
@@ -26,6 +26,12 @@
                     <script src="{{ asset_url }}"></script>
                 {% endjavascripts %}
             {% endif %}
+            {% javascripts 'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js' %}
+            <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+            {% javascripts injector="head, modernizr" %}
+            <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
         {% endblock head_script %}
 
         {% block head_style %}
@@ -55,7 +61,7 @@
     {% endblock %}
 
     {% block javascript_bottom %}
-        {% javascripts injector="foot, bootstrap-extra, redactor" %}
+        {% javascripts injector="foot, bootstrap-extra, redactor, victoire-ngApp, alertify-codrops-notification" %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}
         {% javascripts

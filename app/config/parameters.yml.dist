@@ -24,3 +24,6 @@ parameters:
     node_paths:
         - /usr/local/lib/node_modules
         - /usr/local/share/npm/lib/node_modules
+    locale_pattern_table:
+        demo.victoire.dev: fr
+        demo.victoire.io: fr

@@ -3,9 +3,9 @@
 namespace Front\AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Victoire\Bundle\BusinessEntityBundle\Entity\Traits\BusinessEntityTrait;
 use Victoire\Bundle\CoreBundle\Annotations as VIC;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
-use Victoire\Bundle\CoreBundle\Entity\Traits\BusinessEntityTrait;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**

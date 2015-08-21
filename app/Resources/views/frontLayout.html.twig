@@ -16,7 +16,7 @@
 
 {% block head_style %}
     {% if is_granted('ROLE_VICTOIRE') %}
-        {% stylesheets filter='less, cssrewrite' injector="victoire-edit"
+        {% stylesheets filter='less, cssrewrite' injector="victoire-edit, alertify-codrops-notification"
          %}
         <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
         {% endstylesheets %}
@@ -52,12 +52,12 @@
 
 {% block foot_script %}
 
-    <script type="text/javascript">
     {% if view is defined %}
-        var viewReferenceId = '{{ view.reference.id }}';
-    {% endif %}
-    </script>
-    {% if is_granted('ROLE_VICTOIRE') %}
+        <script type="text/javascript">
+            var viewReferenceId = '{{ vic_current_page_reference() }}';
+        </script>
+        {{ render_hinclude(controller('VictoireAnalyticsBundle:BrowseEvent:track', {'viewReferenceId': view.reference.id, 'referer': app.request.headers.get('referer')})) }}
+    {% endif %}{% if is_granted('ROLE_VICTOIRE') %}
         {% spaceless %}
             {% javascripts injector='victoire-edit, victoire-leftnavbar' %}
             <script type="text/javascript" src="{{ asset_url }}"></script>
@@ -77,11 +77,13 @@
     <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
     <script type="text/javascript">
         var locale = '{{ app.request.locale }}';
+        var debug = {{ app.debug ? "true" : "false" }};
     </script>
     <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
     {% javascripts
         '@FrontTemplateBundle/Resources/public/dependency/bootstrap/dist/js/bootstrap.min.js'
         '@FrontTemplateBundle/Resources/public/dependency/retinajs/dist/retina.min.js'
+    '@FrontTemplateBundle/Resources/public/dependency/hinclude/hinclude.js'
     %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}

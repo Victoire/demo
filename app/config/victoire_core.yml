@@ -25,6 +25,4 @@ victoire_i18n:
     available_locales:
         fr: fr
     locale_pattern: domain
-    locale_pattern_table:
-        demo.victoire.com: fr
-        demo.victoire.dev: fr
+    locale_pattern_table: %locale_pattern_table%
