@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2db461c11c5ebddea09fde899083d54e",
+    "hash": "e5a77a3929ac61a51a0e85dfe839d87b",
+    "content-hash": "64b4b52260ff6809ca7d7f270bdb93e4",
     "packages": [
         {
             "name": "appventus/ajax-bundle",
@@ -60,12 +61,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AppVentus/AvAlertifyBundle.git",
-                "reference": "2dc64e364558708ba6de426e9e56de42f6ac01d9"
+                "reference": "d64485d1e486ec644cffd24e74d10f4a0086d735"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AppVentus/AvAlertifyBundle/zipball/2dc64e364558708ba6de426e9e56de42f6ac01d9",
-                "reference": "2dc64e364558708ba6de426e9e56de42f6ac01d9",
+                "url": "https://api.github.com/repos/AppVentus/AvAlertifyBundle/zipball/d64485d1e486ec644cffd24e74d10f4a0086d735",
+                "reference": "d64485d1e486ec644cffd24e74d10f4a0086d735",
                 "shasum": ""
             },
             "require": {
@@ -107,7 +108,7 @@
                 "alert",
                 "bootstrap"
             ],
-            "time": "2015-08-12 07:44:58"
+            "time": "2015-10-06 12:40:35"
         },
         {
             "name": "appventus/assetic-injector-bundle",
@@ -116,12 +117,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AppVentus/AsseticInjectorBundle.git",
-                "reference": "5964d9b2b56b5fd5397f3b7b97babd5d7d3c7680"
+                "reference": "44f5e7235576560af4b0227d79d5dfcb755c8262"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AppVentus/AsseticInjectorBundle/zipball/5964d9b2b56b5fd5397f3b7b97babd5d7d3c7680",
-                "reference": "5964d9b2b56b5fd5397f3b7b97babd5d7d3c7680",
+                "url": "https://api.github.com/repos/AppVentus/AsseticInjectorBundle/zipball/44f5e7235576560af4b0227d79d5dfcb755c8262",
+                "reference": "44f5e7235576560af4b0227d79d5dfcb755c8262",
                 "shasum": ""
             },
             "require": {
@@ -153,7 +154,7 @@
                 "assetic",
                 "injector"
             ],
-            "time": "2015-08-20 07:22:22"
+            "time": "2015-08-22 08:45:11"
         },
         {
             "name": "appventus/avlist-bundle",
@@ -249,12 +250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AppVentus/AvAwesomeShorcutsBundle.git",
-                "reference": "d517c6a1f858ab374d5a5ecffb8267013bdca6f0"
+                "reference": "f6baeb231a09f0e06b616d6aa761d71be1cd8061"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AppVentus/AvAwesomeShorcutsBundle/zipball/d517c6a1f858ab374d5a5ecffb8267013bdca6f0",
-                "reference": "d517c6a1f858ab374d5a5ecffb8267013bdca6f0",
+                "url": "https://api.github.com/repos/AppVentus/AvAwesomeShorcutsBundle/zipball/f6baeb231a09f0e06b616d6aa761d71be1cd8061",
+                "reference": "f6baeb231a09f0e06b616d6aa761d71be1cd8061",
                 "shasum": ""
             },
             "require-dev": {
@@ -282,7 +283,7 @@
             "keywords": [
                 "controller"
             ],
-            "time": "2015-07-23 12:14:35"
+            "time": "2015-10-06 12:40:30"
         },
         {
             "name": "appventus/spoolmailerbundle",
@@ -291,12 +292,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AppVentus/AvSpoolMailerBundle.git",
-                "reference": "c8486889c7215b49d2f8ab903a1b0664e2e2d565"
+                "reference": "06432158fb471829fe866e2753eacf88f563e227"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AppVentus/AvSpoolMailerBundle/zipball/c8486889c7215b49d2f8ab903a1b0664e2e2d565",
-                "reference": "c8486889c7215b49d2f8ab903a1b0664e2e2d565",
+                "url": "https://api.github.com/repos/AppVentus/AvSpoolMailerBundle/zipball/06432158fb471829fe866e2753eacf88f563e227",
+                "reference": "06432158fb471829fe866e2753eacf88f563e227",
                 "shasum": ""
             },
             "require": {
@@ -328,7 +329,7 @@
                 "spool",
                 "swiftmailer"
             ],
-            "time": "2015-07-21 17:11:11"
+            "time": "2015-10-15 20:17:12"
         },
         {
             "name": "appventus/swiftmailerdbbundle",
@@ -337,12 +338,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AppVentus/WhiteOctoberSwiftMailerDBBundle.git",
-                "reference": "0eddc8674d0737cb9c9e3d9f6533cac4757580eb"
+                "reference": "aeae64bfe946b4f90ef509d1e0f287adeb57ca50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AppVentus/WhiteOctoberSwiftMailerDBBundle/zipball/0eddc8674d0737cb9c9e3d9f6533cac4757580eb",
-                "reference": "0eddc8674d0737cb9c9e3d9f6533cac4757580eb",
+                "url": "https://api.github.com/repos/AppVentus/WhiteOctoberSwiftMailerDBBundle/zipball/aeae64bfe946b4f90ef509d1e0f287adeb57ca50",
+                "reference": "aeae64bfe946b4f90ef509d1e0f287adeb57ca50",
                 "shasum": ""
             },
             "require": {
@@ -363,14 +364,12 @@
             ],
             "authors": [
                 {
-                    "name": "Rich Sage",
-                    "email": "rich.sage@gmail.com",
-                    "homepage": "http://www.richsage.co.uk/"
+                    "name": "Paul Andrieux",
+                    "email": "paul@appventus.com"
                 },
                 {
-                    "name": "Paul Andrieux",
-                    "email": "paul@appventus.com",
-                    "homepage": "http://appventus.com"
+                    "name": "Rich Sage",
+                    "email": "rich.sage@gmail.com"
                 }
             ],
             "description": "Database spooling for SwiftMailer with sms support",
@@ -379,7 +378,7 @@
                 "spool",
                 "swiftmailer"
             ],
-            "time": "2014-01-26 23:55:19"
+            "time": "2015-09-20 21:39:48"
         },
         {
             "name": "beberlei/DoctrineExtensions",
@@ -387,12 +386,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/beberlei/DoctrineExtensions.git",
-                "reference": "2d1b8bd7087ada868408f14a38d9cd88e126bec8"
+                "reference": "d7be90e5273f5fea20fc159c50dedc679feb5178"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/DoctrineExtensions/zipball/2d1b8bd7087ada868408f14a38d9cd88e126bec8",
-                "reference": "2d1b8bd7087ada868408f14a38d9cd88e126bec8",
+                "url": "https://api.github.com/repos/beberlei/DoctrineExtensions/zipball/d7be90e5273f5fea20fc159c50dedc679feb5178",
+                "reference": "d7be90e5273f5fea20fc159c50dedc679feb5178",
                 "shasum": ""
             },
             "require": {
@@ -441,20 +440,20 @@
                 "doctrine",
                 "orm"
             ],
-            "time": "2015-08-06 13:16:43"
+            "time": "2015-11-12 13:25:24"
         },
         {
             "name": "behat/transliterator",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Transliterator.git",
-                "reference": "c93521d3462a554332d1ef5bb0e9b5b8ca4106c4"
+                "reference": "868e05be3a9f25ba6424c2dd4849567f50715003"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Transliterator/zipball/c93521d3462a554332d1ef5bb0e9b5b8ca4106c4",
-                "reference": "c93521d3462a554332d1ef5bb0e9b5b8ca4106c4",
+                "url": "https://api.github.com/repos/Behat/Transliterator/zipball/868e05be3a9f25ba6424c2dd4849567f50715003",
+                "reference": "868e05be3a9f25ba6424c2dd4849567f50715003",
                 "shasum": ""
             },
             "require": {
@@ -463,7 +462,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -481,20 +480,20 @@
                 "slug",
                 "transliterator"
             ],
-            "time": "2014-05-15 22:08:22"
+            "time": "2015-09-28 16:26:35"
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.2.6",
+            "version": "v1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "f4a91702ca3cd2e568c3736aa031ed00c3752af4"
+                "reference": "f25c8aab83e0c3e976fd7d19875f198ccf2f7535"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/f4a91702ca3cd2e568c3736aa031ed00c3752af4",
-                "reference": "f4a91702ca3cd2e568c3736aa031ed00c3752af4",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
+                "reference": "f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
                 "shasum": ""
             },
             "require": {
@@ -549,20 +548,20 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2015-06-17 12:21:22"
+            "time": "2015-08-31 12:32:49"
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.4.1",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03"
+                "reference": "2b9cec5a5e722010cbebc91713d4c11eaa064d5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/c9eadeb743ac6199f7eec423cb9426bc518b7b03",
-                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/2b9cec5a5e722010cbebc91713d4c11eaa064d5e",
+                "reference": "2b9cec5a5e722010cbebc91713d4c11eaa064d5e",
                 "shasum": ""
             },
             "require": {
@@ -583,8 +582,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Cache\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -619,7 +618,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-04-15 00:11:59"
+            "time": "2015-11-02 18:35:48"
         },
         {
             "name": "doctrine/collections",
@@ -689,16 +688,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "cd8daf2501e10c63dced7b8b9b905844316ae9d3"
+                "reference": "0009b8f0d4a917aabc971fb089eba80e872f83f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/cd8daf2501e10c63dced7b8b9b905844316ae9d3",
-                "reference": "cd8daf2501e10c63dced7b8b9b905844316ae9d3",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/0009b8f0d4a917aabc971fb089eba80e872f83f9",
+                "reference": "0009b8f0d4a917aabc971fb089eba80e872f83f9",
                 "shasum": ""
             },
             "require": {
@@ -758,7 +757,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2015-04-02 19:55:44"
+            "time": "2015-08-31 13:00:22"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -766,12 +765,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/data-fixtures.git",
-                "reference": "bd44f6b6e40247b6530bc8abe802e4e4d914976a"
+                "reference": "b4213c21f138c96c29ba2f57349d6fca5b2878a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/bd44f6b6e40247b6530bc8abe802e4e4d914976a",
-                "reference": "bd44f6b6e40247b6530bc8abe802e4e4d914976a",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/b4213c21f138c96c29ba2f57349d6fca5b2878a9",
+                "reference": "b4213c21f138c96c29ba2f57349d6fca5b2878a9",
                 "shasum": ""
             },
             "require": {
@@ -815,20 +814,20 @@
             "keywords": [
                 "database"
             ],
-            "time": "2015-03-30 12:14:13"
+            "time": "2015-11-02 22:38:12"
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "628c2256b646ae2417d44e063bce8aec5199d48d"
+                "reference": "01dbcbc5cd0a913d751418e635434a18a2f2a75c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/628c2256b646ae2417d44e063bce8aec5199d48d",
-                "reference": "628c2256b646ae2417d44e063bce8aec5199d48d",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/01dbcbc5cd0a913d751418e635434a18a2f2a75c",
+                "reference": "01dbcbc5cd0a913d751418e635434a18a2f2a75c",
                 "shasum": ""
             },
             "require": {
@@ -886,20 +885,20 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2015-01-12 21:52:47"
+            "time": "2015-09-16 16:29:33"
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "v1.5.1",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "8c5cedb4f2f7ebb66a963ae46ad9daa1e31cee01"
+                "reference": "c4ffef2b2296e9d0179eb0b5248e5ae25c9bba3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/8c5cedb4f2f7ebb66a963ae46ad9daa1e31cee01",
-                "reference": "8c5cedb4f2f7ebb66a963ae46ad9daa1e31cee01",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/c4ffef2b2296e9d0179eb0b5248e5ae25c9bba3b",
+                "reference": "c4ffef2b2296e9d0179eb0b5248e5ae25c9bba3b",
                 "shasum": ""
             },
             "require": {
@@ -926,7 +925,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
@@ -964,52 +963,55 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2015-08-12 15:52:00"
+            "time": "2015-11-16 17:11:46"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
-            "version": "v1.0.1",
-            "target-dir": "Doctrine/Bundle/DoctrineCacheBundle",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineCacheBundle.git",
-                "reference": "e4b6f810aa047f9cbfe41c3d6a3d7e83d7477a9d"
+                "reference": "030ff41ef1db66370b36467086bfb817a661fe6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/e4b6f810aa047f9cbfe41c3d6a3d7e83d7477a9d",
-                "reference": "e4b6f810aa047f9cbfe41c3d6a3d7e83d7477a9d",
+                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/030ff41ef1db66370b36467086bfb817a661fe6a",
+                "reference": "030ff41ef1db66370b36467086bfb817a661fe6a",
                 "shasum": ""
             },
             "require": {
-                "doctrine/cache": "~1.3",
+                "doctrine/cache": "^1.4.2",
                 "doctrine/inflector": "~1.0",
                 "php": ">=5.3.2",
-                "symfony/doctrine-bridge": "~2.2",
-                "symfony/framework-bundle": "~2.2",
-                "symfony/security": "~2.2"
+                "symfony/doctrine-bridge": "~2.2|~3.0"
             },
             "require-dev": {
                 "instaclick/coding-standard": "~1.1",
                 "instaclick/object-calisthenics-sniffs": "dev-master",
                 "instaclick/symfony2-coding-standard": "dev-remaster",
-                "phpunit/phpunit": "~3.7",
+                "phpunit/phpunit": "~4",
                 "satooshi/php-coveralls": "~0.6.1",
-                "squizlabs/php_codesniffer": "dev-master",
-                "symfony/console": "~2.2",
-                "symfony/finder": "~2.2",
-                "symfony/validator": "~2.2",
-                "symfony/yaml": "~2.2"
+                "squizlabs/php_codesniffer": "~1.5",
+                "symfony/console": "~2.2|~3.0",
+                "symfony/finder": "~2.2|~3.0",
+                "symfony/framework-bundle": "~2.2|~3.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0",
+                "symfony/security-acl": "~2.3|~3.0",
+                "symfony/validator": "~2.2|~3.0",
+                "symfony/yaml": "~2.2|~3.0"
+            },
+            "suggest": {
+                "symfony/security-acl": "For using this bundle to cache ACLs"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Bundle\\DoctrineCacheBundle": ""
+                "psr-4": {
+                    "Doctrine\\Bundle\\DoctrineCacheBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1042,13 +1044,13 @@
                     "email": "fabien@symfony.com"
                 }
             ],
-            "description": "Symfony2 Bundle for Doctrine Cache",
+            "description": "Symfony Bundle for Doctrine Cache",
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
                 "cache",
                 "caching"
             ],
-            "time": "2014-11-28 09:43:36"
+            "time": "2015-11-27 04:59:07"
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
@@ -1056,19 +1058,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
-                "reference": "817c2d233fde0fe85cb7e4d25d43fbfcd028aef8"
+                "reference": "0f1a2f91b349e10f5c343f75ab71d23aace5b029"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/817c2d233fde0fe85cb7e4d25d43fbfcd028aef8",
-                "reference": "817c2d233fde0fe85cb7e4d25d43fbfcd028aef8",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/0f1a2f91b349e10f5c343f75ab71d23aace5b029",
+                "reference": "0f1a2f91b349e10f5c343f75ab71d23aace5b029",
                 "shasum": ""
             },
             "require": {
                 "doctrine/data-fixtures": "~1.0",
                 "doctrine/doctrine-bundle": "~1.0",
                 "php": ">=5.3.2",
-                "symfony/doctrine-bridge": "~2.1"
+                "symfony/doctrine-bridge": "~2.3|~3.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1105,20 +1107,20 @@
                 "Fixture",
                 "persistence"
             ],
-            "time": "2015-08-04 22:43:14"
+            "time": "2015-11-04 21:23:23"
         },
         {
             "name": "doctrine/inflector",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "0bcb2e79d8571787f18b7eb036ed3d004908e604"
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/0bcb2e79d8571787f18b7eb036ed3d004908e604",
-                "reference": "0bcb2e79d8571787f18b7eb036ed3d004908e604",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/90b2128806bfde671b6952ab8bea493942c1fdae",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae",
                 "shasum": ""
             },
             "require": {
@@ -1130,7 +1132,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -1172,7 +1174,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2014-12-20 21:24:13"
+            "time": "2015-11-06 14:35:42"
         },
         {
             "name": "doctrine/instantiator",
@@ -1284,16 +1286,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.5.0",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "aa80c7d2c55a372f5f9f825f5c66dbda53a6e3fe"
+                "reference": "464b5fdbfbbeb4a65465ac173c4c5d90960f41ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/aa80c7d2c55a372f5f9f825f5c66dbda53a6e3fe",
-                "reference": "aa80c7d2c55a372f5f9f825f5c66dbda53a6e3fe",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/464b5fdbfbbeb4a65465ac173c4c5d90960f41ff",
+                "reference": "464b5fdbfbbeb4a65465ac173c4c5d90960f41ff",
                 "shasum": ""
             },
             "require": {
@@ -1304,12 +1306,12 @@
                 "doctrine/instantiator": "~1.0.1",
                 "ext-pdo": "*",
                 "php": ">=5.4",
-                "symfony/console": "~2.5"
+                "symfony/console": "~2.5|~3.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0",
                 "satooshi/php-coveralls": "dev-master",
-                "symfony/yaml": "~2.1"
+                "symfony/yaml": "~2.3|~3.0"
             },
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
@@ -1357,7 +1359,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2015-04-02 20:40:18"
+            "time": "2015-11-23 12:44:25"
         },
         {
             "name": "egeloen/ckeditor-bundle",
@@ -1472,23 +1474,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
-                "reference": "cc33cfd500cb056808a9f937d6c2e589b23ba936"
+                "reference": "e481171a0826e9372bfec28acd6bf5fb50c4106a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/cc33cfd500cb056808a9f937d6c2e589b23ba936",
-                "reference": "cc33cfd500cb056808a9f937d6c2e589b23ba936",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/e481171a0826e9372bfec28acd6bf5fb50c4106a",
+                "reference": "e481171a0826e9372bfec28acd6bf5fb50c4106a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "symfony/console": "~2.3",
-                "symfony/framework-bundle": "~2.3",
-                "symfony/serializer": "~2.0",
+                "symfony/console": "~2.3|~3.0",
+                "symfony/framework-bundle": "~2.3|~3.0",
+                "symfony/serializer": "~2.0|~3.0",
                 "willdurand/jsonp-callback-validator": "~1.0"
             },
             "require-dev": {
-                "symfony/expression-language": "~2.4"
+                "symfony/expression-language": "~2.4|~3.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1522,7 +1525,7 @@
                 "javascript",
                 "routing"
             ],
-            "time": "2015-07-31 09:51:44"
+            "time": "2015-11-10 12:47:06"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1530,16 +1533,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "336d9cd8ba0c5a462b3e70be144a7bef5377b219"
+                "reference": "45d6f40178216a840885b4ca6d7de9e67068568a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/336d9cd8ba0c5a462b3e70be144a7bef5377b219",
-                "reference": "336d9cd8ba0c5a462b3e70be144a7bef5377b219",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/45d6f40178216a840885b4ca6d7de9e67068568a",
+                "reference": "45d6f40178216a840885b4ca6d7de9e67068568a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
+                "php": ">=5.3.9",
                 "symfony/form": "~2.3",
                 "symfony/framework-bundle": "~2.3",
                 "symfony/security-bundle": "~2.3",
@@ -1589,7 +1592,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2015-08-14 09:45:59"
+            "time": "2015-11-03 10:24:23"
         },
         {
             "name": "friendsofvictoire/articlelist-widget",
@@ -1598,21 +1601,27 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetArticleListBundle.git",
-                "reference": "c57e954c8f40d25d807423215a0d731b29ad2682"
+                "reference": "3dfb6a8cea7b291994e21272664f561eece09d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetArticleListBundle/zipball/c57e954c8f40d25d807423215a0d731b29ad2682",
-                "reference": "c57e954c8f40d25d807423215a0d731b29ad2682",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetArticleListBundle/zipball/3dfb6a8cea7b291994e21272664f561eece09d96",
+                "reference": "3dfb6a8cea7b291994e21272664f561eece09d96",
                 "shasum": ""
             },
             "require": {
+                "friendsofvictoire/listing-widget": "1.3.x-dev",
                 "lexik/form-filter-bundle": "3.*@dev",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": ">=0.1"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\ArticleListBundle": ""
@@ -1625,19 +1634,24 @@
             "authors": [
                 {
                     "name": "Leny Bernard",
-                    "email": "leny@appventus.com"
+                    "email": "leny@victoire.io"
                 }
             ],
-            "description": "Victoire Cms article list widget",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS List articles widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "article",
+                "blog",
                 "cms",
+                "dynamic",
                 "list",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-02 21:09:05"
+            "time": "2015-11-12 15:34:56"
         },
         {
             "name": "friendsofvictoire/breadcrumb-widget",
@@ -1646,20 +1660,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetBreadcrumbBundle.git",
-                "reference": "f1ac0e469abc29a6fd98f35f496e08f0a56e7822"
+                "reference": "740e282dcfbd1d7ceb76356022170ef1d0e81b18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetBreadcrumbBundle/zipball/f1ac0e469abc29a6fd98f35f496e08f0a56e7822",
-                "reference": "f1ac0e469abc29a6fd98f35f496e08f0a56e7822",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetBreadcrumbBundle/zipball/740e282dcfbd1d7ceb76356022170ef1d0e81b18",
+                "reference": "740e282dcfbd1d7ceb76356022170ef1d0e81b18",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\BreadcrumbBundle": ""
@@ -1672,18 +1691,22 @@
             "authors": [
                 {
                     "name": "Leny Bernard",
-                    "email": "leny@appventus.com"
+                    "email": "leny@victoire.io"
                 }
             ],
-            "description": "Victoire Cms Breadcrumb widget",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS Breadcrumb widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "breadcrumb",
                 "cms",
+                "dynamic",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-11 12:55:55"
+            "time": "2015-11-12 16:06:21"
         },
         {
             "name": "friendsofvictoire/button-widget",
@@ -1692,20 +1715,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetButtonBundle.git",
-                "reference": "fa530fa4e20700b1fe9209de98b0d89036e98e97"
+                "reference": "6d1ded570824544498c014b0aebf64dddee7cc5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetButtonBundle/zipball/fa530fa4e20700b1fe9209de98b0d89036e98e97",
-                "reference": "fa530fa4e20700b1fe9209de98b0d89036e98e97",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetButtonBundle/zipball/6d1ded570824544498c014b0aebf64dddee7cc5d",
+                "reference": "6d1ded570824544498c014b0aebf64dddee7cc5d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\ButtonBundle": ""
@@ -1721,10 +1749,11 @@
                     "email": "leny@victoire.io"
                 }
             ],
-            "description": "Victoire DCMS Button component",
+            "description": "Victoire DCMS Button widget",
             "homepage": "http://victoire.io",
             "keywords": [
                 "DCMS",
+                "FoV",
                 "FriendsofVictoire",
                 "button",
                 "cms",
@@ -1732,7 +1761,7 @@
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-12 23:02:58"
+            "time": "2015-11-24 09:59:46"
         },
         {
             "name": "friendsofvictoire/ckeditor-widget",
@@ -1741,21 +1770,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetCKEditor.git",
-                "reference": "1059702d9beebba46994c92bcb10b71411b4b7ed"
+                "reference": "4dad08b570d0f003f50d7fcfbe7edd2530f48be7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetCKEditor/zipball/1059702d9beebba46994c92bcb10b71411b4b7ed",
-                "reference": "1059702d9beebba46994c92bcb10b71411b4b7ed",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetCKEditor/zipball/4dad08b570d0f003f50d7fcfbe7edd2530f48be7",
+                "reference": "4dad08b570d0f003f50d7fcfbe7edd2530f48be7",
                 "shasum": ""
             },
             "require": {
                 "egeloen/ckeditor-bundle": "2.5.2",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\CKEditorBundle": ""
@@ -1768,17 +1802,24 @@
             "authors": [
                 {
                     "name": "Leny Bernard",
-                    "email": "leny@appventus.com"
+                    "email": "leny@victoire.io"
                 }
             ],
-            "description": "Victoire Cms CKEditor widget",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS CK Editor widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "CK",
                 "CKEditor",
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
-                "victoire"
+                "dynamic",
+                "editor",
+                "victoire",
+                "widget"
             ],
-            "time": "2015-08-11 12:57:11"
+            "time": "2015-11-12 16:03:27"
         },
         {
             "name": "friendsofvictoire/cover-widget",
@@ -1787,21 +1828,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetCoverBundle.git",
-                "reference": "1d9a43060cc52a29b2bb53dff348cf6f62e49163"
+                "reference": "23818ddf44f0c9ed13ad301fd7a7f2d1074e757e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetCoverBundle/zipball/1d9a43060cc52a29b2bb53dff348cf6f62e49163",
-                "reference": "1d9a43060cc52a29b2bb53dff348cf6f62e49163",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetCoverBundle/zipball/23818ddf44f0c9ed13ad301fd7a7f2d1074e757e",
+                "reference": "23818ddf44f0c9ed13ad301fd7a7f2d1074e757e",
                 "shasum": ""
             },
             "require": {
-                "friendsofvictoire/image-widget": "dev-master",
+                "friendsofvictoire/image-widget": "1.3.x-dev",
                 "php": ">=5.3.3",
-                "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "symfony/framework-bundle": ">=2.3",
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\CoverBundle": ""
@@ -1814,18 +1860,23 @@
             "authors": [
                 {
                     "name": "Paul Andrieux",
-                    "email": "paul@appventus.com"
+                    "email": "paul@victoire.io"
                 }
             ],
-            "description": "Victoire Cms Cover widget",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS Cover widget - DEPRECATED",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
                 "cover",
+                "dynamic",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-04-21 08:43:24"
+            "abandoned": "friendsofvictoire/image-widget",
+            "time": "2015-11-12 15:26:59"
         },
         {
             "name": "friendsofvictoire/disqus-widget",
@@ -1834,20 +1885,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetDisqusBundle.git",
-                "reference": "74fc6060d8c4ff959d4b20983ce4be71d919e4d1"
+                "reference": "2f168818069742338549861fb4e1b82dc99f7f8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetDisqusBundle/zipball/74fc6060d8c4ff959d4b20983ce4be71d919e4d1",
-                "reference": "74fc6060d8c4ff959d4b20983ce4be71d919e4d1",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetDisqusBundle/zipball/2f168818069742338549861fb4e1b82dc99f7f8d",
+                "reference": "2f168818069742338549861fb4e1b82dc99f7f8d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\DisqusBundle": ""
@@ -1860,18 +1916,22 @@
             "authors": [
                 {
                     "name": "Paul Andrieux",
-                    "email": "paul@appventus.com"
+                    "email": "paul@victoire.io"
                 }
             ],
             "description": "Victoire Cms Disqus widget",
-            "homepage": "http://appventus.com",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
                 "disqus",
+                "dynamic",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-04-24 15:03:47"
+            "time": "2015-11-17 10:19:26"
         },
         {
             "name": "friendsofvictoire/file-widget",
@@ -1880,20 +1940,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetFileBundle.git",
-                "reference": "74075d574c5eeac99c6160cc1d194f793767466c"
+                "reference": "17cac97f0ffbd31dd161d4c8937b647358d68f89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetFileBundle/zipball/74075d574c5eeac99c6160cc1d194f793767466c",
-                "reference": "74075d574c5eeac99c6160cc1d194f793767466c",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetFileBundle/zipball/17cac97f0ffbd31dd161d4c8937b647358d68f89",
+                "reference": "17cac97f0ffbd31dd161d4c8937b647358d68f89",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\FileBundle": ""
@@ -1906,18 +1971,22 @@
             "authors": [
                 {
                     "name": "Leny BERNARD",
-                    "email": "leny@appventus.com"
+                    "email": "leny@victoire.io"
                 }
             ],
-            "description": "Victoire Cms File widget",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS File widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "file",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-04-21 07:31:54"
+            "time": "2015-11-12 15:54:55"
         },
         {
             "name": "friendsofvictoire/filter-widget",
@@ -1926,21 +1995,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetFilterBundle.git",
-                "reference": "8f7cdbe40b3f2facbfe53eb4937ff615d085d963"
+                "reference": "a964edd87a0f617a1a6eacda0e05cf3c93c84030"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetFilterBundle/zipball/8f7cdbe40b3f2facbfe53eb4937ff615d085d963",
-                "reference": "8f7cdbe40b3f2facbfe53eb4937ff615d085d963",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetFilterBundle/zipball/a964edd87a0f617a1a6eacda0e05cf3c93c84030",
+                "reference": "a964edd87a0f617a1a6eacda0e05cf3c93c84030",
                 "shasum": ""
             },
             "require": {
+                "appventus/ajax-bundle": "dev-master",
                 "beberlei/doctrineextensions": "dev-master",
+                "lexik/form-filter-bundle": "3.*@dev",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\FilterBundle": ""
@@ -1953,18 +2029,22 @@
             "authors": [
                 {
                     "name": "Paul Andrieux",
-                    "email": "paul@appventus.com"
+                    "email": "paul@victoire.io"
                 }
             ],
-            "description": "Victoire WebStation filter widget",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS Filter widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "filter",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-11 12:57:33"
+            "time": "2015-11-12 15:59:48"
         },
         {
             "name": "friendsofvictoire/html-widget",
@@ -1973,20 +2053,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetHtmlBundle.git",
-                "reference": "b0de43f513f912b153e74538723fac45325d580a"
+                "reference": "029a13a1ee56531acb4b3fc9f8096d7e6958c94b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetHtmlBundle/zipball/b0de43f513f912b153e74538723fac45325d580a",
-                "reference": "b0de43f513f912b153e74538723fac45325d580a",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetHtmlBundle/zipball/029a13a1ee56531acb4b3fc9f8096d7e6958c94b",
+                "reference": "029a13a1ee56531acb4b3fc9f8096d7e6958c94b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\HtmlBundle": ""
@@ -1998,19 +2083,23 @@
             ],
             "authors": [
                 {
-                    "name": "Loic GOYET",
-                    "email": "loic@appventus.com"
+                    "name": "Loïc Goyet",
+                    "email": "loic@victoire.io"
                 }
             ],
-            "description": "Victoire DCMS Html widget",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS HTML widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "html",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-04-21 08:23:14"
+            "time": "2015-11-12 15:54:04"
         },
         {
             "name": "friendsofvictoire/image-widget",
@@ -2019,20 +2108,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetImageBundle.git",
-                "reference": "a9b4cf8bff7980b268fbf38b70b5a24f5cc25804"
+                "reference": "a82c487e4a4e04f1eef37acb08e264255a215436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetImageBundle/zipball/a9b4cf8bff7980b268fbf38b70b5a24f5cc25804",
-                "reference": "a9b4cf8bff7980b268fbf38b70b5a24f5cc25804",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetImageBundle/zipball/a82c487e4a4e04f1eef37acb08e264255a215436",
+                "reference": "a82c487e4a4e04f1eef37acb08e264255a215436",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\ImageBundle": ""
@@ -2045,17 +2139,22 @@
             "authors": [
                 {
                     "name": "Paul Andrieux",
-                    "email": "paul@appventus.com"
+                    "email": "paul@victoire.io"
                 }
             ],
-            "description": "Victoire Cms Image component",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS Image widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "image",
-                "victoire"
+                "victoire",
+                "widget"
             ],
-            "time": "2015-08-13 14:33:03"
+            "time": "2015-11-12 15:57:44"
         },
         {
             "name": "friendsofvictoire/layout-widget",
@@ -2064,20 +2163,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetLayoutBundle.git",
-                "reference": "71cc930bca32436b141e6e6f58d863abd64553a0"
+                "reference": "3c0c744d9704a8863b6e0125914210b6268c479c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetLayoutBundle/zipball/71cc930bca32436b141e6e6f58d863abd64553a0",
-                "reference": "71cc930bca32436b141e6e6f58d863abd64553a0",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetLayoutBundle/zipball/3c0c744d9704a8863b6e0125914210b6268c479c",
+                "reference": "3c0c744d9704a8863b6e0125914210b6268c479c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\LayoutBundle": ""
@@ -2090,18 +2194,25 @@
             "authors": [
                 {
                     "name": "Leny BERNARD",
-                    "email": "leny@appventus.com"
+                    "email": "leny@victoire.io"
+                },
+                {
+                    "name": "Paul Andrieux",
+                    "email": "paul@victoire.io"
                 }
             ],
             "description": "Victoire DCMS Layout widget",
-            "homepage": "http://appventus.com",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "layout",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-04-21 08:25:04"
+            "time": "2015-11-12 15:57:10"
         },
         {
             "name": "friendsofvictoire/listing-widget",
@@ -2110,20 +2221,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetListingBundle.git",
-                "reference": "510e53be6166bea7a951d689ab7c1b37b144a29b"
+                "reference": "e4abc77d50dba054b07249f7eb49a30a958b40a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetListingBundle/zipball/510e53be6166bea7a951d689ab7c1b37b144a29b",
-                "reference": "510e53be6166bea7a951d689ab7c1b37b144a29b",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetListingBundle/zipball/e4abc77d50dba054b07249f7eb49a30a958b40a3",
+                "reference": "e4abc77d50dba054b07249f7eb49a30a958b40a3",
                 "shasum": ""
             },
             "require": {
+                "pagerfanta/pagerfanta": "^1.0@dev",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\ListingBundle": ""
@@ -2132,7 +2249,7 @@
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
-                    "name": "Leny Bernard",
+                    "name": "Leny BERNARD",
                     "email": "leny@victoire.io"
                 },
                 {
@@ -2140,10 +2257,11 @@
                     "email": "paul@victoire.io"
                 }
             ],
-            "description": "Victoire DCMS Listing component",
+            "description": "Victoire DCMS Listing widget",
             "homepage": "http://victoire.io",
             "keywords": [
                 "DCMS",
+                "FoV",
                 "FriendsofVictoire",
                 "cms",
                 "dynamic",
@@ -2151,7 +2269,7 @@
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-18 09:24:48"
+            "time": "2015-11-12 15:56:38"
         },
         {
             "name": "friendsofvictoire/markdown-widget",
@@ -2160,21 +2278,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetMarkdownBundle.git",
-                "reference": "3366b59ad7a1edc76c37afcd28c8fc6c10452ebb"
+                "reference": "613bc11cb0e03e2253ac05ed0bca5b93589e3e28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetMarkdownBundle/zipball/3366b59ad7a1edc76c37afcd28c8fc6c10452ebb",
-                "reference": "3366b59ad7a1edc76c37afcd28c8fc6c10452ebb",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetMarkdownBundle/zipball/613bc11cb0e03e2253ac05ed0bca5b93589e3e28",
+                "reference": "613bc11cb0e03e2253ac05ed0bca5b93589e3e28",
                 "shasum": ""
             },
             "require": {
-                "friendsofvictoire/html-widget": "dev-master",
+                "friendsofvictoire/html-widget": "1.3.x-dev",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\MarkdownBundle": ""
@@ -2186,19 +2309,23 @@
             ],
             "authors": [
                 {
-                    "name": "Leny Bernard",
-                    "email": "leny@appventus.com"
+                    "name": "Leny BERNARD",
+                    "email": "leny@victoire.io"
                 }
             ],
             "description": "Victoire DCMS Markdown widget",
-            "homepage": "http://appventus.com",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "markdown",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-04-21 08:49:32"
+            "time": "2015-11-12 15:53:02"
         },
         {
             "name": "friendsofvictoire/menu-widget",
@@ -2207,20 +2334,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetMenuBundle.git",
-                "reference": "9315fdc6d75e540a363db7825a9dbf61637c5715"
+                "reference": "7e7e8b5f95492addfc6d36fc21105347d1e8e761"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetMenuBundle/zipball/9315fdc6d75e540a363db7825a9dbf61637c5715",
-                "reference": "9315fdc6d75e540a363db7825a9dbf61637c5715",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetMenuBundle/zipball/7e7e8b5f95492addfc6d36fc21105347d1e8e761",
+                "reference": "7e7e8b5f95492addfc6d36fc21105347d1e8e761",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\MenuBundle": ""
@@ -2233,17 +2365,22 @@
             "authors": [
                 {
                     "name": "Paul Andrieux",
-                    "email": "paul@appventus.com"
+                    "email": "paul@victoire.io"
                 }
             ],
-            "description": "Victoire Cms Menu component",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS Menu widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "menu",
-                "victoire"
+                "victoire",
+                "widget"
             ],
-            "time": "2015-08-13 14:34:14"
+            "time": "2015-11-12 15:50:19"
         },
         {
             "name": "friendsofvictoire/render-widget",
@@ -2252,20 +2389,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetRenderBundle.git",
-                "reference": "6e130efd7c0ea66a5560c8083a4961942d1c0c5e"
+                "reference": "e3261e61e428140df5c3ba306543ddcca5dd952c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetRenderBundle/zipball/6e130efd7c0ea66a5560c8083a4961942d1c0c5e",
-                "reference": "6e130efd7c0ea66a5560c8083a4961942d1c0c5e",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetRenderBundle/zipball/e3261e61e428140df5c3ba306543ddcca5dd952c",
+                "reference": "e3261e61e428140df5c3ba306543ddcca5dd952c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\RenderBundle": ""
@@ -2278,17 +2420,22 @@
             "authors": [
                 {
                     "name": "Paul Andrieux",
-                    "email": "paul@appventus.com"
+                    "email": "paul@victoire.io"
                 }
             ],
-            "description": "Victoire Cms Render component",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS Render widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "render",
-                "victoire"
+                "victoire",
+                "widget"
             ],
-            "time": "2015-08-13 14:33:59"
+            "time": "2015-11-12 15:28:26"
         },
         {
             "name": "friendsofvictoire/sharethis-widget",
@@ -2297,20 +2444,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetShareThisBundle.git",
-                "reference": "a727aed8337cfb6ab934756bcb0cbf0ea8a79d7b"
+                "reference": "a6732de871f743a22e474388d627dc809d69453a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetShareThisBundle/zipball/a727aed8337cfb6ab934756bcb0cbf0ea8a79d7b",
-                "reference": "a727aed8337cfb6ab934756bcb0cbf0ea8a79d7b",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetShareThisBundle/zipball/a6732de871f743a22e474388d627dc809d69453a",
+                "reference": "a6732de871f743a22e474388d627dc809d69453a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\ShareThisBundle": ""
@@ -2322,19 +2474,23 @@
             ],
             "authors": [
                 {
-                    "name": "Leny Bernard",
-                    "email": "leny@appventus.com"
+                    "name": "Leny BERNARD",
+                    "email": "leny@victoire.io"
                 }
             ],
-            "description": "Victoire Cms ShareThis widget",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS ShareThis widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "sharethis",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-11 12:59:11"
+            "time": "2015-11-24 09:57:42"
         },
         {
             "name": "friendsofvictoire/simplecontactform-widget",
@@ -2343,12 +2499,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetSimpleContactFormBundle.git",
-                "reference": "d92b5a29f67e27d9c3fdfc900e260f0a4a155c3f"
+                "reference": "506b70b460621d60e4737c8e3322d034d530518a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetSimpleContactFormBundle/zipball/d92b5a29f67e27d9c3fdfc900e260f0a4a155c3f",
-                "reference": "d92b5a29f67e27d9c3fdfc900e260f0a4a155c3f",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetSimpleContactFormBundle/zipball/506b70b460621d60e4737c8e3322d034d530518a",
+                "reference": "506b70b460621d60e4737c8e3322d034d530518a",
                 "shasum": ""
             },
             "require": {
@@ -2357,9 +2513,14 @@
                 "appventus/swiftmailerdbbundle": "dev-master",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": ">=1.0.0"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\SimpleContactFormBundle": ""
@@ -2379,6 +2540,7 @@
             "homepage": "http://victoire.io",
             "keywords": [
                 "DCMS",
+                "FoV",
                 "FriendsofVictoire",
                 "SimpleContactForm",
                 "cms",
@@ -2386,7 +2548,7 @@
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-03 17:04:45"
+            "time": "2015-11-13 13:23:42"
         },
         {
             "name": "friendsofvictoire/sitemap-widget",
@@ -2395,20 +2557,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetSitemapBundle.git",
-                "reference": "d798d20df8a857b19beca07a13eb3897a723a091"
+                "reference": "327c086b181d60a3148e4fd66114f07ad14432bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetSitemapBundle/zipball/d798d20df8a857b19beca07a13eb3897a723a091",
-                "reference": "d798d20df8a857b19beca07a13eb3897a723a091",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetSitemapBundle/zipball/327c086b181d60a3148e4fd66114f07ad14432bb",
+                "reference": "327c086b181d60a3148e4fd66114f07ad14432bb",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\SitemapBundle": ""
@@ -2420,19 +2587,23 @@
             ],
             "authors": [
                 {
-                    "name": "Leny Bernard",
-                    "email": "leny@appventus.com"
+                    "name": "Leny BERNARD",
+                    "email": "leny@victoire.io"
                 }
             ],
             "description": "Victoire DCMS Sitemap widget",
-            "homepage": "http://appventus.com",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "Sitemap",
                 "cms",
+                "dynamic",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-07-09 21:52:37"
+            "time": "2015-11-12 15:42:34"
         },
         {
             "name": "friendsofvictoire/slider-widget",
@@ -2441,20 +2612,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetSliderBundle.git",
-                "reference": "a8134654a6b72d7675e06dab23f97efbd6aaee6d"
+                "reference": "3bfdca4fed1d6b743a4fb35d7f979a7ff0d945f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetSliderBundle/zipball/a8134654a6b72d7675e06dab23f97efbd6aaee6d",
-                "reference": "a8134654a6b72d7675e06dab23f97efbd6aaee6d",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetSliderBundle/zipball/3bfdca4fed1d6b743a4fb35d7f979a7ff0d945f9",
+                "reference": "3bfdca4fed1d6b743a4fb35d7f979a7ff0d945f9",
                 "shasum": ""
             },
             "require": {
+                "friendsofvictoire/listing-widget": "1.3.x-dev",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\SliderBundle": ""
@@ -2467,19 +2644,26 @@
             "authors": [
                 {
                     "name": "Leny Bernard",
-                    "email": "leny@appventus.com"
+                    "email": "leny@victoire.io"
+                },
+                {
+                    "name": "Grégoire Humeau",
+                    "email": "gregoire@victoire.io"
                 }
             ],
-            "description": "Victoire Cms Listing Slider Widget",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS Slider Widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
-                "listing",
+                "dynamic",
                 "slider",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-13 14:33:45"
+            "time": "2015-11-27 14:30:28"
         },
         {
             "name": "friendsofvictoire/tab-widget",
@@ -2488,20 +2672,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetTabBundle.git",
-                "reference": "da8209dcd33e169aab7b525872d3f9780fef84e3"
+                "reference": "527fcbe450c891998d75992ecd5eb3ce4037690e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetTabBundle/zipball/da8209dcd33e169aab7b525872d3f9780fef84e3",
-                "reference": "da8209dcd33e169aab7b525872d3f9780fef84e3",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetTabBundle/zipball/527fcbe450c891998d75992ecd5eb3ce4037690e",
+                "reference": "527fcbe450c891998d75992ecd5eb3ce4037690e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\TabBundle": ""
@@ -2513,19 +2702,23 @@
             ],
             "authors": [
                 {
-                    "name": "Leny BERNARD",
-                    "email": "leny@appventus.com"
+                    "name": "Leny Bernard",
+                    "email": "leny@victoire.io"
                 }
             ],
             "description": "Victoire Cms Tab widget",
-            "homepage": "http://appventus.com",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "tab",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-13 14:40:26"
+            "time": "2015-11-12 15:38:56"
         },
         {
             "name": "friendsofvictoire/text-widget",
@@ -2534,23 +2727,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetTextBundle.git",
-                "reference": "75d366dad02b7ce863327e4fe9269876c6e554db"
+                "reference": "678903a5640f4d02d1b409818b3ce8311003f964"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetTextBundle/zipball/75d366dad02b7ce863327e4fe9269876c6e554db",
-                "reference": "75d366dad02b7ce863327e4fe9269876c6e554db",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetTextBundle/zipball/678903a5640f4d02d1b409818b3ce8311003f964",
+                "reference": "678903a5640f4d02d1b409818b3ce8311003f964",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -2564,18 +2757,27 @@
             ],
             "authors": [
                 {
+                    "name": "Leny Bernard",
+                    "email": "leny@victoire.io"
+                },
+                {
                     "name": "Paul Andrieux",
-                    "email": "paul@appventus.com"
+                    "email": "paul@victoire.io"
                 }
             ],
-            "description": "Victoire Cms Text component",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS Text widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FriendsofVictoire",
+                "Plain",
                 "cms",
+                "dynamic",
                 "text",
-                "victoire"
+                "victoire",
+                "widget"
             ],
-            "time": "2015-08-12 23:00:10"
+            "time": "2015-11-12 15:37:56"
         },
         {
             "name": "friendsofvictoire/title-widget",
@@ -2584,21 +2786,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfVictoire/WidgetTitleBundle.git",
-                "reference": "5657be5e8345c85bc8852920c92acb90cd8054ed"
+                "reference": "e8e553123f603c23139b8f586f3f9c497270e4af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetTitleBundle/zipball/5657be5e8345c85bc8852920c92acb90cd8054ed",
-                "reference": "5657be5e8345c85bc8852920c92acb90cd8054ed",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetTitleBundle/zipball/e8e553123f603c23139b8f586f3f9c497270e4af",
+                "reference": "e8e553123f603c23139b8f586f3f9c497270e4af",
                 "shasum": ""
             },
             "require": {
-                "friendsofvictoire/text-widget": "dev-master",
+                "friendsofvictoire/text-widget": "1.3.x-dev",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "dev-master"
+                "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Victoire\\Widget\\TitleBundle": ""
@@ -2610,23 +2817,26 @@
             ],
             "authors": [
                 {
-                    "name": "Paul Andrieux",
-                    "email": "paul@appventus.com"
+                    "name": "Leny Bernard",
+                    "email": "leny@victoire.io"
                 },
                 {
-                    "name": "Leny Bernard",
-                    "email": "leny@appventus.com"
+                    "name": "Paul Andrieux",
+                    "email": "paul@victoire.io"
                 }
             ],
-            "description": "Victoire Cms Title component",
-            "homepage": "http://appventus.com",
+            "description": "Victoire DCMS Title widget",
+            "homepage": "http://victoire.io",
             "keywords": [
+                "DCMS",
+                "FriendsofVictoire",
                 "cms",
+                "dynamic",
                 "title",
                 "victoire",
                 "widget"
             ],
-            "time": "2015-08-20 12:09:16"
+            "time": "2015-11-12 15:37:08"
         },
         {
             "name": "fzaninotto/faker",
@@ -2682,16 +2892,16 @@
         },
         {
             "name": "gedmo/doctrine-extensions",
-            "version": "v2.4.5",
+            "version": "v2.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Atlantic18/DoctrineExtensions.git",
-                "reference": "12da6e0c6ffbc7702d9f83ff12f3649a0bc5b600"
+                "reference": "04ac4d1cdbdc610816562344c7ed74aecf2cd1ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/12da6e0c6ffbc7702d9f83ff12f3649a0bc5b600",
-                "reference": "12da6e0c6ffbc7702d9f83ff12f3649a0bc5b600",
+                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/04ac4d1cdbdc610816562344c7ed74aecf2cd1ca",
+                "reference": "04ac4d1cdbdc610816562344c7ed74aecf2cd1ca",
                 "shasum": ""
             },
             "require": {
@@ -2701,7 +2911,7 @@
             },
             "require-dev": {
                 "doctrine/common": ">=2.5.0",
-                "doctrine/mongodb-odm": "dev-master",
+                "doctrine/mongodb-odm": ">=1.0.2",
                 "doctrine/orm": ">=2.5.0",
                 "phpunit/phpunit": "~4.4",
                 "phpunit/phpunit-mock-objects": "~2.3",
@@ -2757,20 +2967,20 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2015-08-11 16:33:57"
+            "time": "2015-11-30 18:58:48"
         },
         {
             "name": "imagine/imagine",
-            "version": "0.6.2",
+            "version": "v0.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/avalanche123/Imagine.git",
-                "reference": "83ca8babede0e54f935ec09d55a726bf4b0a3f7c"
+                "reference": "149041d2a1b517107bfe270ca2b1a17aa341715d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/83ca8babede0e54f935ec09d55a726bf4b0a3f7c",
-                "reference": "83ca8babede0e54f935ec09d55a726bf4b0a3f7c",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/149041d2a1b517107bfe270ca2b1a17aa341715d",
+                "reference": "149041d2a1b517107bfe270ca2b1a17aa341715d",
                 "shasum": ""
             },
             "require": {
@@ -2814,25 +3024,25 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2014-11-11 11:36:02"
+            "time": "2015-09-19 16:54:05"
         },
         {
             "name": "incenteev/composer-parameter-handler",
-            "version": "v2.1.1",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Incenteev/ParameterHandler.git",
-                "reference": "84a205fe80a46101607bafbc423019527893ddd0"
+                "reference": "d7ce7f06136109e81d1cb9d57066c4d4a99cf1cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Incenteev/ParameterHandler/zipball/84a205fe80a46101607bafbc423019527893ddd0",
-                "reference": "84a205fe80a46101607bafbc423019527893ddd0",
+                "url": "https://api.github.com/repos/Incenteev/ParameterHandler/zipball/d7ce7f06136109e81d1cb9d57066c4d4a99cf1cc",
+                "reference": "d7ce7f06136109e81d1cb9d57066c4d4a99cf1cc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "symfony/yaml": "~2.0"
+                "symfony/yaml": "~2.3|~3.0"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
@@ -2865,7 +3075,66 @@
             "keywords": [
                 "parameters management"
             ],
-            "time": "2015-06-03 08:27:03"
+            "time": "2015-11-10 17:04:01"
+        },
+        {
+            "name": "infinite-networks/form-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Charlie-Lucas/InfiniteFormBundle.git",
+                "reference": "3d189031a9f312e96cbd4c3794d564806670d7f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Charlie-Lucas/InfiniteFormBundle/zipball/3d189031a9f312e96cbd4c3794d564806670d7f0",
+                "reference": "3d189031a9f312e96cbd4c3794d564806670d7f0",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "~2.3",
+                "php": ">=5.3.2",
+                "symfony/form": "~2.3",
+                "symfony/framework-bundle": "~2.3"
+            },
+            "conflict": {
+                "twig/twig": "<1.12"
+            },
+            "require-dev": {
+                "components/jquery": "*",
+                "components/qunit": "*",
+                "doctrine/doctrine-bundle": "~1.2",
+                "doctrine/orm": "~2.3",
+                "robloach/component-installer": "~0.1.1",
+                "symfony/phpunit-bridge": "^2.7",
+                "symfony/symfony": "^2.3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Infinite\\FormBundle\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Nagel",
+                    "email": "t.nagel@infinite.net.au"
+                }
+            ],
+            "description": "A collection of useful form types and extensions for Symfony2",
+            "support": {
+                "issues": "https://github.com/infinite-networks/InfiniteFormBundle/issues",
+                "source": "https://github.com/Charlie-Lucas/InfiniteFormBundle/tree/master"
+            },
+            "time": "2015-11-24 15:55:46"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -2919,21 +3188,21 @@
         },
         {
             "name": "jms/aop-bundle",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "target-dir": "JMS/AopBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSAopBundle.git",
-                "reference": "93f41ab85ed409430bc3bab2e0b7c7677f152aa8"
+                "reference": "66287749c020b4c667c0ff4937b07e66c04bbe71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSAopBundle/zipball/93f41ab85ed409430bc3bab2e0b7c7677f152aa8",
-                "reference": "93f41ab85ed409430bc3bab2e0b7c7677f152aa8",
+                "url": "https://api.github.com/repos/schmittjoh/JMSAopBundle/zipball/66287749c020b4c667c0ff4937b07e66c04bbe71",
+                "reference": "66287749c020b4c667c0ff4937b07e66c04bbe71",
                 "shasum": ""
             },
             "require": {
-                "jms/cg": "1.*",
+                "jms/cg": "^1.1",
                 "symfony/framework-bundle": "2.*"
             },
             "type": "symfony-bundle",
@@ -2949,14 +3218,12 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache"
+                "Apache-2.0"
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Adds AOP capabilities to Symfony2",
@@ -2964,26 +3231,31 @@
                 "annotations",
                 "aop"
             ],
-            "time": "2013-07-29 09:34:26"
+            "time": "2015-09-13 09:02:33"
         },
         {
             "name": "jms/cg",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/cg-library.git",
-                "reference": "ce8ef43dd6bfe6ce54e5e9844ab71be2343bf2fc"
+                "reference": "0af1113c7409b8636c5244bbae10b2e0ff792e9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/cg-library/zipball/ce8ef43dd6bfe6ce54e5e9844ab71be2343bf2fc",
-                "reference": "ce8ef43dd6bfe6ce54e5e9844ab71be2343bf2fc",
+                "url": "https://api.github.com/repos/schmittjoh/cg-library/zipball/0af1113c7409b8636c5244bbae10b2e0ff792e9c",
+                "reference": "0af1113c7409b8636c5244bbae10b2e0ff792e9c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "CG\\": "src/"
@@ -2991,21 +3263,19 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache"
+                "Apache2"
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Toolset for generating PHP code",
             "keywords": [
                 "code generation"
             ],
-            "time": "2012-01-02 20:40:52"
+            "time": "2015-09-13 08:54:43"
         },
         {
             "name": "jms/di-extra-bundle",
@@ -3090,8 +3360,7 @@
                 "shasum": ""
             },
             "require": {
-                "jms/translation-bundle": "~1.0",
-                "symfony/framework-bundle": "~2.1"
+                "symfony/framework-bundle": "~2.3|~3.0"
             },
             "require-dev": {
                 "jms/di-extra-bundle": "*",
@@ -3297,27 +3566,170 @@
             "time": "2015-06-25 13:44:57"
         },
         {
+            "name": "jms/serializer",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/serializer.git",
+                "reference": "fe13a1f993ea3456e195b7820692f2eb2b6bbb48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/fe13a1f993ea3456e195b7820692f2eb2b6bbb48",
+                "reference": "fe13a1f993ea3456e195b7820692f2eb2b6bbb48",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "1.*",
+                "doctrine/instantiator": "~1.0.3",
+                "jms/metadata": "~1.1",
+                "jms/parser-lib": "1.*",
+                "php": ">=5.4.0",
+                "phpcollection/phpcollection": "~0.1"
+            },
+            "conflict": {
+                "twig/twig": "<1.12"
+            },
+            "require-dev": {
+                "doctrine/orm": "~2.1",
+                "doctrine/phpcr-odm": "~1.0.1",
+                "jackalope/jackalope-doctrine-dbal": "1.0.*",
+                "phpunit/phpunit": "~4.0",
+                "propel/propel1": "~1.7",
+                "symfony/filesystem": "2.*",
+                "symfony/form": "~2.1",
+                "symfony/translation": "~2.0",
+                "symfony/validator": "~2.0",
+                "symfony/yaml": "2.*",
+                "twig/twig": "~1.12|~2.0"
+            },
+            "suggest": {
+                "symfony/yaml": "Required if you'd like to serialize data to YAML format."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "JMS\\Serializer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Library for (de-)serializing data of any complexity; supports XML, JSON, and YAML.",
+            "homepage": "http://jmsyst.com/libs/serializer",
+            "keywords": [
+                "deserialization",
+                "jaxb",
+                "json",
+                "serialization",
+                "xml"
+            ],
+            "time": "2015-10-27 09:24:41"
+        },
+        {
+            "name": "jms/serializer-bundle",
+            "version": "1.1.0",
+            "target-dir": "JMS/SerializerBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/JMSSerializerBundle.git",
+                "reference": "3e396c980545350c2efb65a50041d2a9f9d6562e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/JMSSerializerBundle/zipball/3e396c980545350c2efb65a50041d2a9f9d6562e",
+                "reference": "3e396c980545350c2efb65a50041d2a9f9d6562e",
+                "shasum": ""
+            },
+            "require": {
+                "jms/serializer": "^1.0.0",
+                "php": ">=5.4.0",
+                "phpoption/phpoption": "^1.1.0",
+                "symfony/framework-bundle": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "*",
+                "doctrine/orm": "*",
+                "symfony/browser-kit": "*",
+                "symfony/class-loader": "*",
+                "symfony/css-selector": "*",
+                "symfony/finder": "*",
+                "symfony/form": "*",
+                "symfony/process": "*",
+                "symfony/stopwatch": "*",
+                "symfony/twig-bundle": "*",
+                "symfony/validator": "*",
+                "symfony/yaml": "*"
+            },
+            "suggest": {
+                "jms/di-extra-bundle": "Required to get lazy loading (de)serialization visitors, ~1.3"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "JMS\\SerializerBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Allows you to easily serialize, and deserialize data of any complexity",
+            "homepage": "http://jmsyst.com/bundles/JMSSerializerBundle",
+            "keywords": [
+                "deserialization",
+                "jaxb",
+                "json",
+                "serialization",
+                "xml"
+            ],
+            "time": "2015-11-10 12:26:42"
+        },
+        {
             "name": "jms/translation-bundle",
             "version": "dev-master",
             "target-dir": "JMS/TranslationBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSTranslationBundle.git",
-                "reference": "8eff56746b73762dfe06414faf0fb609bfe51754"
+                "reference": "c2b4c6def557a8bcaae1df0745b57e5daac103ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/8eff56746b73762dfe06414faf0fb609bfe51754",
-                "reference": "8eff56746b73762dfe06414faf0fb609bfe51754",
+                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/c2b4c6def557a8bcaae1df0745b57e5daac103ac",
+                "reference": "c2b4c6def557a8bcaae1df0745b57e5daac103ac",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "0.9.4",
+                "nikic/php-parser": "~1.4.1",
                 "symfony/console": "*",
                 "symfony/framework-bundle": "~2.1"
             },
             "conflict": {
-                "twig/twig": "1.10.2"
+                "twig/twig": "<1.12"
             },
             "require-dev": {
                 "jms/di-extra-bundle": ">=1.1",
@@ -3325,6 +3737,7 @@
                 "symfony/browser-kit": "*",
                 "symfony/class-loader": "*",
                 "symfony/css-selector": "*",
+                "symfony/expression-language": "~2.6",
                 "symfony/finder": "*",
                 "symfony/form": "*",
                 "symfony/process": "*",
@@ -3366,7 +3779,7 @@
                 "ui",
                 "webinterface"
             ],
-            "time": "2014-10-29 13:23:47"
+            "time": "2015-10-10 08:49:21"
         },
         {
             "name": "knplabs/gaufrette",
@@ -3457,12 +3870,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/knp-components.git",
-                "reference": "e557a2b41b91b08d1eaa56511b99dccf5148cf28"
+                "reference": "07d445c8fab6471fe39fcd5216bce9749ddfbead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/e557a2b41b91b08d1eaa56511b99dccf5148cf28",
-                "reference": "e557a2b41b91b08d1eaa56511b99dccf5148cf28",
+                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/07d445c8fab6471fe39fcd5216bce9749ddfbead",
+                "reference": "07d445c8fab6471fe39fcd5216bce9749ddfbead",
                 "shasum": ""
             },
             "require": {
@@ -3517,7 +3930,7 @@
                 "pager",
                 "paginator"
             ],
-            "time": "2015-07-24 07:51:32"
+            "time": "2015-10-22 08:02:08"
         },
         {
             "name": "knplabs/knp-gaufrette-bundle",
@@ -3581,25 +3994,26 @@
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "v2.0.0-alpha1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "323c0e6c3471208ab86e1cac561febd5c63cef52"
+                "reference": "c6ad49933babd06a27b2f962a3469601ec9038b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/323c0e6c3471208ab86e1cac561febd5c63cef52",
-                "reference": "323c0e6c3471208ab86e1cac561febd5c63cef52",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/c6ad49933babd06a27b2f962a3469601ec9038b8",
+                "reference": "c6ad49933babd06a27b2f962a3469601ec9038b8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "pimple/pimple": "1.0.*",
-                "silex/silex": "1.0.*",
-                "twig/twig": ">=1.2,<2.0-dev"
+                "pimple/pimple": "~1.0",
+                "silex/silex": "~1.0",
+                "symfony/phpunit-bridge": "~2.7",
+                "twig/twig": "~1.16|~2.0"
             },
             "suggest": {
                 "pimple/pimple": "for the built-in implementations of the menu provider and renderer provider",
@@ -3609,12 +4023,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Knp\\Menu\\": "src/"
+                "psr-4": {
+                    "Knp\\Menu\\": "src/Knp/Menu"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3641,36 +4055,39 @@
                 "menu",
                 "tree"
             ],
-            "time": "2013-06-23 19:58:17"
+            "time": "2015-09-20 08:23:47"
         },
         {
             "name": "knplabs/knp-menu-bundle",
-            "version": "v2.0.0-alpha1",
-            "target-dir": "Knp/Bundle/MenuBundle",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "000b50881aff2831cdaadb8672e57e1b1502d643"
+                "reference": "675a8f87d972713b1abec06e5ed63043e7fd5aec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/000b50881aff2831cdaadb8672e57e1b1502d643",
-                "reference": "000b50881aff2831cdaadb8672e57e1b1502d643",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/675a8f87d972713b1abec06e5ed63043e7fd5aec",
+                "reference": "675a8f87d972713b1abec06e5ed63043e7fd5aec",
                 "shasum": ""
             },
             "require": {
-                "knplabs/knp-menu": "2.0.*",
-                "symfony/framework-bundle": "~2.0"
+                "knplabs/knp-menu": "~2.1",
+                "symfony/framework-bundle": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.4|~3.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Knp\\Bundle\\MenuBundle": ""
+                "psr-4": {
+                    "Knp\\Bundle\\MenuBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3695,39 +4112,42 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2013-06-23 23:46:58"
+            "time": "2015-11-13 10:51:46"
         },
         {
             "name": "kriswallsmith/assetic",
-            "version": "v1.2.1",
+            "version": "v1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "b20efe38845d20458702f97f3ff625d80805897b"
+                "reference": "9928f7c4ad98b234e3559d1049abd13387f86db5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/b20efe38845d20458702f97f3ff625d80805897b",
-                "reference": "b20efe38845d20458702f97f3ff625d80805897b",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/9928f7c4ad98b234e3559d1049abd13387f86db5",
+                "reference": "9928f7c4ad98b234e3559d1049abd13387f86db5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.1",
-                "symfony/process": "~2.1"
+                "symfony/process": "~2.1|~3.0"
+            },
+            "conflict": {
+                "twig/twig": "<1.23"
             },
             "require-dev": {
-                "cssmin/cssmin": "*",
-                "joliclic/javascript-packer": "*",
-                "kamicane/packager": "*",
-                "leafo/lessphp": "*",
-                "leafo/scssphp": "*",
-                "leafo/scssphp-compass": "*",
-                "mrclay/minify": "*",
-                "patchwork/jsqueeze": "~1.0",
-                "phpunit/phpunit": "~4",
+                "cssmin/cssmin": "3.0.1",
+                "joliclic/javascript-packer": "1.1",
+                "kamicane/packager": "1.0",
+                "leafo/lessphp": "^0.3.7",
+                "leafo/scssphp": "~0.1",
+                "mrclay/minify": "~2.2",
+                "patchwork/jsqueeze": "~1.0|~2.0",
+                "phpunit/phpunit": "~4.8",
                 "psr/log": "~1.0",
-                "ptachoire/cssembed": "*",
-                "twig/twig": "~1.6"
+                "ptachoire/cssembed": "~1.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0",
+                "twig/twig": "~1.8|~2.0"
             },
             "suggest": {
                 "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
@@ -3740,7 +4160,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -3769,7 +4189,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-12-12 05:04:05"
+            "time": "2015-11-12 13:51:40"
         },
         {
             "name": "lexik/form-filter-bundle",
@@ -3834,58 +4254,56 @@
         {
             "name": "liip/imagine-bundle",
             "version": "dev-master",
-            "target-dir": "Liip/ImagineBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liip/LiipImagineBundle.git",
-                "reference": "d7325b2ea6ecd3d574397c70abca1fb3a36cdb2c"
+                "reference": "471a26164997f0f5f6cdeff25c34ae48a195a71a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liip/LiipImagineBundle/zipball/d7325b2ea6ecd3d574397c70abca1fb3a36cdb2c",
-                "reference": "d7325b2ea6ecd3d574397c70abca1fb3a36cdb2c",
+                "url": "https://api.github.com/repos/liip/LiipImagineBundle/zipball/471a26164997f0f5f6cdeff25c34ae48a195a71a",
+                "reference": "471a26164997f0f5f6cdeff25c34ae48a195a71a",
                 "shasum": ""
             },
             "require": {
                 "imagine/imagine": "~0.5,<0.7",
-                "php": ">=5.3.2",
-                "symfony/filesystem": "~2.3 || ~3.0",
-                "symfony/finder": "~2.3 || ~3.0",
-                "symfony/framework-bundle": "~2.3 || ~3.0",
-                "symfony/options-resolver": "~2.3 || ~3.0"
+                "php": "^5.3.9|^7.0",
+                "symfony/filesystem": "~2.3|~3.0",
+                "symfony/finder": "~2.3|~3.0",
+                "symfony/framework-bundle": "~2.3|~3.0",
+                "symfony/options-resolver": "~2.3|~3.0"
             },
             "require-dev": {
                 "amazonwebservices/aws-sdk-for-php": "~1.0",
                 "aws/aws-sdk-php": "~2.4",
                 "doctrine/cache": "~1.1",
-                "doctrine/mongodb-odm": "1.0.*",
                 "doctrine/orm": "~2.3",
                 "ext-gd": "*",
                 "phpunit/phpunit": "~4.3",
                 "psr/log": "~1.0",
-                "symfony/browser-kit": "~2.3 || ~3.0",
-                "symfony/console": "~2.3 || ~3.0",
-                "symfony/form": "~2.3 || ~3.0",
-                "symfony/phpunit-bridge": "~2.3 || ~3.0",
-                "symfony/yaml": "~2.3 || ~3.0",
-                "twig/twig": "~1.0"
+                "symfony/browser-kit": "~2.3|~3.0",
+                "symfony/console": "~2.3|~3.0",
+                "symfony/dependency-injection": "~2.3|~3.0",
+                "symfony/form": "~2.3|~3.0",
+                "symfony/phpunit-bridge": "~2.3|~3.0",
+                "symfony/yaml": "~2.3|~3.0",
+                "twig/twig": "~1.12"
             },
             "suggest": {
                 "amazonwebservices/aws-sdk-for-php": "Add it if you'd like to use aws v1 resolver",
                 "aws/aws-sdk-php": "Add it if you'd like to use aws v2 or v3 resolver",
                 "monolog/monolog": "If you'd want to write logs",
-                "twig/twig": "If you'd want to use some handy twig filters"
+                "twig/twig": "If you'd want to use some handy twig filters, version 1.12 or greater required"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev",
-                    "dev-0.x": "0.x-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Liip\\ImagineBundle": ""
+                "psr-4": {
+                    "Liip\\ImagineBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3904,20 +4322,20 @@
                 "image",
                 "imagine"
             ],
-            "time": "2015-07-22 09:31:34"
+            "time": "2015-11-27 18:18:04"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.16.0",
+            "version": "1.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "c0c0b4bee3aabce7182876b0d912ef2595563db7"
+                "reference": "bee7f0dc9c3e0b69a6039697533dca1e845c8c24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c0c0b4bee3aabce7182876b0d912ef2595563db7",
-                "reference": "c0c0b4bee3aabce7182876b0d912ef2595563db7",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bee7f0dc9c3e0b69a6039697533dca1e845c8c24",
+                "reference": "bee7f0dc9c3e0b69a6039697533dca1e845c8c24",
                 "shasum": ""
             },
             "require": {
@@ -3931,10 +4349,11 @@
                 "aws/aws-sdk-php": "^2.4.9",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
                 "php-console/php-console": "^3.1.3",
                 "phpunit/phpunit": "~4.5",
                 "phpunit/phpunit-mock-objects": "2.3.0",
-                "raven/raven": "~0.8",
+                "raven/raven": "^0.13",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "swiftmailer/swiftmailer": "~5.3",
                 "videlalvaro/php-amqplib": "~2.4"
@@ -3980,7 +4399,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-08-09 17:44:44"
+            "time": "2015-10-14 12:51:02"
         },
         {
             "name": "mopa/bootstrap-bundle",
@@ -3989,21 +4408,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "c34671a55b2585e20a35ab5c6e1ad13a7e220b01"
+                "reference": "0205959643168208f3b313b2e00ca643441850b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/c34671a55b2585e20a35ab5c6e1ad13a7e220b01",
-                "reference": "c34671a55b2585e20a35ab5c6e1ad13a7e220b01",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/0205959643168208f3b313b2e00ca643441850b4",
+                "reference": "0205959643168208f3b313b2e00ca643441850b4",
                 "shasum": ""
             },
             "require": {
                 "mopa/composer-bridge": "~1.3",
-                "symfony/console": "~2.3",
+                "symfony/console": "~2.3|~3.0",
                 "symfony/form": "~2.3|~3.0",
-                "symfony/framework-bundle": "~2.3",
+                "symfony/framework-bundle": "~2.3|~3.0",
                 "symfony/twig-bundle": "~2.3|~3.0",
-                "twig/twig": ">=1.12"
+                "twig/twig": "^1.14.2"
             },
             "conflict": {
                 "symfony/twig-bridge": "<2.3"
@@ -4052,20 +4471,20 @@
                 "form",
                 "template"
             ],
-            "time": "2015-07-18 01:03:07"
+            "time": "2015-11-27 15:18:23"
         },
         {
             "name": "mopa/composer-bridge",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaComposerBridge.git",
-                "reference": "6f64e2f626bcdf2a6cab5d5c1be1d46a53905c13"
+                "reference": "58661a5c588ce9c3eff7d36c4030f6caa4de1ae2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaComposerBridge/zipball/6f64e2f626bcdf2a6cab5d5c1be1d46a53905c13",
-                "reference": "6f64e2f626bcdf2a6cab5d5c1be1d46a53905c13",
+                "url": "https://api.github.com/repos/phiamo/MopaComposerBridge/zipball/58661a5c588ce9c3eff7d36c4030f6caa4de1ae2",
+                "reference": "58661a5c588ce9c3eff7d36c4030f6caa4de1ae2",
                 "shasum": ""
             },
             "require": {
@@ -4103,7 +4522,7 @@
                 "Symfony2",
                 "composer"
             ],
-            "time": "2015-02-23 10:26:44"
+            "time": "2015-10-01 19:20:19"
         },
         {
             "name": "nelmio/alice",
@@ -4161,31 +4580,32 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v0.9.4",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "1e5e280ae88a27effa2ae4aa2bd088494ed8594f"
+                "reference": "f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1e5e280ae88a27effa2ae4aa2bd088494ed8594f",
-                "reference": "1e5e280ae88a27effa2ae4aa2bd088494ed8594f",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51",
+                "reference": "f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2"
+                "ext-tokenizer": "*",
+                "php": ">=5.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.9-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "PHPParser": "lib/"
-                }
+                "files": [
+                    "lib/bootstrap.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4201,7 +4621,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2013-08-25 17:11:40"
+            "time": "2015-09-19 14:15:08"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -4271,21 +4691,74 @@
             "time": "2014-11-21 09:25:05"
         },
         {
-            "name": "phpoption/phpoption",
-            "version": "1.4.0",
+            "name": "phpcollection/phpcollection",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "5d099bcf0393908bf4ad69cc47dafb785d51f7f5"
+                "url": "https://github.com/schmittjoh/php-collection.git",
+                "reference": "b8bf55a0a929ca43b01232b36719f176f86c7e83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/5d099bcf0393908bf4ad69cc47dafb785d51f7f5",
-                "reference": "5d099bcf0393908bf4ad69cc47dafb785d51f7f5",
+                "url": "https://api.github.com/repos/schmittjoh/php-collection/zipball/b8bf55a0a929ca43b01232b36719f176f86c7e83",
+                "reference": "b8bf55a0a929ca43b01232b36719f176f86c7e83",
+                "shasum": ""
+            },
+            "require": {
+                "phpoption/phpoption": "1.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PhpCollection": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "https://github.com/schmittjoh",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "General-Purpose Collection Library for PHP",
+            "keywords": [
+                "collection",
+                "list",
+                "map",
+                "sequence",
+                "set"
+            ],
+            "time": "2014-03-11 13:46:42"
+        },
+        {
+            "name": "phpoption/phpoption",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/94e644f7d2051a5f0fcf77d81605f152eecff0ed",
+                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.7.*"
             },
             "type": "library",
             "extra": {
@@ -4304,10 +4777,8 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Option Type for PHP",
@@ -4317,7 +4788,7 @@
                 "php",
                 "type"
             ],
-            "time": "2014-01-09 22:37:17"
+            "time": "2015-07-25 16:39:46"
         },
         {
             "name": "psr/log",
@@ -4359,17 +4830,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v3.0.31",
+            "version": "v3.0.34",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "3a900814bd57bf20f9453ae81ff8772bc95d7fff"
+                "reference": "587f3cd08bf8856cfc888b255f34f18b85930657"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/3a900814bd57bf20f9453ae81ff8772bc95d7fff",
-                "reference": "3a900814bd57bf20f9453ae81ff8772bc95d7fff",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/587f3cd08bf8856cfc888b255f34f18b85930657",
+                "reference": "587f3cd08bf8856cfc888b255f34f18b85930657",
                 "shasum": ""
             },
             "require": {
@@ -4415,29 +4886,29 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2015-08-03 10:07:12"
+            "time": "2015-11-26 18:10:17"
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.10",
+            "version": "v3.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "18fc2063c4d6569cdca47a39fbac32342eb65f3c"
+                "reference": "a79e205737b58d557c05caef6dfa8f94d8084bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/18fc2063c4d6569cdca47a39fbac32342eb65f3c",
-                "reference": "18fc2063c4d6569cdca47a39fbac32342eb65f3c",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/a79e205737b58d557c05caef6dfa8f94d8084bca",
+                "reference": "a79e205737b58d557c05caef6dfa8f94d8084bca",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.2",
-                "symfony/framework-bundle": "~2.3"
+                "symfony/framework-bundle": "~2.3|~3.0"
             },
             "require-dev": {
-                "symfony/expression-language": "~2.4",
-                "symfony/security-bundle": "~2.4"
+                "symfony/expression-language": "~2.4|~3.0",
+                "symfony/security-bundle": "~2.4|~3.0"
             },
             "suggest": {
                 "symfony/expression-language": "",
@@ -4470,7 +4941,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2015-08-03 11:59:27"
+            "time": "2015-10-28 15:47:04"
         },
         {
             "name": "sensio/generator-bundle",
@@ -4522,20 +4993,20 @@
         },
         {
             "name": "sensiolabs/security-checker",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/security-checker.git",
-                "reference": "7735fd97ff7303d9df776b8dbc970f949399abc9"
+                "reference": "21696b0daa731064c23cfb694c60a2584a7b6e93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/7735fd97ff7303d9df776b8dbc970f949399abc9",
-                "reference": "7735fd97ff7303d9df776b8dbc970f949399abc9",
+                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/21696b0daa731064c23cfb694c60a2584a7b6e93",
+                "reference": "21696b0daa731064c23cfb694c60a2584a7b6e93",
                 "shasum": ""
             },
             "require": {
-                "symfony/console": "~2.0"
+                "symfony/console": "~2.0|~3.0"
             },
             "bin": [
                 "security-checker"
@@ -4562,7 +5033,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2015-08-11 12:11:25"
+            "time": "2015-11-07 08:07:40"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
@@ -4570,18 +5041,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
-                "reference": "7b3144572617b0555f9a443317dbc2f9cf5b524e"
+                "reference": "6672ca37fe19a8e2a8ae52a93a7163e1b00ef7d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/7b3144572617b0555f9a443317dbc2f9cf5b524e",
-                "reference": "7b3144572617b0555f9a443317dbc2f9cf5b524e",
+                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/6672ca37fe19a8e2a8ae52a93a7163e1b00ef7d5",
+                "reference": "6672ca37fe19a8e2a8ae52a93a7163e1b00ef7d5",
                 "shasum": ""
             },
             "require": {
                 "gedmo/doctrine-extensions": "^2.3.1",
                 "php": ">=5.3.2",
-                "symfony/framework-bundle": "~2.1"
+                "symfony/framework-bundle": "~2.1|~3.0"
             },
             "suggest": {
                 "doctrine/doctrine-bundle": "to use the ORM extensions",
@@ -4623,7 +5094,7 @@
                 "translatable",
                 "tree"
             ],
-            "time": "2015-08-12 16:23:48"
+            "time": "2015-11-26 18:29:38"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4680,33 +5151,38 @@
         },
         {
             "name": "symfony/assetic-bundle",
-            "version": "v2.6.1",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "422b0add2110f0cf9bc7a873a386ea053f4a89f0"
+                "url": "https://github.com/symfony/assetic-bundle.git",
+                "reference": "d885ec8451d5a7b077bda81bb19ac9fbff9cdc76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/422b0add2110f0cf9bc7a873a386ea053f4a89f0",
-                "reference": "422b0add2110f0cf9bc7a873a386ea053f4a89f0",
+                "url": "https://api.github.com/repos/symfony/assetic-bundle/zipball/d885ec8451d5a7b077bda81bb19ac9fbff9cdc76",
+                "reference": "d885ec8451d5a7b077bda81bb19ac9fbff9cdc76",
                 "shasum": ""
             },
             "require": {
-                "kriswallsmith/assetic": "~1.2",
+                "kriswallsmith/assetic": "~1.3",
                 "php": ">=5.3.0",
-                "symfony/console": "~2.3",
-                "symfony/dependency-injection": "~2.3",
-                "symfony/framework-bundle": "~2.3",
-                "symfony/yaml": "~2.3"
+                "symfony/console": "~2.3|~3.0",
+                "symfony/dependency-injection": "~2.3|~3.0",
+                "symfony/framework-bundle": "~2.3|~3.0",
+                "symfony/yaml": "~2.3|~3.0"
+            },
+            "conflict": {
+                "kriswallsmith/spork": "<=0.2",
+                "twig/twig": "<1.20"
             },
             "require-dev": {
-                "kriswallsmith/spork": "~0.2",
+                "kriswallsmith/spork": "~0.3",
                 "patchwork/jsqueeze": "~1.0",
-                "symfony/class-loader": "~2.3",
-                "symfony/css-selector": "~2.3",
-                "symfony/dom-crawler": "~2.3",
-                "symfony/twig-bundle": "~2.3"
+                "symfony/class-loader": "~2.3|~3.0",
+                "symfony/css-selector": "~2.3|~3.0",
+                "symfony/dom-crawler": "~2.3|~3.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0",
+                "symfony/twig-bundle": "~2.3|~3.0"
             },
             "suggest": {
                 "kriswallsmith/spork": "to be able to dump assets in parallel",
@@ -4715,7 +5191,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -4741,38 +5217,38 @@
                 "compression",
                 "minification"
             ],
-            "time": "2015-01-27 12:45:16"
+            "time": "2015-11-17 09:45:47"
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.7.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/MonologBundle.git",
-                "reference": "9320b6863404c70ebe111e9040dab96f251de7ac"
+                "url": "https://github.com/symfony/monolog-bundle.git",
+                "reference": "84785c4d44801c4dd82829fa2e1820cacfe2c46f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/9320b6863404c70ebe111e9040dab96f251de7ac",
-                "reference": "9320b6863404c70ebe111e9040dab96f251de7ac",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/84785c4d44801c4dd82829fa2e1820cacfe2c46f",
+                "reference": "84785c4d44801c4dd82829fa2e1820cacfe2c46f",
                 "shasum": ""
             },
             "require": {
                 "monolog/monolog": "~1.8",
                 "php": ">=5.3.2",
-                "symfony/config": "~2.3",
-                "symfony/dependency-injection": "~2.3",
-                "symfony/http-kernel": "~2.3",
-                "symfony/monolog-bridge": "~2.3"
+                "symfony/config": "~2.3|~3.0",
+                "symfony/dependency-injection": "~2.3|~3.0",
+                "symfony/http-kernel": "~2.3|~3.0",
+                "symfony/monolog-bridge": "~2.3|~3.0"
             },
             "require-dev": {
-                "symfony/console": "~2.3",
-                "symfony/yaml": "~2.3"
+                "symfony/console": "~2.3|~3.0",
+                "symfony/yaml": "~2.3|~3.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7.x-dev"
+                    "dev-master": "2.8.x-dev"
                 }
             },
             "autoload": {
@@ -4800,32 +5276,32 @@
                 "log",
                 "logging"
             ],
-            "time": "2015-01-04 20:21:17"
+            "time": "2015-11-17 10:02:29"
         },
         {
             "name": "symfony/swiftmailer-bundle",
-            "version": "v2.3.8",
+            "version": "v2.3.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/SwiftmailerBundle.git",
-                "reference": "970b13d01871207e81d17b17ddda025e7e21e797"
+                "url": "https://github.com/symfony/swiftmailer-bundle.git",
+                "reference": "3d21ada19f23631f558ad6df653b168e35362e78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/970b13d01871207e81d17b17ddda025e7e21e797",
-                "reference": "970b13d01871207e81d17b17ddda025e7e21e797",
+                "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/3d21ada19f23631f558ad6df653b168e35362e78",
+                "reference": "3d21ada19f23631f558ad6df653b168e35362e78",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "swiftmailer/swiftmailer": ">=4.2.0,~5.0",
-                "symfony/swiftmailer-bridge": "~2.1"
+                "symfony/config": "~2.3|~3.0",
+                "symfony/dependency-injection": "~2.3|~3.0",
+                "symfony/http-kernel": "~2.3|~3.0",
+                "symfony/yaml": "~2.3|~3.0"
             },
             "require-dev": {
-                "symfony/config": "~2.1",
-                "symfony/dependency-injection": "~2.1",
-                "symfony/http-kernel": "~2.1",
-                "symfony/yaml": "~2.1"
+                "symfony/phpunit-bridge": "~2.7|~3.0"
             },
             "suggest": {
                 "psr/log": "Allows logging"
@@ -4857,20 +5333,20 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2014-12-01 17:44:50"
+            "time": "2015-11-28 10:59:29"
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.6.11",
+            "version": "v2.6.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "c6ab380a577e7bfb8db6e6f3105f470f97c83235"
+                "reference": "9d1072d0706af30b5649fee3deb65bc536a08b2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/c6ab380a577e7bfb8db6e6f3105f470f97c83235",
-                "reference": "c6ab380a577e7bfb8db6e6f3105f470f97c83235",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/9d1072d0706af30b5649fee3deb65bc536a08b2a",
+                "reference": "9d1072d0706af30b5649fee3deb65bc536a08b2a",
                 "shasum": ""
             },
             "require": {
@@ -4974,7 +5450,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-07-26 10:44:22"
+            "time": "2015-11-23 11:39:53"
         },
         {
             "name": "twbs/bootstrap",
@@ -4982,12 +5458,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "767cbef6d43fc773461ab178162bdf3ace6e750c"
+                "reference": "0ea85728d175c29525b15c5ab45355d115d62bc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/767cbef6d43fc773461ab178162bdf3ace6e750c",
-                "reference": "767cbef6d43fc773461ab178162bdf3ace6e750c",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0ea85728d175c29525b15c5ab45355d115d62bc6",
+                "reference": "0ea85728d175c29525b15c5ab45355d115d62bc6",
                 "shasum": ""
             },
             "replace": {
@@ -5025,24 +5501,24 @@
                 "responsive",
                 "web"
             ],
-            "time": "2015-08-16 02:55:19"
+            "time": "2015-12-01 08:07:49"
         },
         {
             "name": "twig/extensions",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig-extensions.git",
-                "reference": "8cf4b9fe04077bd54fc73f4fde83347040c3b8cd"
+                "reference": "449e3c8a9ffad7c2479c7864557275a32b037499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/8cf4b9fe04077bd54fc73f4fde83347040c3b8cd",
-                "reference": "8cf4b9fe04077bd54fc73f4fde83347040c3b8cd",
+                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/449e3c8a9ffad7c2479c7864557275a32b037499",
+                "reference": "449e3c8a9ffad7c2479c7864557275a32b037499",
                 "shasum": ""
             },
             "require": {
-                "twig/twig": "~1.12"
+                "twig/twig": "~1.20|~2.0"
             },
             "require-dev": {
                 "symfony/translation": "~2.3"
@@ -5053,7 +5529,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -5077,29 +5553,33 @@
                 "i18n",
                 "text"
             ],
-            "time": "2014-10-30 14:30:03"
+            "time": "2015-08-22 16:38:35"
         },
         {
             "name": "twig/twig",
-            "version": "v1.20.0",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "1ea4e5f81c6d005fe84d0b38e1c4f1955eb86844"
+                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/1ea4e5f81c6d005fe84d0b38e1c4f1955eb86844",
-                "reference": "1ea4e5f81c6d005fe84d0b38e1c4f1955eb86844",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
+                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.7"
             },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.20-dev"
+                    "dev-master": "1.23-dev"
                 }
             },
             "autoload": {
@@ -5134,7 +5614,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-08-12 15:56:39"
+            "time": "2015-11-05 12:49:06"
         },
         {
             "name": "victoire/victoire",
@@ -5142,12 +5622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Victoire/victoire.git",
-                "reference": "8637f6bbcf44502d7cfa219fc3dfe593d4244161"
+                "reference": "d7ee7d36383201ea4a1ece7f7a05769ea9ae9617"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Victoire/victoire/zipball/8637f6bbcf44502d7cfa219fc3dfe593d4244161",
-                "reference": "8637f6bbcf44502d7cfa219fc3dfe593d4244161",
+                "url": "https://api.github.com/repos/Victoire/victoire/zipball/d7ee7d36383201ea4a1ece7f7a05769ea9ae9617",
+                "reference": "d7ee7d36383201ea4a1ece7f7a05769ea9ae9617",
                 "shasum": ""
             },
             "require": {
@@ -5159,26 +5639,29 @@
                 "doctrine/orm": "~2.2,>=2.2.3",
                 "friendsofsymfony/jsrouting-bundle": "2.0.*@dev",
                 "friendsofsymfony/user-bundle": "2.0.*@dev",
-                "friendsofvictoire/button-widget": "dev-master",
-                "friendsofvictoire/text-widget": "dev-master",
+                "friendsofvictoire/button-widget": "1.3.x-dev",
+                "friendsofvictoire/text-widget": "1.3.x-dev",
                 "incenteev/composer-parameter-handler": "~2.0",
+                "infinite-networks/form-bundle": "dev-master",
                 "jms/di-extra-bundle": "1.4.*@dev",
+                "jms/serializer-bundle": "^1.0",
                 "jms/translation-bundle": "1.1.*@dev",
                 "knplabs/gaufrette": "v0.1.7",
-                "knplabs/knp-menu": "2.0.*@dev",
-                "knplabs/knp-menu-bundle": "2.0.*@dev",
+                "knplabs/knp-menu": "2.1.*@dev",
+                "knplabs/knp-menu-bundle": "2.1.*@dev",
                 "liip/imagine-bundle": "1.0.*@dev",
                 "nelmio/alice": "1.*@dev",
                 "php": ">=5.3.3",
-                "sensio/distribution-bundle": ">2.3",
+                "sensio/distribution-bundle": ">=2.3.x-dev",
                 "sensio/framework-extra-bundle": "~3.0",
                 "sensio/generator-bundle": "~2.3",
                 "stof/doctrine-extensions-bundle": "1.2.*@dev",
                 "symfony/assetic-bundle": "~2.3",
                 "symfony/monolog-bundle": "~2.4",
                 "symfony/swiftmailer-bundle": "~2.3",
-                "symfony/symfony": ">=2.4.2, <2.7.0",
-                "twig/extensions": "~1.0"
+                "symfony/symfony": ">=2.4.2, <=2.7.x-dev",
+                "twig/extensions": "~1.0",
+                "twig/twig": "~1.0"
             },
             "require-dev": {
                 "behat/behat": "~3.0",
@@ -5188,7 +5671,9 @@
                 "behat/mink-selenium2-driver": "~1.1",
                 "behat/symfony2-extension": "~2.0",
                 "knplabs/friendly-contexts": "dev-master",
+                "phpunit/php-code-coverage": "2.2.3",
                 "phpunit/phpunit": "4.6.*",
+                "phpunit/phpunit-mock-objects": "2.3.7",
                 "symfony/var-dumper": "~3.0@dev"
             },
             "suggest": {
@@ -5198,22 +5683,30 @@
                 "friendsofvictoire/breadcrumb-widget": "breadcrumb widget",
                 "friendsofvictoire/button-widget": "button widget",
                 "friendsofvictoire/calculator-widget": "calculator widget",
+                "friendsofvictoire/card-widget": "card widget",
                 "friendsofvictoire/ckeditor-widget": "ckeditor widget",
+                "friendsofvictoire/cookielaw-widget": "cookielaw widget",
                 "friendsofvictoire/cover-widget": "cover widget",
+                "friendsofvictoire/date-widget": "date widget",
                 "friendsofvictoire/disqus-widget": "disqus widget",
                 "friendsofvictoire/faq-widget": "faq widget",
                 "friendsofvictoire/file-widget": "file widget",
                 "friendsofvictoire/filter-widget": "filter widget",
                 "friendsofvictoire/form-widget": "form widget",
+                "friendsofvictoire/gmap-widget": "gmap widget",
                 "friendsofvictoire/html-widget": "html widget",
                 "friendsofvictoire/image-widget": "image widget",
                 "friendsofvictoire/layout-widget": "layout widget",
                 "friendsofvictoire/listing-widget": "listing widget",
+                "friendsofvictoire/localeswitcher-widget": "localeswitcher widget",
                 "friendsofvictoire/login-widget": "login widget",
+                "friendsofvictoire/mailchimpnewsletter-widget": "mailchimpnewsletter widget",
                 "friendsofvictoire/markdown-widget": "markdown widget",
                 "friendsofvictoire/menu-widget": "menu widget",
+                "friendsofvictoire/progress-widget": "progress widget",
                 "friendsofvictoire/render-widget": "render widget",
                 "friendsofvictoire/richlist-widget": "richlist widget",
+                "friendsofvictoire/search-widget": "elastic search widget",
                 "friendsofvictoire/sharethis-widget": "sharethis widget",
                 "friendsofvictoire/siblingsmenu-widget": "siblingsmenu widget",
                 "friendsofvictoire/simplecontactform-widget": "simplecontactform widget",
@@ -5221,6 +5714,7 @@
                 "friendsofvictoire/slider-widget": "slider widget",
                 "friendsofvictoire/slidernav-widget": "slidernav widget",
                 "friendsofvictoire/socialbuttons-widget": "socialbuttons widget",
+                "friendsofvictoire/socialpage-widget": "socialpage widget",
                 "friendsofvictoire/statistic-widget": "statistic widget",
                 "friendsofvictoire/tab-widget": "tab widget",
                 "friendsofvictoire/table-widget": "table widget",
@@ -5230,7 +5724,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -5271,25 +5765,29 @@
             "homepage": "http://victoire.io",
             "keywords": [
                 "DCMS",
-                "Dynamic-CMS",
+                "FoV",
+                "FriendsofVictoire",
+                "cms",
+                "dynamic",
+                "overlay",
+                "symfony",
                 "victoire",
                 "webstation"
             ],
-            "time": "2015-08-20 15:46:21"
+            "time": "2015-12-01 22:30:39"
         },
         {
             "name": "white-october/pagerfanta-bundle",
             "version": "dev-master",
-            "target-dir": "WhiteOctober/PagerfantaBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/whiteoctober/WhiteOctoberPagerfantaBundle.git",
-                "reference": "d29b8935236a2cb40cc28e43b334dc0cb3918ee6"
+                "reference": "f329d7bbd9cb97edaac418ef94807d9e376f8880"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/d29b8935236a2cb40cc28e43b334dc0cb3918ee6",
-                "reference": "d29b8935236a2cb40cc28e43b334dc0cb3918ee6",
+                "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/f329d7bbd9cb97edaac418ef94807d9e376f8880",
+                "reference": "f329d7bbd9cb97edaac418ef94807d9e376f8880",
                 "shasum": ""
             },
             "require": {
@@ -5309,8 +5807,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "WhiteOctober\\PagerfantaBundle": ""
+                "psr-4": {
+                    "WhiteOctober\\PagerfantaBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -5328,7 +5826,7 @@
                 "page",
                 "paging"
             ],
-            "time": "2015-08-17 08:45:09"
+            "time": "2015-09-01 16:19:36"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -5390,8 +5888,8 @@
         "jms/i18n-routing-bundle": 20,
         "jms/security-extra-bundle": 20,
         "jms/translation-bundle": 20,
-        "knplabs/knp-menu": 15,
-        "knplabs/knp-menu-bundle": 15,
+        "knplabs/knp-menu": 20,
+        "knplabs/knp-menu-bundle": 20,
         "knplabs/knp-components": 20,
         "lexik/form-filter-bundle": 20,
         "liip/imagine-bundle": 20,
@@ -5399,9 +5897,10 @@
         "pagerfanta/pagerfanta": 20,
         "stof/doctrine-extensions-bundle": 20,
         "twbs/bootstrap": 20,
-        "victoire/victoire": 20,
         "white-october/pagerfanta-bundle": 20,
         "beberlei/doctrineextensions": 20,
+        "infinite-networks/form-bundle": 20,
+        "victoire/victoire": 20,
         "friendsofvictoire/breadcrumb-widget": 20,
         "friendsofvictoire/button-widget": 20,
         "friendsofvictoire/filter-widget": 20,

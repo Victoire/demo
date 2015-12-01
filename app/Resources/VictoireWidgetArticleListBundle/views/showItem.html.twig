@@ -1,4 +1,4 @@
-{% set url = path('victoire_core_page_show_by_id', {'viewId': item.pattern.id, 'entityId': item.id }) %}
+{% set url = path('victoire_core_page_show_by_id', {'viewId': item.template.id, 'entityId': item.id }) %}
 
 <div class="article-item">
     {% if item.image is defined and item.image != '' %}

@@ -1,13 +1,13 @@
 # ************************************************************
 # Sequel Pro SQL dump
-# Version 4512
+# Version 4623
 #
 # http://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
 # Host: localhost (MySQL 5.6.22)
 # Database: victoire_demo
-# Generation Time: 2015-08-21 10:24:49 +0000
+# Generation Time: 2015-12-01 23:02:45 +0000
 # ************************************************************
 
 
@@ -35,8 +35,10 @@ CREATE TABLE `mail` (
   `subject` longtext COLLATE utf8_unicode_ci,
   `content_type` longtext COLLATE utf8_unicode_ci,
   `send_date` datetime DEFAULT NULL,
-  `creation_date` datetime DEFAULT NULL,
   `type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `attachments` longtext COLLATE utf8_unicode_ci COMMENT '(DC2Type:array)',
+  `createdAt` datetime NOT NULL,
+  `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -109,7 +111,63 @@ VALUES
 	(6,20,'127.0.0.1','ref_418','http://demo.victoire.dev/app_dev.php/','2015-08-21 12:09:15','2015-08-21 12:09:15'),
 	(7,20,'127.0.0.1','ref_418','http://demo.victoire.dev/app_dev.php/','2015-08-21 12:10:38','2015-08-21 12:10:38'),
 	(8,20,'127.0.0.1','ref_418','http://demo.victoire.dev/app_dev.php/','2015-08-21 12:23:38','2015-08-21 12:23:38'),
-	(9,20,'127.0.0.1','ref_420','http://demo.victoire.dev/app_dev.php/logements','2015-08-21 12:24:36','2015-08-21 12:24:36');
+	(9,20,'127.0.0.1','ref_420','http://demo.victoire.dev/app_dev.php/logements','2015-08-21 12:24:36','2015-08-21 12:24:36'),
+	(10,NULL,'85.68.186.177','ref_115',NULL,'2015-08-21 12:37:24','2015-08-21 12:37:24'),
+	(11,NULL,'85.68.186.177','ref_418','http://demo.victoire.io/','2015-08-21 12:37:29','2015-08-21 12:37:29'),
+	(12,NULL,'85.68.186.177','ref_115',NULL,'2015-08-21 14:32:11','2015-08-21 14:32:11'),
+	(13,NULL,'85.68.186.177','ref_418','http://demo.victoire.io/','2015-08-21 14:32:18','2015-08-21 14:32:18'),
+	(14,NULL,'88.177.220.188','ref_115',NULL,'2015-08-23 17:00:02','2015-08-23 17:00:02'),
+	(15,NULL,'88.177.220.188','ref_420','http://demo.victoire.io/','2015-08-23 17:01:23','2015-08-23 17:01:23'),
+	(16,NULL,'85.68.186.177','ref_115',NULL,'2015-08-24 16:37:29','2015-08-24 16:37:29'),
+	(17,NULL,'88.177.220.188','ref_115',NULL,'2015-08-24 21:49:38','2015-08-24 21:49:38'),
+	(18,NULL,'85.68.186.177','ref_115',NULL,'2015-08-25 11:54:57','2015-08-25 11:54:57'),
+	(19,20,'85.68.186.177','ref_115','http://demo.victoire.io/login','2015-08-25 11:55:09','2015-08-25 11:55:09'),
+	(20,NULL,'85.68.186.177','ref_115',NULL,'2015-08-27 09:20:01','2015-08-27 09:20:01'),
+	(21,20,'85.68.186.177','ref_115','http://demo.victoire.io/login','2015-08-27 09:21:15','2015-08-27 09:21:15'),
+	(22,NULL,'85.68.186.177','ref_115',NULL,'2015-08-28 09:33:05','2015-08-28 09:33:05'),
+	(23,20,'85.68.186.177','ref_115','http://demo.victoire.io/login','2015-08-28 09:33:22','2015-08-28 09:33:22'),
+	(24,20,'85.68.186.177','ref_418','http://demo.victoire.io/','2015-08-28 09:34:45','2015-08-28 09:34:45'),
+	(25,20,'85.68.186.177','ref_415_10001','http://demo.victoire.io/logements','2015-08-28 09:34:49','2015-08-28 09:34:49'),
+	(26,20,'85.68.186.177','ref_415','http://demo.victoire.io/appartement-appartement-2','2015-08-28 09:35:12','2015-08-28 09:35:12'),
+	(27,NULL,'85.68.186.177','ref_115',NULL,'2015-09-04 13:36:28','2015-09-04 13:36:28'),
+	(28,NULL,'92.92.160.13','ref_115',NULL,'2015-10-24 16:50:11','2015-10-24 16:50:11'),
+	(29,NULL,'92.92.160.13','ref_418','http://demo.victoire.io/','2015-10-24 16:50:18','2015-10-24 16:50:18'),
+	(30,NULL,'92.92.160.13','ref_415_10000','http://demo.victoire.io/logements','2015-10-24 16:50:20','2015-10-24 16:50:20'),
+	(31,NULL,'92.92.160.13','ref_115','http://demo.victoire.io/appartement-appartement-1','2015-10-24 16:50:26','2015-10-24 16:50:26'),
+	(32,NULL,'92.92.160.13','ref_420','http://demo.victoire.io/','2015-10-24 16:50:28','2015-10-24 16:50:28'),
+	(33,NULL,'92.92.160.13','ref_421_1','http://demo.victoire.io/actualite-des-appartements-nantais','2015-10-24 16:50:33','2015-10-24 16:50:33'),
+	(34,NULL,'92.88.237.125','ref_115',NULL,'2015-11-06 15:50:23','2015-11-06 15:50:23'),
+	(35,NULL,'92.88.237.125','ref_418','http://demo.victoire.io/','2015-11-06 16:00:28','2015-11-06 16:00:28'),
+	(36,NULL,'92.88.237.125','ref_415_10001','http://demo.victoire.io/logements','2015-11-06 16:00:33','2015-11-06 16:00:33'),
+	(37,NULL,'88.177.220.188','ref_115',NULL,'2015-12-01 22:21:54','2015-12-01 22:21:54'),
+	(38,NULL,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-01 22:26:07','2015-12-01 22:26:07'),
+	(39,NULL,'127.0.0.1','ref_115',NULL,'2015-12-01 22:26:21','2015-12-01 22:26:21'),
+	(40,NULL,'127.0.0.1','ref_115',NULL,'2015-12-01 22:27:04','2015-12-01 22:27:04'),
+	(41,NULL,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-01 22:27:18','2015-12-01 22:27:18'),
+	(42,NULL,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-01 22:28:29','2015-12-01 22:28:29'),
+	(43,NULL,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-01 22:28:52','2015-12-01 22:28:52'),
+	(44,NULL,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-01 22:31:40','2015-12-01 22:31:40'),
+	(45,NULL,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-01 22:33:51','2015-12-01 22:33:51'),
+	(46,NULL,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-01 22:37:07','2015-12-01 22:37:07'),
+	(47,NULL,'127.0.0.1','ref_115','http://demo.solenebail.dev/app_dev.php/logements','2015-12-01 22:37:10','2015-12-01 22:37:10'),
+	(48,NULL,'127.0.0.1','ref_115','http://demo.solenebail.dev/app_dev.php/logements','2015-12-01 22:38:10','2015-12-01 22:38:10'),
+	(49,20,'127.0.0.1','ref_115','http://demo.solenebail.dev/app_dev.php/login','2015-12-01 22:52:49','2015-12-01 22:52:49'),
+	(50,20,'127.0.0.1','ref_115','http://demo.solenebail.dev/app_dev.php/login','2015-12-01 22:54:10','2015-12-01 22:54:10'),
+	(51,20,'127.0.0.1','ref_115','http://demo.solenebail.dev/app_dev.php/login','2015-12-01 22:54:40','2015-12-01 22:54:40'),
+	(52,20,'127.0.0.1','ref_115','http://demo.solenebail.dev/app_dev.php/login','2015-12-01 22:57:08','2015-12-01 22:57:08'),
+	(53,20,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php/','2015-12-01 22:57:21','2015-12-01 22:57:21'),
+	(54,20,'127.0.0.1','ref_420','http://demo.solenebail.dev/app_dev.php/logements','2015-12-01 22:57:29','2015-12-01 22:57:29'),
+	(55,20,'127.0.0.1','ref_420','http://demo.solenebail.dev/app_dev.php/logements','2015-12-01 22:58:06','2015-12-01 22:58:06'),
+	(56,20,'127.0.0.1','ref_421_1','http://demo.solenebail.dev/app_dev.php/actualite-des-appartements-nantais','2015-12-01 22:58:26','2015-12-01 22:58:26'),
+	(57,20,'127.0.0.1','ref_421_1',NULL,'2015-12-01 23:50:58','2015-12-01 23:50:58'),
+	(58,20,'127.0.0.1','ref_115',NULL,'2015-12-01 23:58:07','2015-12-01 23:58:07'),
+	(59,20,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-01 23:58:18','2015-12-01 23:58:18'),
+	(60,20,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-01 23:58:29','2015-12-01 23:58:29'),
+	(61,20,'127.0.0.1','ref_418','http://demo.solenebail.dev/app_dev.php','2015-12-02 00:01:41','2015-12-02 00:01:41'),
+	(62,20,'127.0.0.1','ref_415_10001','http://demo.solenebail.dev/app_dev.php/logements','2015-12-02 00:01:47','2015-12-02 00:01:47'),
+	(63,20,'127.0.0.1','ref_420','http://demo.solenebail.dev/app_dev.php/logements/appartement-2','2015-12-02 00:01:59','2015-12-02 00:01:59'),
+	(64,20,'127.0.0.1','ref_419_1','http://demo.solenebail.dev/app_dev.php/actualite-des-appartements-nantais','2015-12-02 00:02:12','2015-12-02 00:02:12'),
+	(65,20,'127.0.0.1','ref_420','http://demo.solenebail.dev/app_dev.php/actualite-des-appartements-nantais/titre-de-l-article','2015-12-02 00:02:19','2015-12-02 00:02:19');
 
 /*!40000 ALTER TABLE `vic_analytics_browse_event` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -124,7 +182,7 @@ CREATE TABLE `vic_article` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category_id` int(11) DEFAULT NULL,
   `blog_id` int(11) DEFAULT NULL,
-  `pattern_id` int(11) DEFAULT NULL,
+  `template_id` int(11) DEFAULT NULL,
   `image_id` bigint(20) DEFAULT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -138,18 +196,18 @@ CREATE TABLE `vic_article` (
   PRIMARY KEY (`id`),
   KEY `IDX_265C8BF512469DE2` (`category_id`),
   KEY `IDX_265C8BF5DAE07E97` (`blog_id`),
-  KEY `IDX_265C8BF5F734A20F` (`pattern_id`),
   KEY `IDX_265C8BF53DA5256D` (`image_id`),
+  KEY `IDX_265C8BF55DA0FB8` (`template_id`),
   CONSTRAINT `FK_265C8BF512469DE2` FOREIGN KEY (`category_id`) REFERENCES `vic_category` (`id`) ON DELETE SET NULL,
   CONSTRAINT `FK_265C8BF53DA5256D` FOREIGN KEY (`image_id`) REFERENCES `vic_media` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `FK_265C8BF5DAE07E97` FOREIGN KEY (`blog_id`) REFERENCES `vic_view` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `FK_265C8BF5F734A20F` FOREIGN KEY (`pattern_id`) REFERENCES `vic_view` (`id`) ON DELETE SET NULL
+  CONSTRAINT `FK_265C8BF55DA0FB8` FOREIGN KEY (`template_id`) REFERENCES `vic_view` (`id`) ON DELETE SET NULL,
+  CONSTRAINT `FK_265C8BF5DAE07E97` FOREIGN KEY (`blog_id`) REFERENCES `vic_view` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 LOCK TABLES `vic_article` WRITE;
 /*!40000 ALTER TABLE `vic_article` DISABLE KEYS */;
 
-INSERT INTO `vic_article` (`id`, `category_id`, `blog_id`, `pattern_id`, `image_id`, `name`, `slug`, `description`, `status`, `publishedAt`, `deletedAt`, `visible_on_front`, `createdAt`, `updatedAt`)
+INSERT INTO `vic_article` (`id`, `category_id`, `blog_id`, `template_id`, `image_id`, `name`, `slug`, `description`, `status`, `publishedAt`, `deletedAt`, `visible_on_front`, `createdAt`, `updatedAt`)
 VALUES
 	(1,NULL,420,419,466,'Titre de l’article','titre-de-l-article','Suspendisse in lectus cursus, viverra lectus dignissim, mollis odio. Vestibulum eu pretium nisl. Sed eu vehicula mauris. Quisque tempus lorem nec arcu molestie, in fringilla augue euismod. Morbi scelerisque velit non vulputate molestie. Quisque a lobortis enim. Vestibulum id vulputate sapien. Nam et massa diam. Quisque nisl nulla, egestas id facilisis quis, luctus venenatis nisi. Aliquam malesuada tortor vel consectetur hendrerit. Vestibulum pharetra vel dui a mattis. Donec sodales felis id vulputate cursus. Curabitur id varius elit.','published',NULL,NULL,1,'0000-00-00 00:00:00','0000-00-00 00:00:00'),
 	(2,NULL,420,419,420,'Un autre article','un-autre-article','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur debitis asperiores culpa fuga accusantium aliquid dolorum ad a adipisci, quas, velit molestiae sed eveniet magnam minus rerum quam labore corrupti itaque eius amet dolores. Quisquam suscipit laudantium voluptas expedita, iste eveniet consectetur dolorem, incidunt rerum, fugit iure maxime reprehenderit eligendi reiciendis, similique quas laboriosam commodi perspiciatis nulla beatae distinctio explicabo deleniti aut! Suscipit alias cum hic soluta, distinctio repellendus architecto molestias vel minus recusandae, nostrum similique consequuntur fugiat sunt dolor dolorem quasi, ducimus commodi, necessitatibus sequi. Excepturi perferendis voluptas, odit iusto ratione soluta a vitae at placeat pariatur, debitis atque eius quia ipsum dolorem ex molestias expedita sint! Animi quae molestiae ratione libero placeat ad aperiam et inventore cupiditate rem tempore ex, doloremque magni! Perspiciatis minus beatae quis magni nihil, cumque facere, consectetur','published','2015-04-03 17:25:00',NULL,1,'0000-00-00 00:00:00','0000-00-00 00:00:00'),
@@ -221,8 +279,8 @@ CREATE TABLE `vic_entity_proxy` (
   `article_id` int(11) DEFAULT NULL,
   `rental_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `IDX_2E15B1BA7294869C` (`article_id`),
-  KEY `IDX_2E15B1BAA7CF2329` (`rental_id`),
+  UNIQUE KEY `UNIQ_2E15B1BA7294869C` (`article_id`),
+  UNIQUE KEY `UNIQ_2E15B1BAA7CF2329` (`rental_id`),
   CONSTRAINT `FK_2E15B1BA7294869C` FOREIGN KEY (`article_id`) REFERENCES `vic_article` (`id`) ON DELETE CASCADE,
   CONSTRAINT `FK_2E15B1BAA7CF2329` FOREIGN KEY (`rental_id`) REFERENCES `Rental` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -234,7 +292,8 @@ INSERT INTO `vic_entity_proxy` (`id`, `article_id`, `rental_id`)
 VALUES
 	(1,1,NULL),
 	(2,2,NULL),
-	(3,3,NULL);
+	(3,3,NULL),
+	(4,NULL,10001);
 
 /*!40000 ALTER TABLE `vic_entity_proxy` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -403,7 +462,7 @@ DROP TABLE IF EXISTS `vic_page_seo`;
 CREATE TABLE `vic_page_seo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `meta_title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `meta_description` longtext COLLATE utf8_unicode_ci,
+  `meta_description` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `rel_author` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `rel_publisher` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `ogTitle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -414,7 +473,7 @@ CREATE TABLE `vic_page_seo` (
   `twitterCard` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `twitterUrl` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `twitterTitle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `twitterDescription` longtext COLLATE utf8_unicode_ci,
+  `twitterDescription` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `schemaPageType` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `schemaName` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `schemaDescription` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -426,7 +485,7 @@ CREATE TABLE `vic_page_seo` (
   `rel_canonical` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `redirect_to` int(11) DEFAULT NULL,
-  `sitemap_changeFreq` varchar(255) COLLATE utf8_unicode_ci DEFAULT 'monthly',
+  `sitemap_changeFreq` varchar(20) COLLATE utf8_unicode_ci DEFAULT 'monthly',
   `ogImage_id` bigint(20) DEFAULT NULL,
   `twitterImage_id` bigint(20) DEFAULT NULL,
   `schemaImage_id` bigint(20) DEFAULT NULL,
@@ -483,17 +542,20 @@ CREATE TABLE `vic_tag` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
+  `blog_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_8C1B1805DAE07E97` (`blog_id`),
+  CONSTRAINT `FK_8C1B1805DAE07E97` FOREIGN KEY (`blog_id`) REFERENCES `vic_view` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 LOCK TABLES `vic_tag` WRITE;
 /*!40000 ALTER TABLE `vic_tag` DISABLE KEYS */;
 
-INSERT INTO `vic_tag` (`id`, `title`, `slug`)
+INSERT INTO `vic_tag` (`id`, `title`, `slug`, `blog_id`)
 VALUES
-	(1,'','Tag 1'),
-	(2,'','Tag 2'),
-	(3,'','Tag 3');
+	(1,'','Tag 1',NULL),
+	(2,'','Tag 2',NULL),
+	(3,'','Tag 3',NULL);
 
 /*!40000 ALTER TABLE `vic_tag` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -537,7 +599,7 @@ LOCK TABLES `vic_user` WRITE;
 
 INSERT INTO `vic_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `locked`, `expired`, `expires_at`, `confirmation_token`, `password_requested_at`, `roles`, `credentials_expired`, `credentials_expire_at`, `firstname`, `lastname`, `locale`, `createdAt`, `updatedAt`)
 VALUES
-	(20,'anakin@victoire.io','anakin@victoire.io','anakin@victoire.io','anakin@victoire.io',1,'6hmztsiwga04ocksg8gg8gk0sokw8kk','JOozgnmRIuqPF3wAs+gXKC3kLVt0HaPmO85dKVmJzZ6G76LffOshEM5IXQ/4PfmV5YjVCA5vtQqXF6KtD1Ksow==','2015-08-21 12:05:04',0,0,NULL,NULL,NULL,'a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:23:\"ROLE_VICTOIRE_DEVELOPER\";}',0,NULL,'Anakin','Skywalker','fr','0000-00-00 00:00:00','2015-08-21 12:05:04');
+	(20,'anakin@victoire.io','anakin@victoire.io','anakin@victoire.io','anakin@victoire.io',1,'6hmztsiwga04ocksg8gg8gk0sokw8kk','JOozgnmRIuqPF3wAs+gXKC3kLVt0HaPmO85dKVmJzZ6G76LffOshEM5IXQ/4PfmV5YjVCA5vtQqXF6KtD1Ksow==','2015-12-01 22:52:39',0,0,NULL,NULL,NULL,'a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:23:\"ROLE_VICTOIRE_DEVELOPER\";}',0,NULL,'Anakin','Skywalker','fr','0000-00-00 00:00:00','2015-12-01 22:52:39');
 
 /*!40000 ALTER TABLE `vic_user` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -560,9 +622,9 @@ CREATE TABLE `vic_view` (
   `bodyId` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `bodyClass` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `backendName` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `homepage` tinyint(1) DEFAULT NULL,
-  `compute_url` tinyint(1) DEFAULT NULL,
+  `author_restricted` tinyint(1) DEFAULT NULL,
   `position` int(11) NOT NULL,
   `lft` int(11) NOT NULL,
   `lvl` int(11) NOT NULL,
@@ -582,6 +644,7 @@ CREATE TABLE `vic_view` (
   `updatedAt` datetime NOT NULL,
   `staticUrl` tinytext COLLATE utf8_unicode_ci,
   `orderBy` longtext COLLATE utf8_unicode_ci,
+  `cssHash` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_FAA91F3477153098` (`code`),
   KEY `IDX_FAA91F34727ACA70` (`parent_id`),
@@ -601,24 +664,24 @@ CREATE TABLE `vic_view` (
 LOCK TABLES `vic_view` WRITE;
 /*!40000 ALTER TABLE `vic_view` DISABLE KEYS */;
 
-INSERT INTO `vic_view` (`id`, `type`, `layout`, `seo_id`, `template_id`, `parent_id`, `author_id`, `name`, `bodyId`, `bodyClass`, `slug`, `url`, `homepage`, `compute_url`, `position`, `lft`, `lvl`, `rgt`, `root`, `status`, `publishedAt`, `undeletable`, `widget_map`, `entityProxy_id`, `query`, `business_entity_id`, `code`, `i18n_id`, `locale`, `createdAt`, `updatedAt`, `staticUrl`, `orderBy`)
+INSERT INTO `vic_view` (`id`, `type`, `layout`, `seo_id`, `template_id`, `parent_id`, `author_id`, `name`, `bodyId`, `bodyClass`, `slug`, `backendName`, `homepage`, `author_restricted`, `position`, `lft`, `lvl`, `rgt`, `root`, `status`, `publishedAt`, `undeletable`, `widget_map`, `entityProxy_id`, `query`, `business_entity_id`, `code`, `i18n_id`, `locale`, `createdAt`, `updatedAt`, `staticUrl`, `orderBy`, `cssHash`)
 VALUES
-	(113,'template','fullWidth',NULL,NULL,NULL,20,'Modèle de base',NULL,NULL,'base',NULL,NULL,NULL,0,1,0,2,113,NULL,NULL,1,'a:17:{s:11:\"header_logo\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:247;}}s:11:\"header_menu\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:18;}}s:10:\"header_btn\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:19;}}s:13:\"footer_layout\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:20;}}s:4:\"20_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:81;}}s:4:\"20_2\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:80;}}s:4:\"20_3\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:79;}}s:11:\"footer_text\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:24;}}s:10:\"footer_btn\";a:0:{}s:12:\"main_content\";a:0:{}s:4:\"20_4\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:78;}}s:6:\"footer\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:183;}}s:5:\"179_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:180;}}s:5:\"179_2\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:181;}}s:5:\"183_1\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:184;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:187;}}s:5:\"184_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:248;}}s:5:\"184_2\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:186;}}}',NULL,NULL,NULL,NULL,5,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(114,'template','home',NULL,113,NULL,20,'Modèle de page d\'accueil',NULL,NULL,'home',NULL,NULL,NULL,0,1,0,2,114,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,NULL,6,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(115,'page',NULL,1,113,NULL,20,'Page d\'accueil',NULL,NULL,'home','',1,1,0,1,0,2,115,'published','1979-03-27 17:20:00',1,'a:17:{s:12:\"main_content\";a:3:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:188;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:193;}i:2;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:3;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:196;}}s:29:\"carousel_content__middle_28_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:29;}}s:4:\"29_1\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:30;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:31;}}s:4:\"31_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:32;}}s:4:\"31_2\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:33;}}s:4:\"27_1\";a:6:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:34;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:35;}i:2;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:3;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:36;}i:3;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:4;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:37;}i:4;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:5;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:38;}i:5;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:6;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:39;}}s:4:\"39_2\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:40;}}s:4:\"39_3\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:41;}}s:10:\"header_btn\";a:0:{}s:8:\"cover188\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:189;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:190;}}s:5:\"190_2\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:191;}}s:5:\"190_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:192;}}s:5:\"193_1\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:194;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:195;}}s:5:\"196_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:197;}}s:5:\"196_2\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:198;}}s:5:\"242_2\";a:0:{}s:5:\"242_1\";a:0:{}}',NULL,NULL,NULL,NULL,7,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(116,'errorpage',NULL,NULL,113,NULL,20,'Mauvaise Requete',NULL,NULL,'mauvaise-requete',NULL,NULL,NULL,0,1,0,2,116,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,400,8,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(117,'errorpage',NULL,NULL,113,NULL,20,'Interdit',NULL,NULL,'erreur403',NULL,NULL,NULL,0,1,0,2,117,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,403,9,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(118,'errorpage',NULL,NULL,113,NULL,20,'Page introuvable',NULL,NULL,'erreur404',NULL,NULL,NULL,0,1,0,2,118,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,404,10,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(119,'errorpage',NULL,NULL,113,NULL,20,'Erreur serveur',NULL,NULL,'erreur500',NULL,NULL,NULL,0,1,0,2,119,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,500,11,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(120,'errorpage',NULL,NULL,113,NULL,20,'Service indisponible',NULL,NULL,'erreur503',NULL,NULL,NULL,0,1,0,2,120,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,503,12,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(153,'template','fullWidth',NULL,113,NULL,20,'Modèle de page Ariane',NULL,NULL,'modele-de-page-ariane',NULL,NULL,NULL,0,1,0,2,153,NULL,NULL,0,'a:2:{s:12:\"main_content\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:142;}}s:5:\"142_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:143;}}}',NULL,NULL,NULL,NULL,45,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(415,'businessentitypagepattern',NULL,NULL,113,115,20,'{{item.title}}',NULL,NULL,'item-title','appartement-{{item.slug}}',NULL,1,0,1,0,2,415,'published','2015-04-02 17:38:35',0,'a:6:{s:12:\"main_content\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:199;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:207;}}s:5:\"199_1\";a:3:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:200;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:201;}i:2;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:3;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:202;}}s:7:\"202_155\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:203;}}s:7:\"202_156\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:206;}}s:10:\"breadcrumb\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:208;}}s:8:\"cover208\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:209;}}}',NULL,NULL,'rental',NULL,49,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(418,'page',NULL,2,113,NULL,20,'Logements',NULL,NULL,'logements','logements',0,1,2,1,0,2,418,'published','2015-04-03 14:29:56',0,'a:2:{s:12:\"main_content\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:211;}}s:5:\"211_1\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:213;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:215;}}}',NULL,NULL,NULL,NULL,50,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(419,'businessentitypagepattern',NULL,NULL,113,NULL,20,'{{item.name}}',NULL,NULL,'item-name','article-{{item.slug}}',NULL,1,0,1,0,2,419,'published','2015-04-03 15:48:22',0,'a:5:{s:10:\"breadcrumb\";a:3:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:221;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:223;}i:2;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:3;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:224;}}s:8:\"cover221\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:222;}}s:5:\"224_1\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:225;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:226;}}s:6:\"footer\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:236;}}s:5:\"236_1\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:237;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:246;}}}',NULL,NULL,'article',NULL,51,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(420,'blog',NULL,3,113,NULL,20,'Actualité des appartements Nantais',NULL,NULL,'actualite-des-appartements-nantais','actualite-des-appartements-nantais',NULL,1,3,1,0,2,420,'published',NULL,0,'a:3:{s:12:\"main_content\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:217;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:219;}}s:5:\"217_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:218;}}s:8:\"cover219\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:220;}}}',NULL,NULL,NULL,NULL,52,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(421,'businessentitypage',NULL,NULL,419,NULL,20,'Titre de l’article',NULL,NULL,'titre-de-l-article','article-titre-de-l-article',NULL,1,0,1,0,2,421,'published','2015-04-03 15:48:22',0,'a:1:{s:11:\"header_menu\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"delete\";s:8:\"position\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:18;}}}',1,NULL,NULL,NULL,53,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(422,'businessentitypage',NULL,NULL,419,NULL,20,'Un autre article',NULL,NULL,'un-autre-article','article-un-autre-article',NULL,1,0,1,0,2,422,'published','2015-04-03 15:48:22',0,'a:5:{s:5:\"224_1\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"delete\";s:8:\"position\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:225;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";s:3:\"226\";s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:231;}}s:5:\"227_1\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:228;}}s:5:\"227_2\";a:1:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:229;}}s:5:\"231_1\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:232;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:233;}}s:5:\"231_2\";a:2:{i:0;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:234;}i:1;a:5:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:235;}}}',2,NULL,NULL,NULL,54,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL),
-	(424,'businessentitypage',NULL,NULL,419,NULL,20,'Troisième article',NULL,NULL,'troisieme-article','article-troisieme-article',NULL,1,0,1,0,2,424,'published','2015-04-03 15:48:22',0,'a:0:{}',3,NULL,NULL,NULL,56,'fr','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,NULL);
+	(113,'template','fullWidth',NULL,NULL,NULL,20,'Modèle de base',NULL,NULL,'base',NULL,NULL,NULL,0,1,0,2,113,NULL,NULL,1,'a:17:{s:11:\"header_logo\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:247;}}s:11:\"header_menu\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:18;}}s:10:\"header_btn\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:19;}}s:13:\"footer_layout\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:20;}}s:4:\"20_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:81;}}s:4:\"20_2\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:80;}}s:4:\"20_3\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:79;}}s:11:\"footer_text\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:24;}}s:10:\"footer_btn\";a:0:{}s:12:\"main_content\";a:0:{}s:4:\"20_4\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:78;}}s:6:\"footer\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:183;}}s:5:\"179_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:180;}}s:5:\"179_2\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:181;}}s:5:\"183_1\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:184;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:187;}}s:5:\"184_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:248;}}s:5:\"184_2\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:186;}}}',NULL,NULL,NULL,NULL,5,'fr','0000-00-00 00:00:00','2015-12-01 22:54:25',NULL,NULL,'f3d3e051d1191485474e3cd593f4c9b9123c8bb1'),
+	(114,'template','home',NULL,113,NULL,20,'Modèle de page d\'accueil',NULL,NULL,'home',NULL,NULL,NULL,0,1,0,2,114,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,NULL,6,'fr','0000-00-00 00:00:00','2015-12-01 22:54:28',NULL,NULL,'02ed342ceea65ee2f99cb6d351e1c77cb94f3272'),
+	(115,'page',NULL,1,113,NULL,20,'Page d\'accueil',NULL,NULL,'home','',1,0,0,1,0,2,115,'published','1979-03-27 17:20:00',1,'a:17:{s:12:\"main_content\";a:3:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:188;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:193;}i:2;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:3;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:196;}}s:29:\"carousel_content__middle_28_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:29;}}s:4:\"29_1\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:30;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:31;}}s:4:\"31_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:32;}}s:4:\"31_2\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:33;}}s:4:\"27_1\";a:6:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:34;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:35;}i:2;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:3;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:36;}i:3;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:4;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:37;}i:4;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:5;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:38;}i:5;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:6;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:39;}}s:4:\"39_2\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:40;}}s:4:\"39_3\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:41;}}s:10:\"header_btn\";a:0:{}s:8:\"cover188\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:189;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:190;}}s:5:\"190_2\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:191;}}s:5:\"190_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:192;}}s:5:\"193_1\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:194;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:195;}}s:5:\"196_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:197;}}s:5:\"196_2\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:198;}}s:5:\"242_2\";a:0:{}s:5:\"242_1\";a:0:{}}',NULL,NULL,NULL,NULL,7,'fr','0000-00-00 00:00:00','2015-12-01 22:26:14',NULL,NULL,'5126ee3e5bd349ba6f0546f517e4ccc9c780931b'),
+	(116,'errorpage',NULL,NULL,113,NULL,20,'Mauvaise Requete',NULL,NULL,'mauvaise-requete',NULL,NULL,NULL,0,1,0,2,116,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,400,8,'fr','0000-00-00 00:00:00','2015-12-01 22:54:28',NULL,NULL,'a5b8b8628350edaef4e06486a5bb4f7cb8332b87'),
+	(117,'errorpage',NULL,NULL,113,NULL,20,'Interdit',NULL,NULL,'erreur403',NULL,NULL,NULL,0,1,0,2,117,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,403,9,'fr','0000-00-00 00:00:00','2015-12-01 22:54:28',NULL,NULL,'5d4ec967ba7f37d0837a027f259c2284f8ed729d'),
+	(118,'errorpage',NULL,NULL,113,NULL,20,'Page introuvable',NULL,NULL,'erreur404',NULL,NULL,NULL,0,1,0,2,118,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,404,10,'fr','0000-00-00 00:00:00','2015-12-01 22:54:28',NULL,NULL,'8b7d30c30b2d1f10a0429a74823789142d408a52'),
+	(119,'errorpage',NULL,NULL,113,NULL,20,'Erreur serveur',NULL,NULL,'erreur500',NULL,NULL,NULL,0,1,0,2,119,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,500,11,'fr','0000-00-00 00:00:00','2015-12-01 22:54:28',NULL,NULL,'5e9d0d388ffd1d2428a4ecd48ada8984477540b4'),
+	(120,'errorpage',NULL,NULL,113,NULL,20,'Service indisponible',NULL,NULL,'erreur503',NULL,NULL,NULL,0,1,0,2,120,NULL,NULL,1,'a:0:{}',NULL,NULL,NULL,503,12,'fr','0000-00-00 00:00:00','2015-12-01 22:54:29',NULL,NULL,'96c483ba9e67432d1b3107a22ab6d6d76e86b6dc'),
+	(153,'template','fullWidth',NULL,113,NULL,20,'Modèle de page Ariane',NULL,NULL,'modele-de-page-ariane',NULL,NULL,NULL,0,1,0,2,153,NULL,NULL,0,'a:2:{s:12:\"main_content\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:142;}}s:5:\"142_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:143;}}}',NULL,NULL,NULL,NULL,45,'fr','0000-00-00 00:00:00','2015-12-01 22:54:29',NULL,NULL,'6362469e46c62fd57af377e717ab3e4435c55f6f'),
+	(415,'businesstemplate',NULL,NULL,113,418,20,'{{item.title}}',NULL,NULL,'{{item.slug}}','appartement-{{item.slug}}',NULL,0,0,1,0,2,415,'published','2015-04-02 17:38:35',0,'a:6:{s:12:\"main_content\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:199;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:207;}}s:5:\"199_1\";a:3:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:200;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:201;}i:2;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:3;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:202;}}s:7:\"202_155\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:203;}}s:7:\"202_156\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:206;}}s:10:\"breadcrumb\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:208;}}s:8:\"cover208\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:209;}}}',NULL,NULL,'rental',NULL,49,'fr','0000-00-00 00:00:00','2015-12-01 22:54:29',NULL,NULL,'fecb5fa5f27344431f84731129c8cdf798ddc411'),
+	(418,'page',NULL,2,113,115,20,'Logements',NULL,NULL,'logements','logements',0,0,2,1,0,2,418,'published','2015-04-03 14:29:56',0,'a:2:{s:12:\"main_content\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:211;}}s:5:\"211_1\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:213;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:215;}}}',NULL,NULL,NULL,NULL,50,'fr','0000-00-00 00:00:00','2015-12-01 22:26:01',NULL,NULL,'bfda5a41bd6a5633fedea544d2d1a0b28e2e419f'),
+	(419,'articletemplate',NULL,NULL,113,420,20,'{{item.name}}',NULL,NULL,'{{item.slug}}','article-{{item.slug}}',NULL,0,0,1,0,2,419,'published','2015-04-03 15:48:22',0,'a:5:{s:10:\"breadcrumb\";a:3:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:221;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:223;}i:2;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:3;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:224;}}s:8:\"cover221\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:222;}}s:5:\"224_1\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:225;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:226;}}s:6:\"footer\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:236;}}s:5:\"236_1\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:237;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:246;}}}',NULL,NULL,'article',NULL,51,'fr','0000-00-00 00:00:00','2015-12-01 22:54:29',NULL,NULL,'6b960dae7d413d5ee4569b59aff7a83c8e5c8e50'),
+	(420,'blog',NULL,3,113,115,20,'Actualité des appartements Nantais',NULL,NULL,'actualite-des-appartements-nantais','actualite-des-appartements-nantais',NULL,0,3,1,0,2,420,'published',NULL,0,'a:3:{s:12:\"main_content\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:217;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:219;}}s:5:\"217_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:218;}}s:8:\"cover219\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:220;}}}',NULL,NULL,NULL,NULL,52,'fr','0000-00-00 00:00:00','2015-12-01 22:54:29',NULL,NULL,'2306eff277fb1e56024be601f74c6468e3f24edc'),
+	(421,'businesspage',NULL,NULL,419,420,20,'Titre de l’article',NULL,NULL,'titre-de-l-article','article-titre-de-l-article',NULL,0,0,1,0,2,421,'published','2015-04-03 15:48:22',0,'a:1:{s:11:\"header_menu\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"delete\";s:8:\"position\";N;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:18;}}}',1,NULL,NULL,NULL,53,'fr','0000-00-00 00:00:00','2015-12-01 22:54:30',NULL,NULL,'d98e6f7e98126e687cd5f28443ee3cda29462475'),
+	(422,'businesspage',NULL,NULL,419,420,20,'Un autre article',NULL,NULL,'un-autre-article','article-un-autre-article',NULL,0,0,1,0,2,422,'published','2015-04-03 15:48:22',0,'a:5:{s:5:\"224_1\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"delete\";s:8:\"position\";N;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:225;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";s:3:\"226\";s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:231;}}s:5:\"227_1\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:228;}}s:5:\"227_2\";a:1:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:229;}}s:5:\"231_1\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:232;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:233;}}s:5:\"231_2\";a:2:{i:0;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:1;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:234;}i:1;a:6:{s:6:\"action\";s:6:\"create\";s:8:\"position\";i:2;s:12:\"asynchronous\";N;s:17:\"positionReference\";N;s:16:\"replacedWidgetId\";N;s:8:\"widgetId\";i:235;}}}',2,NULL,NULL,NULL,54,'fr','0000-00-00 00:00:00','2015-12-01 22:54:30',NULL,NULL,'6206a1400e453fc6b46bab00c75a501ea561e2bb'),
+	(424,'businesspage',NULL,NULL,419,420,20,'Troisième article',NULL,NULL,'troisieme-article','article-troisieme-article',NULL,0,0,1,0,2,424,'published','2015-04-03 15:48:22',0,'a:0:{}',3,NULL,NULL,NULL,56,'fr','0000-00-00 00:00:00','2015-12-01 22:54:30',NULL,NULL,'e330e8c537a29faf320bcff20f3fd92205065415');
 
 /*!40000 ALTER TABLE `vic_view` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -708,93 +771,144 @@ CREATE TABLE `vic_widget` (
   `text_align_lg` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
   `asynchronous` tinyint(1) DEFAULT NULL,
   `orderBy` longtext COLLATE utf8_unicode_ci,
+  `container_background_image_id` bigint(20) DEFAULT NULL,
+  `container_background_image_xs_id` bigint(20) DEFAULT NULL,
+  `container_background_image_sm_id` bigint(20) DEFAULT NULL,
+  `container_background_image_md_id` bigint(20) DEFAULT NULL,
+  `container_background_image_lg_id` bigint(20) DEFAULT NULL,
+  `childrenSlot` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_height` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_repeat` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_position` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_size` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_color` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_overlay` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_height_xs` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_type_xs` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_repeat_xs` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_position_xs` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_size_xs` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_color_xs` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_overlay_xs` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_height_sm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_type_sm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_repeat_sm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_position_sm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_size_sm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_color_sm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_overlay_sm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_height_md` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_type_md` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_repeat_md` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_position_md` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_size_md` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_color_md` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_overlay_md` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_height_lg` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_type_lg` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_repeat_lg` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_position_lg` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_size_lg` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_color_lg` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `container_background_overlay_lg` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `IDX_57DF2B2331518C7` (`view_id`),
   KEY `IDX_57DF2B231341DB46` (`entityProxy_id`),
+  KEY `IDX_57DF2B2368E78469` (`container_background_image_id`),
+  KEY `IDX_57DF2B23D088CE77` (`container_background_image_xs_id`),
+  KEY `IDX_57DF2B23179EDFCA` (`container_background_image_sm_id`),
+  KEY `IDX_57DF2B23B546B9A3` (`container_background_image_md_id`),
+  KEY `IDX_57DF2B239A933FFD` (`container_background_image_lg_id`),
   CONSTRAINT `FK_57DF2B231341DB46` FOREIGN KEY (`entityProxy_id`) REFERENCES `vic_entity_proxy` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `FK_57DF2B2331518C7` FOREIGN KEY (`view_id`) REFERENCES `vic_view` (`id`) ON DELETE CASCADE
+  CONSTRAINT `FK_57DF2B23179EDFCA` FOREIGN KEY (`container_background_image_sm_id`) REFERENCES `vic_media` (`id`) ON DELETE SET NULL,
+  CONSTRAINT `FK_57DF2B2331518C7` FOREIGN KEY (`view_id`) REFERENCES `vic_view` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_57DF2B2368E78469` FOREIGN KEY (`container_background_image_id`) REFERENCES `vic_media` (`id`) ON DELETE SET NULL,
+  CONSTRAINT `FK_57DF2B239A933FFD` FOREIGN KEY (`container_background_image_lg_id`) REFERENCES `vic_media` (`id`) ON DELETE SET NULL,
+  CONSTRAINT `FK_57DF2B23B546B9A3` FOREIGN KEY (`container_background_image_md_id`) REFERENCES `vic_media` (`id`) ON DELETE SET NULL,
+  CONSTRAINT `FK_57DF2B23D088CE77` FOREIGN KEY (`container_background_image_xs_id`) REFERENCES `vic_media` (`id`) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 LOCK TABLES `vic_widget` WRITE;
 /*!40000 ALTER TABLE `vic_widget` DISABLE KEYS */;
 
-INSERT INTO `vic_widget` (`id`, `slot`, `theme`, `fields`, `mode`, `query`, `business_entity_id`, `view_id`, `entityProxy_id`, `type`, `container_tag`, `container_class`, `container_width`, `container_margin`, `container_padding`, `container_margin_xs`, `container_padding_xs`, `container_margin_sm`, `container_padding_sm`, `container_margin_md`, `container_padding_md`, `container_margin_lg`, `container_padding_lg`, `container_background`, `text_align`, `container_width_xs`, `container_background_xs`, `text_align_xs`, `container_width_sm`, `container_background_sm`, `text_align_sm`, `container_width_md`, `container_background_md`, `text_align_md`, `container_width_lg`, `container_background_lg`, `text_align_lg`, `asynchronous`, `orderBy`)
+INSERT INTO `vic_widget` (`id`, `slot`, `theme`, `fields`, `mode`, `query`, `business_entity_id`, `view_id`, `entityProxy_id`, `type`, `container_tag`, `container_class`, `container_width`, `container_margin`, `container_padding`, `container_margin_xs`, `container_padding_xs`, `container_margin_sm`, `container_padding_sm`, `container_margin_md`, `container_padding_md`, `container_margin_lg`, `container_padding_lg`, `container_background`, `text_align`, `container_width_xs`, `container_background_xs`, `text_align_xs`, `container_width_sm`, `container_background_sm`, `text_align_sm`, `container_width_md`, `container_background_md`, `text_align_md`, `container_width_lg`, `container_background_lg`, `text_align_lg`, `asynchronous`, `orderBy`, `container_background_image_id`, `container_background_image_xs_id`, `container_background_image_sm_id`, `container_background_image_md_id`, `container_background_image_lg_id`, `childrenSlot`, `container_height`, `container_background_type`, `container_background_repeat`, `container_background_position`, `container_background_size`, `container_background_color`, `container_background_overlay`, `container_height_xs`, `container_background_type_xs`, `container_background_repeat_xs`, `container_background_position_xs`, `container_background_size_xs`, `container_background_color_xs`, `container_background_overlay_xs`, `container_height_sm`, `container_background_type_sm`, `container_background_repeat_sm`, `container_background_position_sm`, `container_background_size_sm`, `container_background_color_sm`, `container_background_overlay_sm`, `container_height_md`, `container_background_type_md`, `container_background_repeat_md`, `container_background_position_md`, `container_background_size_md`, `container_background_color_md`, `container_background_overlay_md`, `container_height_lg`, `container_background_type_lg`, `container_background_repeat_lg`, `container_background_position_lg`, `container_background_size_lg`, `container_background_color_lg`, `container_background_overlay_lg`)
 VALUES
-	(18,'header_menu','Header','a:0:{}','static',NULL,NULL,113,NULL,'Menu','div','header-menu',NULL,'36px 0 0 88px',NULL,'0px',NULL,'0px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(19,'header_btn',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Button','div',NULL,NULL,'24px auto 0',NULL,'0px',NULL,'0px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(20,'footer_layout',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(24,'footer_text',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'CKEditor','div',NULL,NULL,'20px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(29,'carousel_content__middle_28_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div','container',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(30,'29_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,'200px auto 50px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(31,'29_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,'0 auto 100px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(32,'31_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-xs-center text-md-right slider-btn',NULL,NULL,NULL,'25px 0 0',NULL,'25px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(33,'31_2',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-xs-center text-md-left slider-btn',NULL,NULL,NULL,'25px 0 0',NULL,'25px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(34,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,'60px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(35,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-center',NULL,'40px auto',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(36,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(37,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Title','div',NULL,NULL,'100px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(38,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,'40px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(39,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,'45px auto 100px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(40,'39_2',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Image','div','text-right',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(41,'39_3',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Image','div','text-left',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(78,'20_4',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Button','div','text-center',NULL,'20px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(79,'20_3',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div','text-center',NULL,'15px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(80,'20_2',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div','text-center',NULL,'20px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(81,'20_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div','text-center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(142,'main_content',NULL,'a:0:{}','static',NULL,NULL,153,NULL,'Layout','div','container',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(143,'142_1',NULL,'a:0:{}','static',NULL,NULL,153,NULL,'Breadcrumb','div',NULL,NULL,'100px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(180,'179_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(181,'179_2',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Button','div',NULL,NULL,'5px 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(183,'footer',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Layout','footer',NULL,NULL,NULL,'20px 0 36px',NULL,'20px 0',NULL,'20px 0',NULL,NULL,NULL,NULL,'#222534',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(184,'183_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(186,'184_2',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Button','div',NULL,NULL,'5px 0',NULL,'20px 0 30px',NULL,'20px 0 30px',NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(187,'183_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Menu','nav',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(188,'main_content',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Cover','div',NULL,NULL,'-90px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(189,'cover188',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Title','div','color-white',NULL,'220px 0 67px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(190,'cover188',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(191,'190_2',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-xs-center text-md-left -homeBtn',NULL,NULL,NULL,'15px 0 0',NULL,'15px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(192,'190_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-xs-center text-md-right -homeBtn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(193,'main_content',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(194,'193_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Title','div',NULL,NULL,'100px 0 30px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(195,'193_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,'0 0 50px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(196,'main_content',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,'0 0 100px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(197,'196_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Image','div','text-xs-center text-md-right',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(198,'196_2',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Image','div','text-xs-center text-md-left',NULL,NULL,NULL,'30px 0 0',NULL,'30px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(199,'main_content',NULL,'a:0:{}','static',NULL,NULL,415,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(200,'199_1',NULL,'a:1:{s:7:\"content\";s:16:\"shortDescription\";}','businessEntity',NULL,'rental',415,NULL,'Title','div',NULL,NULL,'50px 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(201,'199_1',NULL,'a:0:{}','static',NULL,NULL,415,NULL,'Button','div',NULL,NULL,'0 0 60px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(202,'199_1',NULL,'a:0:{}','static',NULL,NULL,415,NULL,'Tab','div',NULL,NULL,'0 0 300px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(203,'202_155',NULL,'a:1:{s:7:\"content\";s:11:\"description\";}','businessEntity',NULL,'rental',415,NULL,'Text','div',NULL,NULL,'50px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(206,'202_156',NULL,'a:4:{s:5:\"image\";s:20:\"emissionOfGreenhouse\";s:3:\"alt\";s:5:\"title\";s:6:\"legend\";s:16:\"shortDescription\";s:5:\"title\";s:5:\"title\";}','businessEntity',NULL,'rental',415,NULL,'Image','div',NULL,NULL,'50px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(207,'main_content',NULL,'a:0:{}','static',NULL,NULL,415,NULL,'Breadcrumb','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(208,'breadcrumb',NULL,'a:4:{s:5:\"image\";s:7:\"picture\";s:3:\"alt\";s:5:\"title\";s:6:\"legend\";s:5:\"title\";s:5:\"title\";s:5:\"title\";}','businessEntity',NULL,'rental',415,NULL,'Cover','div','rental-cover',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(209,'cover208',NULL,'a:1:{s:7:\"content\";s:5:\"title\";}','businessEntity',NULL,'rental',415,NULL,'Title','div','text-uppercase color-white',NULL,'172px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(211,'main_content',NULL,'a:0:{}','static',NULL,NULL,418,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(213,'211_1','Rental','a:0:{}','query',NULL,'rental',418,NULL,'Listing','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(215,'211_1',NULL,'a:0:{}','static',NULL,NULL,418,NULL,'Title','div',NULL,NULL,'100px 0 50px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(216,'header_menu','Header','a:0:{}','static',NULL,NULL,421,NULL,'Menu','div','header-menu',NULL,'36px 0 0 88px',NULL,'0px',NULL,'0px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(217,'main_content',NULL,'a:0:{}','static',NULL,NULL,420,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'#FCF9F9',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(218,'217_1',NULL,'a:0:{}','query',NULL,'article',420,NULL,'ArticleList','div',NULL,NULL,'60px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(219,'main_content',NULL,'a:0:{}','static',NULL,NULL,420,NULL,'Cover','div',NULL,NULL,'-90px 0 0',NULL,'-70px 0 0',NULL,'-70px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(220,'cover219',NULL,'a:0:{}','static',NULL,NULL,420,NULL,'Title','div','color-white text-uppercase',NULL,'270px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(221,'breadcrumb',NULL,'a:4:{s:5:\"image\";s:5:\"image\";s:3:\"alt\";s:4:\"name\";s:6:\"legend\";s:4:\"name\";s:5:\"title\";s:4:\"name\";}','businessEntity',NULL,'article',419,NULL,'Cover','div','blog-cover',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(222,'cover221',NULL,'a:1:{s:7:\"content\";s:4:\"name\";}','businessEntity',NULL,'article',419,NULL,'Title','div','color-white text-uppercase',NULL,'170px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(223,'breadcrumb',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Breadcrumb','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(224,'breadcrumb',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'#FCF9F9',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(225,'224_1',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Title','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'left',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(226,'224_1','Date','a:1:{s:7:\"content\";s:11:\"publishedAt\";}','businessEntity',NULL,'article',419,NULL,'Title','div','color-green',NULL,'105px 0 32px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'left',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(228,'227_1',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'CKEditor','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(229,'227_2',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'Image','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(231,'224_1',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'Layout','div',NULL,NULL,'0 0 130px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(232,'231_1',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'CKEditor','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(233,'231_1',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'Image','div',NULL,NULL,'30px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(234,'231_2',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'Image','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(235,'231_2',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'CKEditor','div',NULL,NULL,'30px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(236,'footer',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'#FCF9F9',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(237,'236_1',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Disqus','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(246,'236_1',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'ShareThis','div',NULL,NULL,'0 0 50px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(247,'header_logo',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div',NULL,NULL,'25px 0 0',NULL,'14px 0 0',NULL,'14px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(248,'184_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+	(18,'header_menu','Header','a:0:{}','static',NULL,NULL,113,NULL,'Menu','div','header-menu',NULL,'36px 0 0 88px',NULL,'0px',NULL,'0px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(19,'header_btn',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Button','div',NULL,NULL,'24px auto 0',NULL,'0px',NULL,'0px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(20,'footer_layout',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(24,'footer_text',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'CKEditor','div',NULL,NULL,'20px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(29,'carousel_content__middle_28_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div','container',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(30,'29_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,'200px auto 50px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(31,'29_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,'0 auto 100px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(32,'31_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-xs-center text-md-right slider-btn',NULL,NULL,NULL,'25px 0 0',NULL,'25px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(33,'31_2',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-xs-center text-md-left slider-btn',NULL,NULL,NULL,'25px 0 0',NULL,'25px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(34,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,'60px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(35,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-center',NULL,'40px auto',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(36,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(37,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Title','div',NULL,NULL,'100px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(38,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,'40px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(39,'27_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,'45px auto 100px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(40,'39_2',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Image','div','text-right',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(41,'39_3',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Image','div','text-left',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(78,'20_4',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Button','div','text-center',NULL,'20px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(79,'20_3',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div','text-center',NULL,'15px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(80,'20_2',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div','text-center',NULL,'20px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(81,'20_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div','text-center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(142,'main_content',NULL,'a:0:{}','static',NULL,NULL,153,NULL,'Layout','div','container',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(143,'142_1',NULL,'a:0:{}','static',NULL,NULL,153,NULL,'Breadcrumb','div',NULL,NULL,'100px auto 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(180,'179_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(181,'179_2',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Button','div',NULL,NULL,'5px 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(183,'footer',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Layout','footer',NULL,NULL,NULL,'20px 0 36px',NULL,'20px 0',NULL,'20px 0',NULL,NULL,NULL,NULL,'#222534',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(184,'183_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(186,'184_2',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Button','div',NULL,NULL,'5px 0',NULL,'20px 0 30px',NULL,'20px 0 30px',NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(187,'183_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Menu','nav',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(188,'main_content',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Cover','div',NULL,NULL,'-90px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(189,'cover188',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Title','div','color-white',NULL,'220px 0 67px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(190,'cover188',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(191,'190_2',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-xs-center text-md-left -homeBtn',NULL,NULL,NULL,'15px 0 0',NULL,'15px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(192,'190_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Button','div','text-xs-center text-md-right -homeBtn',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(193,'main_content',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(194,'193_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Title','div',NULL,NULL,'100px 0 30px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(195,'193_1',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'CKEditor','div',NULL,NULL,'0 0 50px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(196,'main_content',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Layout','div',NULL,NULL,'0 0 100px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(197,'196_1',NULL,'a:4:{s:5:\"image\";s:7:\"picture\";s:3:\"alt\";s:16:\"shortDescription\";s:6:\"legend\";s:5:\"title\";s:5:\"title\";s:16:\"shortDescription\";}','entity',NULL,'rental',115,4,'Image','div','text-xs-center text-md-right',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(198,'196_2',NULL,'a:0:{}','static',NULL,NULL,115,NULL,'Image','div','text-xs-center text-md-left',NULL,NULL,NULL,'30px 0 0',NULL,'30px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(199,'main_content',NULL,'a:0:{}','static',NULL,NULL,415,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(200,'199_1',NULL,'a:1:{s:7:\"content\";s:16:\"shortDescription\";}','businessEntity',NULL,'rental',415,NULL,'Title','div',NULL,NULL,'50px 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(201,'199_1',NULL,'a:0:{}','static',NULL,NULL,415,NULL,'Button','div',NULL,NULL,'0 0 60px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(202,'199_1',NULL,'a:0:{}','static',NULL,NULL,415,NULL,'Tab','div',NULL,NULL,'0 0 300px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(203,'202_155',NULL,'a:1:{s:7:\"content\";s:11:\"description\";}','businessEntity',NULL,'rental',415,NULL,'Text','div',NULL,NULL,'50px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(206,'202_156',NULL,'a:4:{s:5:\"image\";s:20:\"emissionOfGreenhouse\";s:3:\"alt\";s:5:\"title\";s:6:\"legend\";s:16:\"shortDescription\";s:5:\"title\";s:5:\"title\";}','businessEntity',NULL,'rental',415,NULL,'Image','div',NULL,NULL,'50px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(207,'main_content',NULL,'a:0:{}','static',NULL,NULL,415,NULL,'Breadcrumb','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(208,'breadcrumb',NULL,'a:4:{s:5:\"image\";s:7:\"picture\";s:3:\"alt\";s:5:\"title\";s:6:\"legend\";s:5:\"title\";s:5:\"title\";s:5:\"title\";}','businessEntity',NULL,'rental',415,NULL,'Cover','div','rental-cover',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(209,'cover208',NULL,'a:1:{s:7:\"content\";s:5:\"title\";}','businessEntity',NULL,'rental',415,NULL,'Title','div','text-uppercase color-white',NULL,'172px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(211,'main_content',NULL,'a:0:{}','static',NULL,NULL,418,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(213,'211_1','Rental','a:0:{}','query',NULL,'rental',418,NULL,'Listing','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(215,'211_1',NULL,'a:0:{}','static',NULL,NULL,418,NULL,'Title','div',NULL,NULL,'100px 0 50px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(216,'header_menu','Header','a:0:{}','static',NULL,NULL,421,NULL,'Menu','div','header-menu',NULL,'36px 0 0 88px',NULL,'0px',NULL,'0px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(217,'main_content',NULL,'a:0:{}','static',NULL,NULL,420,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'#FCF9F9',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(218,'217_1',NULL,'a:0:{}','query',NULL,'article',420,NULL,'ArticleList','div',NULL,NULL,'60px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(219,'main_content',NULL,'a:0:{}','static',NULL,NULL,420,NULL,'Cover','div',NULL,NULL,'-90px 0 0',NULL,'-70px 0 0',NULL,'-70px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(220,'cover219',NULL,'a:0:{}','static',NULL,NULL,420,NULL,'Title','div','color-white text-uppercase',NULL,'270px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(221,'breadcrumb',NULL,'a:4:{s:5:\"image\";s:5:\"image\";s:3:\"alt\";s:4:\"name\";s:6:\"legend\";s:4:\"name\";s:5:\"title\";s:4:\"name\";}','businessEntity',NULL,'article',419,NULL,'Cover','div','blog-cover',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(222,'cover221',NULL,'a:1:{s:7:\"content\";s:4:\"name\";}','businessEntity',NULL,'article',419,NULL,'Title','div','color-white text-uppercase',NULL,'170px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(223,'breadcrumb',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Breadcrumb','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(224,'breadcrumb',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'#FCF9F9',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(225,'224_1',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Title','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'left',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(226,'224_1','Date','a:1:{s:7:\"content\";s:11:\"publishedAt\";}','businessEntity',NULL,'article',419,NULL,'Title','div','color-green',NULL,'105px 0 32px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'left',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(228,'227_1',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'CKEditor','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(229,'227_2',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'Image','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(231,'224_1',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'Layout','div',NULL,NULL,'0 0 130px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(232,'231_1',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'CKEditor','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(233,'231_1',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'Image','div',NULL,NULL,'30px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(234,'231_2',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'Image','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(235,'231_2',NULL,'a:0:{}','static',NULL,NULL,422,NULL,'CKEditor','div',NULL,NULL,'30px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(236,'footer',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Layout','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'#FCF9F9',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(237,'236_1',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'Disqus','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(246,'236_1',NULL,'a:0:{}','static',NULL,NULL,419,NULL,'ShareThis','div',NULL,NULL,'0 0 50px',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(247,'header_logo',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div',NULL,NULL,'25px 0 0',NULL,'14px 0 0',NULL,'14px 0 0',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+	(248,'184_1',NULL,'a:0:{}','static',NULL,NULL,113,NULL,'Image','div',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'center',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 /*!40000 ALTER TABLE `vic_widget` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -873,6 +987,7 @@ CREATE TABLE `vic_widget_button` (
   `analytics_track_code` longtext COLLATE utf8_unicode_ci,
   `link_id` int(11) DEFAULT NULL,
   `icon` varchar(55) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tooltipable` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_D7442D9ADA40271` (`link_id`),
   KEY `IDX_D7442D949A25CE0` (`attached_page_id`),
@@ -886,18 +1001,18 @@ CREATE TABLE `vic_widget_button` (
 LOCK TABLES `vic_widget_button` WRITE;
 /*!40000 ALTER TABLE `vic_widget_button` DISABLE KEYS */;
 
-INSERT INTO `vic_widget_button` (`id`, `attached_widget_id`, `title`, `hoverTitle`, `size`, `style`, `is_block`, `url`, `target`, `route`, `route_parameters`, `link_type`, `attached_page_id`, `is_callToAction`, `analytics_track_code`, `link_id`, `icon`)
+INSERT INTO `vic_widget_button` (`id`, `attached_widget_id`, `title`, `hoverTitle`, `size`, `style`, `is_block`, `url`, `target`, `route`, `route_parameters`, `link_type`, `attached_page_id`, `is_callToAction`, `analytics_track_code`, `link_id`, `icon`, `tooltipable`)
 VALUES
-	(19,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,26,NULL),
-	(32,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,27,NULL),
-	(33,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,28,NULL),
-	(35,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,29,NULL),
-	(78,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,30,NULL),
-	(181,NULL,'Contact',NULL,'normal','success',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,2,NULL),
-	(186,NULL,'Contact',NULL,'normal','success',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,3,NULL),
-	(191,NULL,'Call to action','Call to action','large','success',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,4,NULL),
-	(192,NULL,'Défault','Défault','large','default',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,1,NULL,5,NULL),
-	(201,NULL,'Envoyer un message',NULL,'normal','success',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,6,NULL);
+	(19,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,26,NULL,0),
+	(32,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,27,NULL,0),
+	(33,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,28,NULL,0),
+	(35,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,29,NULL,0),
+	(78,NULL,'test',NULL,'normal','primary',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,30,NULL,0),
+	(181,NULL,'Contact',NULL,'normal','success',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,2,NULL,0),
+	(186,NULL,'Contact',NULL,'normal','success',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,3,NULL,0),
+	(191,NULL,'Call to action','Call to action','large','success',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,4,NULL,0),
+	(192,NULL,'Défault','Défault','large','default',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,1,NULL,5,NULL,0),
+	(201,NULL,'Envoyer un message',NULL,'normal','success',0,NULL,'_parent',NULL,'a:0:{}','none',NULL,0,NULL,6,NULL,0);
 
 /*!40000 ALTER TABLE `vic_widget_button` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -966,7 +1081,7 @@ DROP TABLE IF EXISTS `vic_widget_disqus`;
 
 CREATE TABLE `vic_widget_disqus` (
   `id` int(11) NOT NULL,
-  `disqus_shortname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `disqus_shortname` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   CONSTRAINT `FK_360AB717BF396750` FOREIGN KEY (`id`) REFERENCES `vic_widget` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -1028,7 +1143,7 @@ DROP TABLE IF EXISTS `vic_widget_html`;
 
 CREATE TABLE `vic_widget_html` (
   `id` int(11) NOT NULL,
-  `content` text COLLATE utf8_unicode_ci NOT NULL,
+  `content` longtext COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`),
   CONSTRAINT `FK_C7214C8BBF396750` FOREIGN KEY (`id`) REFERENCES `vic_widget` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -1042,7 +1157,7 @@ DROP TABLE IF EXISTS `vic_widget_image`;
 
 CREATE TABLE `vic_widget_image` (
   `id` int(11) NOT NULL,
-  `image_id` bigint(20) NOT NULL,
+  `image_id` bigint(20) DEFAULT NULL,
   `alt` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `link_type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -1059,6 +1174,9 @@ CREATE TABLE `vic_widget_image` (
   `analytics_track_code` longtext COLLATE utf8_unicode_ci,
   `link_id` int(11) DEFAULT NULL,
   `lazy_load` tinyint(1) DEFAULT NULL,
+  `popover` longtext COLLATE utf8_unicode_ci,
+  `placement` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `hover` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_6FE810B4ADA40271` (`link_id`),
   KEY `IDX_6FE810B4335FA941` (`related_page_id`),
@@ -1076,20 +1194,20 @@ CREATE TABLE `vic_widget_image` (
 LOCK TABLES `vic_widget_image` WRITE;
 /*!40000 ALTER TABLE `vic_widget_image` DISABLE KEYS */;
 
-INSERT INTO `vic_widget_image` (`id`, `image_id`, `alt`, `title`, `link_type`, `width`, `height`, `url`, `related_page_id`, `legend`, `attached_page_id`, `attached_widget_id`, `target`, `route`, `route_parameters`, `analytics_track_code`, `link_id`, `lazy_load`)
+INSERT INTO `vic_widget_image` (`id`, `image_id`, `alt`, `title`, `link_type`, `width`, `height`, `url`, `related_page_id`, `legend`, `attached_page_id`, `attached_widget_id`, `target`, `route`, `route_parameters`, `analytics_track_code`, `link_id`, `lazy_load`, `popover`, `placement`, `hover`)
 VALUES
-	(188,451,NULL,NULL,'none',NULL,'550px',NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,7,NULL),
-	(197,452,NULL,NULL,'none',NULL,'106',NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,11,NULL),
-	(198,453,NULL,NULL,'none',NULL,'106px',NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,12,NULL),
-	(206,453,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'a:0:{}',NULL,13,NULL),
-	(208,453,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'a:0:{}',NULL,8,NULL),
-	(219,464,NULL,NULL,'none',NULL,'490px',NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,9,NULL),
-	(221,453,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'a:0:{}',NULL,10,NULL),
-	(229,468,NULL,NULL,'none','100%',NULL,NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,14,NULL),
-	(233,469,NULL,NULL,'none','100%',NULL,NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,15,NULL),
-	(234,468,NULL,NULL,'none','100%',NULL,NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,16,NULL),
-	(247,471,NULL,NULL,'page',NULL,'41px',NULL,NULL,NULL,115,NULL,'_parent',NULL,'a:0:{}',NULL,17,NULL),
-	(248,472,NULL,NULL,'url',NULL,'50px','http://appventus.com/victoire',NULL,NULL,NULL,NULL,'_blank',NULL,'a:0:{}',NULL,18,NULL);
+	(188,451,NULL,NULL,'none',NULL,'550px',NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,7,NULL,NULL,NULL,NULL),
+	(197,452,NULL,NULL,'none',NULL,'106',NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,11,NULL,NULL,NULL,NULL),
+	(198,453,NULL,NULL,'none',NULL,'106px',NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,12,NULL,NULL,NULL,NULL),
+	(206,453,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'a:0:{}',NULL,13,NULL,NULL,NULL,NULL),
+	(208,453,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'a:0:{}',NULL,8,NULL,NULL,NULL,NULL),
+	(219,464,NULL,NULL,'none',NULL,'490px',NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,9,NULL,NULL,NULL,NULL),
+	(221,453,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'a:0:{}',NULL,10,NULL,NULL,NULL,NULL),
+	(229,468,NULL,NULL,'none','100%',NULL,NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,14,NULL,NULL,NULL,NULL),
+	(233,469,NULL,NULL,'none','100%',NULL,NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,15,NULL,NULL,NULL,NULL),
+	(234,468,NULL,NULL,'none','100%',NULL,NULL,NULL,NULL,NULL,NULL,'_parent',NULL,'a:0:{}',NULL,16,NULL,NULL,NULL,NULL),
+	(247,471,NULL,NULL,'page',NULL,'41px',NULL,NULL,NULL,115,NULL,'_parent',NULL,'a:0:{}',NULL,17,NULL,NULL,NULL,NULL),
+	(248,472,NULL,NULL,'url',NULL,'50px','http://appventus.com/victoire',NULL,NULL,NULL,NULL,'_blank',NULL,'a:0:{}',NULL,18,NULL,NULL,NULL,NULL);
 
 /*!40000 ALTER TABLE `vic_widget_image` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1102,8 +1220,11 @@ DROP TABLE IF EXISTS `vic_widget_layout`;
 
 CREATE TABLE `vic_widget_layout` (
   `id` int(11) NOT NULL,
-  `layout` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `layoutMd` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `has_container` tinyint(1) NOT NULL DEFAULT '0',
+  `layoutLg` varchar(25) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `layoutSm` varchar(25) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `layoutXs` varchar(25) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   CONSTRAINT `FK_D488506BF396750` FOREIGN KEY (`id`) REFERENCES `vic_widget` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -1111,24 +1232,24 @@ CREATE TABLE `vic_widget_layout` (
 LOCK TABLES `vic_widget_layout` WRITE;
 /*!40000 ALTER TABLE `vic_widget_layout` DISABLE KEYS */;
 
-INSERT INTO `vic_widget_layout` (`id`, `layout`, `has_container`)
+INSERT INTO `vic_widget_layout` (`id`, `layoutMd`, `has_container`, `layoutLg`, `layoutSm`, `layoutXs`)
 VALUES
-	(20,'quarters',0),
-	(29,'once',0),
-	(31,'half',0),
-	(39,'quarters',0),
-	(142,'once',0),
-	(183,'once',1),
-	(184,'half',0),
-	(190,'half',1),
-	(193,'once',1),
-	(196,'half',1),
-	(199,'once',1),
-	(211,'once',1),
-	(217,'once',1),
-	(224,'once',1),
-	(231,'third21',0),
-	(236,'once',1);
+	(20,'quarters',0,NULL,NULL,NULL),
+	(29,'once',0,NULL,NULL,NULL),
+	(31,'half',0,NULL,NULL,NULL),
+	(39,'quarters',0,NULL,NULL,NULL),
+	(142,'once',0,NULL,NULL,NULL),
+	(183,'once',1,NULL,NULL,NULL),
+	(184,'half',0,NULL,NULL,NULL),
+	(190,'half',1,NULL,NULL,NULL),
+	(193,'once',1,NULL,NULL,NULL),
+	(196,'half',1,NULL,NULL,NULL),
+	(199,'once',1,NULL,NULL,NULL),
+	(211,'once',1,NULL,NULL,NULL),
+	(217,'once',1,NULL,NULL,NULL),
+	(224,'once',1,NULL,NULL,NULL),
+	(231,'third21',0,NULL,NULL,NULL),
+	(236,'once',1,NULL,NULL,NULL);
 
 /*!40000 ALTER TABLE `vic_widget_layout` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1143,7 +1264,7 @@ CREATE TABLE `vic_widget_listing` (
   `id` int(11) NOT NULL,
   `targetPattern_id` int(11) DEFAULT NULL,
   `maxResults` int(11) DEFAULT NULL,
-  `randomResults` tinyint(1) NOT NULL,
+  `randomResults` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `IDX_6C501C5BC14172EE` (`targetPattern_id`),
   CONSTRAINT `FK_6C501C5BBF396750` FOREIGN KEY (`id`) REFERENCES `vic_widget` (`id`) ON DELETE CASCADE,
@@ -1264,10 +1385,6 @@ CREATE TABLE `vic_widget_menu_item` (
   `menu_id` int(11) DEFAULT NULL,
   `parent_id` int(11) DEFAULT NULL,
   `attached_widget_id` int(11) DEFAULT NULL,
-  `lft` int(11) NOT NULL,
-  `lvl` int(11) NOT NULL,
-  `rgt` int(11) NOT NULL,
-  `root` int(11) DEFAULT NULL,
   `menu_type` int(11) NOT NULL,
   `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `target` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -1297,15 +1414,15 @@ CREATE TABLE `vic_widget_menu_item` (
 LOCK TABLES `vic_widget_menu_item` WRITE;
 /*!40000 ALTER TABLE `vic_widget_menu_item` DISABLE KEYS */;
 
-INSERT INTO `vic_widget_menu_item` (`id`, `menu_id`, `parent_id`, `attached_widget_id`, `lft`, `lvl`, `rgt`, `root`, `menu_type`, `url`, `target`, `route`, `route_parameters`, `link_type`, `root_hierarchy_page`, `attached_page_id`, `analytics_track_code`, `link_id`)
+INSERT INTO `vic_widget_menu_item` (`id`, `menu_id`, `parent_id`, `attached_widget_id`, `menu_type`, `url`, `target`, `route`, `route_parameters`, `link_type`, `root_hierarchy_page`, `attached_page_id`, `analytics_track_code`, `link_id`)
 VALUES
-	(153,187,NULL,NULL,1,0,2,153,2,NULL,'_parent',NULL,'N;','none',NULL,NULL,NULL,19),
-	(159,216,NULL,NULL,1,0,2,159,2,NULL,'_parent',NULL,'N;','page',NULL,420,NULL,20),
-	(160,216,NULL,NULL,1,0,2,160,2,NULL,'_parent',NULL,'N;','page',NULL,115,NULL,21),
-	(161,216,NULL,NULL,1,0,2,161,2,NULL,'_parent',NULL,'N;','page',NULL,418,NULL,22),
-	(162,18,NULL,NULL,1,0,2,162,2,NULL,'_parent',NULL,'N;','page',NULL,115,NULL,23),
-	(163,18,NULL,NULL,1,0,2,163,2,NULL,'_parent',NULL,'N;','page',NULL,418,NULL,24),
-	(164,18,NULL,NULL,1,0,2,164,2,NULL,'_parent',NULL,'N;','page',NULL,420,NULL,25);
+	(153,187,NULL,NULL,2,NULL,'_parent',NULL,'N;','none',NULL,NULL,NULL,19),
+	(159,216,NULL,NULL,2,NULL,'_parent',NULL,'N;','page',NULL,420,NULL,20),
+	(160,216,NULL,NULL,2,NULL,'_parent',NULL,'N;','page',NULL,115,NULL,21),
+	(161,216,NULL,NULL,2,NULL,'_parent',NULL,'N;','page',NULL,418,NULL,22),
+	(162,18,NULL,NULL,2,NULL,'_parent',NULL,'N;','page',NULL,115,NULL,23),
+	(163,18,NULL,NULL,2,NULL,'_parent',NULL,'N;','page',NULL,418,NULL,24),
+	(164,18,NULL,NULL,2,NULL,'_parent',NULL,'N;','page',NULL,420,NULL,25);
 
 /*!40000 ALTER TABLE `vic_widget_menu_item` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1347,16 +1464,31 @@ CREATE TABLE `vic_widget_sharethis` (
   `bufferEnabled` tinyint(1) NOT NULL,
   `shareThisEnabled` tinyint(1) NOT NULL,
   `twitterVia` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `link_id` int(11) DEFAULT NULL,
+  `attached_page_id` int(11) DEFAULT NULL,
+  `attached_widget_id` int(11) DEFAULT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `target` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `route` varchar(55) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `route_parameters` longtext COLLATE utf8_unicode_ci COMMENT '(DC2Type:array)',
+  `link_type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `analytics_track_code` longtext COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_1967A814ADA40271` (`link_id`),
+  KEY `IDX_1967A81449A25CE0` (`attached_page_id`),
+  KEY `IDX_1967A81429E2283F` (`attached_widget_id`),
+  CONSTRAINT `FK_1967A81429E2283F` FOREIGN KEY (`attached_widget_id`) REFERENCES `vic_widget` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_1967A81449A25CE0` FOREIGN KEY (`attached_page_id`) REFERENCES `vic_view` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_1967A814ADA40271` FOREIGN KEY (`link_id`) REFERENCES `vic_link` (`id`) ON DELETE SET NULL,
   CONSTRAINT `FK_1967A814BF396750` FOREIGN KEY (`id`) REFERENCES `vic_widget` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 LOCK TABLES `vic_widget_sharethis` WRITE;
 /*!40000 ALTER TABLE `vic_widget_sharethis` DISABLE KEYS */;
 
-INSERT INTO `vic_widget_sharethis` (`id`, `facebookEnabled`, `twitterEnabled`, `googleplusEnabled`, `linkedinEnabled`, `viadeoEnabled`, `emailEnabled`, `pinterestEnabled`, `bufferEnabled`, `shareThisEnabled`, `twitterVia`)
+INSERT INTO `vic_widget_sharethis` (`id`, `facebookEnabled`, `twitterEnabled`, `googleplusEnabled`, `linkedinEnabled`, `viadeoEnabled`, `emailEnabled`, `pinterestEnabled`, `bufferEnabled`, `shareThisEnabled`, `twitterVia`, `link_id`, `attached_page_id`, `attached_widget_id`, `url`, `target`, `route`, `route_parameters`, `link_type`, `analytics_track_code`)
 VALUES
-	(246,1,1,0,0,0,0,0,0,0,NULL);
+	(246,1,1,0,0,0,0,0,0,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 /*!40000 ALTER TABLE `vic_widget_sharethis` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1421,6 +1553,10 @@ DROP TABLE IF EXISTS `vic_widget_slider`;
 
 CREATE TABLE `vic_widget_slider` (
   `id` int(11) NOT NULL,
+  `library` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `bullets` tinyint(1) NOT NULL,
+  `autoplay` tinyint(1) NOT NULL,
+  `autoplaySpeed` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   CONSTRAINT `FK_F8B5FEE3BF396750` FOREIGN KEY (`id`) REFERENCES `vic_widget` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -1446,6 +1582,8 @@ CREATE TABLE `vic_widget_slider_item` (
   `attached_page_id` int(11) DEFAULT NULL,
   `analytics_track_code` longtext COLLATE utf8_unicode_ci,
   `link_id` int(11) DEFAULT NULL,
+  `enabled` tinyint(1) NOT NULL,
+  `subtitle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_5403DED0ADA40271` (`link_id`),
   KEY `IDX_5403DED03DA5256D` (`image_id`),

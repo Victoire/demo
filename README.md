@@ -3,7 +3,7 @@
 ##Install
 
 ```
-composer create-project victoire/demo myVictoire "1.1.*@dev"
+composer create-project victoire/demo myVictoire "1.3.*@dev"
 ```
 
 ##Domain names

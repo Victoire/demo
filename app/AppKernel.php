@@ -43,7 +43,7 @@ class AppKernel extends Kernel
             new Victoire\Bundle\TwigBundle\VictoireTwigBundle(),
             new Victoire\Bundle\BlogBundle\VictoireBlogBundle(),
             new Victoire\Bundle\BusinessEntityBundle\VictoireBusinessEntityBundle(),
-            new Victoire\Bundle\BusinessEntityPageBundle\VictoireBusinessEntityPageBundle(),
+            new Victoire\Bundle\BusinessPageBundle\VictoireBusinessPageBundle(),
             new Victoire\Bundle\FilterBundle\VictoireFilterBundle(),
             new Victoire\Bundle\FormBundle\VictoireFormBundle(),
             new Victoire\Bundle\I18nBundle\VictoireI18nBundle(),
@@ -57,6 +57,7 @@ class AppKernel extends Kernel
             new Victoire\Bundle\WidgetBundle\VictoireWidgetBundle(),
             new Victoire\Bundle\WidgetMapBundle\VictoireWidgetMapBundle(),
             new Victoire\Bundle\AnalyticsBundle\VictoireAnalyticsBundle(),
+            new Victoire\Bundle\ViewReferenceBundle\ViewReferenceBundle(),
 
             //Victoire Widgets
             new Victoire\Widget\ArticleListBundle\VictoireWidgetArticleListBundle(),
