@@ -17,11 +17,19 @@ The default parameters are indicated between the () but you might need to insert
 
 ###Domain names
 Change domain names for yours in app/config/parameters.yml
+
 ```
     locale_pattern_table:
         demo.victoire.dev: fr
         demo.victoire.io: fr
 ```
+
+###Define your locale
+Available locale :
+
+* fr : French
+* en : English
+* es : Spanish
 
 ###Database
 Create your database
