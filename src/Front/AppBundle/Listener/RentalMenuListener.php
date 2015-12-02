@@ -6,7 +6,7 @@ use Symfony\Component\EventDispatcher\Event;
 use Victoire\Bundle\CoreBundle\Menu\MenuBuilder;
 
 /**
- * When dispatched, this listener add items to a KnpMenu
+ * When dispatched, this listener add items to a KnpMenu.
  */
 class RentalMenuListener
 {
@@ -14,7 +14,8 @@ class RentalMenuListener
     private $mainItem;
 
     /**
-     * Constructor
+     * Constructor.
+     *
      * @param MenuBuilder $menuBuilder
      */
     public function __construct(MenuBuilder $menuBuilder)
@@ -23,7 +24,7 @@ class RentalMenuListener
     }
 
     /**
-     * add global menu items
+     * add global menu items.
      *
      * @param Event $event
      *
@@ -36,9 +37,9 @@ class RentalMenuListener
         $this->mainItem = $this->menuBuilder->getLeftNavbar();
 
         $this->mainItem
-            ->addChild('menu.rental', array(
+            ->addChild('menu.rental', [
                 'route' => 'rental_index',
-            ));
+            ]);
 
         return $this->mainItem;
     }
