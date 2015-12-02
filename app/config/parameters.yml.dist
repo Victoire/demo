@@ -27,3 +27,4 @@ parameters:
     locale_pattern_table:
         demo.victoire.dev: fr
         demo.victoire.io: fr
+    assetic.sass.bin: '~/.rbenv/versions/1.9.3-p194/bin/sass'
