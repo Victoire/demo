@@ -71,6 +71,11 @@ If you have not already installed less, run the following command
 npm install -g less
 ```
 
+If you have not already installed sass, run the following command
+```
+gem install sass
+```
+
 Then dump assets
 ```
 php bin/console assets:install web --symlink
