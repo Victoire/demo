@@ -8,9 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Rental controller.
@@ -19,7 +17,6 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class RentalController extends Controller
 {
-
     /**
      * Lists all Rental entities.
      *
@@ -32,12 +29,13 @@ class RentalController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $entities = $em->getRepository('AppBundle:Rental')->findAll();
-        $response = array(
+        $response = [
             'entities' => $entities,
-        );
+        ];
 
         return $response;
     }
+
     /**
      * Creates a new Rental entity.
      *
@@ -59,10 +57,10 @@ class RentalController extends Controller
             return $this->redirect($this->generateUrl('rental_index'));
         }
 
-        $response = array(
+        $response = [
             'entity' => $entity,
             'form'   => $form->createView(),
-        );
+        ];
 
         return $response;
     }
@@ -76,14 +74,14 @@ class RentalController extends Controller
      */
     private function createCreateForm(Rental $entity)
     {
-        $form = $this->createForm(new RentalType(), $entity, array(
+        $form = $this->createForm(new RentalType(), $entity, [
             'action' => $this->generateUrl('rental_create'),
             'method' => 'POST',
-        ));
+        ]);
 
-        $form->add('submit', 'submit', array(
-            'label' => 'Créer'
-        ));
+        $form->add('submit', 'submit', [
+            'label' => 'Créer',
+        ]);
 
         return $form;
     }
@@ -98,12 +96,12 @@ class RentalController extends Controller
     public function newAction()
     {
         $entity = new Rental();
-        $form   = $this->createCreateForm($entity);
+        $form = $this->createCreateForm($entity);
 
-        $response = array(
+        $response = [
             'entity' => $entity,
             'form'   => $form->createView(),
-        );
+        ];
 
         return $response;
     }
@@ -128,11 +126,11 @@ class RentalController extends Controller
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
-        $response = array(
+        $response = [
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
-        );
+        ];
 
         return $response;
     }
@@ -146,17 +144,18 @@ class RentalController extends Controller
      */
     private function createEditForm(Rental $entity)
     {
-        $form = $this->createForm(new RentalType(), $entity, array(
-            'action' => $this->generateUrl('rental_update', array('id' => $entity->getId())),
+        $form = $this->createForm(new RentalType(), $entity, [
+            'action' => $this->generateUrl('rental_update', ['id' => $entity->getId()]),
             'method' => 'PUT',
-        ));
+        ]);
 
-        $form->add('submit', 'submit', array(
+        $form->add('submit', 'submit', [
             'label' => 'Valider',
-        ));
+        ]);
 
         return $form;
     }
+
     /**
      * Edits an existing Rental entity.
      *
@@ -181,17 +180,18 @@ class RentalController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('rental_edit', array('id' => $id)));
+            return $this->redirect($this->generateUrl('rental_edit', ['id' => $id]));
         }
 
-        $response = array(
+        $response = [
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
-        );
+        ];
 
         return $response;
     }
+
     /**
      * Deletes a Rental entity.
      *
@@ -228,10 +228,9 @@ class RentalController extends Controller
     private function createDeleteForm($id)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('rental_delete', array('id' => $id)))
+            ->setAction($this->generateUrl('rental_delete', ['id' => $id]))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Supprimer'))
-            ->getForm()
-            ;
+            ->add('submit', 'submit', ['label' => 'Supprimer'])
+            ->getForm();
     }
 }

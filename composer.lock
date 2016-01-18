@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e5a77a3929ac61a51a0e85dfe839d87b",
-    "content-hash": "64b4b52260ff6809ca7d7f270bdb93e4",
+    "hash": "d3e7b55c9c825c99db69173a82deb64f",
+    "content-hash": "6ee721d5b9608c5aa8178c8a8b0c999d",
     "packages": [
         {
             "name": "appventus/ajax-bundle",
@@ -1822,24 +1822,23 @@
             "time": "2015-11-12 16:03:27"
         },
         {
-            "name": "friendsofvictoire/cover-widget",
+            "name": "friendsofvictoire/cookielaw-widget",
             "version": "dev-master",
-            "target-dir": "Victoire/Widget/CoverBundle",
+            "target-dir": "Victoire/Widget/CookieLawBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FriendsOfVictoire/WidgetCoverBundle.git",
-                "reference": "23818ddf44f0c9ed13ad301fd7a7f2d1074e757e"
+                "url": "https://github.com/FriendsOfVictoire/WidgetCookieLawBundle.git",
+                "reference": "b5b83b8ecf5ad59c6a818c9c07f65bffa9581cbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetCoverBundle/zipball/23818ddf44f0c9ed13ad301fd7a7f2d1074e757e",
-                "reference": "23818ddf44f0c9ed13ad301fd7a7f2d1074e757e",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetCookieLawBundle/zipball/b5b83b8ecf5ad59c6a818c9c07f65bffa9581cbb",
+                "reference": "b5b83b8ecf5ad59c6a818c9c07f65bffa9581cbb",
                 "shasum": ""
             },
             "require": {
-                "friendsofvictoire/image-widget": "1.3.x-dev",
                 "php": ">=5.3.3",
-                "symfony/framework-bundle": ">=2.3",
+                "symfony/framework-bundle": "~2.3",
                 "victoire/victoire": "~1.3.0"
             },
             "type": "symfony-bundle",
@@ -1850,7 +1849,57 @@
             },
             "autoload": {
                 "psr-0": {
-                    "Victoire\\Widget\\CoverBundle": ""
+                    "Victoire\\Widget\\CookieLawBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Victoire DCMS CookieLaw widget",
+            "homepage": "http://victoire.io",
+            "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
+                "cms",
+                "cookielaw",
+                "cookies",
+                "dynamic",
+                "victoire",
+                "widget"
+            ],
+            "time": "2015-11-25 10:01:10"
+        },
+        {
+            "name": "friendsofvictoire/date-widget",
+            "version": "dev-master",
+            "target-dir": "Victoire/Widget/DateBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfVictoire/WidgetDateBundle.git",
+                "reference": "b83ec9f75b82ab5f0e09ac7d200018b6a942a0e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetDateBundle/zipball/b83ec9f75b82ab5f0e09ac7d200018b6a942a0e2",
+                "reference": "b83ec9f75b82ab5f0e09ac7d200018b6a942a0e2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.3",
+                "victoire/victoire": "~1.3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Victoire\\Widget\\DateBundle": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1859,24 +1908,23 @@
             ],
             "authors": [
                 {
-                    "name": "Paul Andrieux",
-                    "email": "paul@victoire.io"
+                    "name": "Leny Bernard",
+                    "email": "leny@victoire.io"
                 }
             ],
-            "description": "Victoire DCMS Cover widget - DEPRECATED",
+            "description": "Victoire DCMS Date widget",
             "homepage": "http://victoire.io",
             "keywords": [
                 "DCMS",
                 "FoV",
                 "FriendsofVictoire",
                 "cms",
-                "cover",
+                "date",
                 "dynamic",
                 "victoire",
                 "widget"
             ],
-            "abandoned": "friendsofvictoire/image-widget",
-            "time": "2015-11-12 15:26:59"
+            "time": "2015-11-12 16:02:54"
         },
         {
             "name": "friendsofvictoire/disqus-widget",
@@ -2045,6 +2093,67 @@
                 "widget"
             ],
             "time": "2015-11-12 15:59:48"
+        },
+        {
+            "name": "friendsofvictoire/form-widget",
+            "version": "dev-master",
+            "target-dir": "Victoire/Widget/FormBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfVictoire/WidgetFormBundle.git",
+                "reference": "075411ebe2cfa3570e3718c9565fe40d3fb6a45f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetFormBundle/zipball/075411ebe2cfa3570e3718c9565fe40d3fb6a45f",
+                "reference": "075411ebe2cfa3570e3718c9565fe40d3fb6a45f",
+                "shasum": ""
+            },
+            "require": {
+                "appventus/alertify-bundle": "dev-master",
+                "ornicar/akismet-bundle": "dev-master",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.3",
+                "victoire/victoire": "~1.3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Victoire\\Widget\\FormBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leny BERNARD",
+                    "email": "leny@victoire.io"
+                },
+                {
+                    "name": "Charlie Lucas",
+                    "email": "charlie@victoire.io"
+                }
+            ],
+            "description": "Create custom forms in Victoire website",
+            "homepage": "http://victoire.io",
+            "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
+                "cms",
+                "dynamic",
+                "form",
+                "victoire",
+                "widget"
+            ],
+            "time": "2015-11-12 15:59:17"
         },
         {
             "name": "friendsofvictoire/html-widget",
@@ -2272,6 +2381,66 @@
             "time": "2015-11-12 15:56:38"
         },
         {
+            "name": "friendsofvictoire/localeswitcher-widget",
+            "version": "dev-master",
+            "target-dir": "Victoire/Widget/LocaleSwitcherBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfVictoire/WidgetLocaleswitcherBundle.git",
+                "reference": "2a9a6cb30ebe8a9af00fcc368ecd998022c9b6d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetLocaleswitcherBundle/zipball/2a9a6cb30ebe8a9af00fcc368ecd998022c9b6d6",
+                "reference": "2a9a6cb30ebe8a9af00fcc368ecd998022c9b6d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.3",
+                "victoire/victoire": "~1.3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Victoire\\Widget\\LocaleSwitcherBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leny BERNARD",
+                    "email": "leny@victoire.io"
+                },
+                {
+                    "name": "Loic GOYET",
+                    "email": "loic@victoire.io"
+                }
+            ],
+            "description": "Victoire DCMS LocaleSwitcher widget",
+            "homepage": "http://victoire.io",
+            "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
+                "LocaleSwitcher",
+                "cms",
+                "dynamic",
+                "locale",
+                "victoire",
+                "widget"
+            ],
+            "time": "2015-11-12 15:29:06"
+        },
+        {
             "name": "friendsofvictoire/markdown-widget",
             "version": "dev-master",
             "target-dir": "Victoire/Widget/MarkdownBundle",
@@ -2438,6 +2607,62 @@
             "time": "2015-11-12 15:28:26"
         },
         {
+            "name": "friendsofvictoire/richlist-widget",
+            "version": "dev-master",
+            "target-dir": "Victoire/Widget/RichListBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfVictoire/WidgetRichList.git",
+                "reference": "b8249d252a6b1899e31334f513133b4024a2162a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetRichList/zipball/b8249d252a6b1899e31334f513133b4024a2162a",
+                "reference": "b8249d252a6b1899e31334f513133b4024a2162a",
+                "shasum": ""
+            },
+            "require": {
+                "friendsofvictoire/listing-widget": "1.3.x-dev",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.3",
+                "victoire/victoire": "~1.3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Victoire\\Widget\\RichListBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leny BERNARD",
+                    "email": "leny@victoire.io"
+                }
+            ],
+            "description": "Victoire DCMS RichList widget",
+            "homepage": "http://victoire.io",
+            "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
+                "RichList",
+                "cms",
+                "dynamic",
+                "victoire",
+                "widget"
+            ],
+            "time": "2015-11-12 15:47:59"
+        },
+        {
             "name": "friendsofvictoire/sharethis-widget",
             "version": "dev-master",
             "target-dir": "Victoire/Widget/ShareThisBundle",
@@ -2491,64 +2716,6 @@
                 "widget"
             ],
             "time": "2015-11-24 09:57:42"
-        },
-        {
-            "name": "friendsofvictoire/simplecontactform-widget",
-            "version": "dev-master",
-            "target-dir": "Victoire/Widget/SimpleContactFormBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfVictoire/WidgetSimpleContactFormBundle.git",
-                "reference": "506b70b460621d60e4737c8e3322d034d530518a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetSimpleContactFormBundle/zipball/506b70b460621d60e4737c8e3322d034d530518a",
-                "reference": "506b70b460621d60e4737c8e3322d034d530518a",
-                "shasum": ""
-            },
-            "require": {
-                "appventus/shortcuts-bundle": "dev-master",
-                "appventus/spoolmailerbundle": "dev-master",
-                "appventus/swiftmailerdbbundle": "dev-master",
-                "php": ">=5.3.3",
-                "symfony/framework-bundle": "~2.3",
-                "victoire/victoire": "~1.3.0"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Victoire\\Widget\\SimpleContactFormBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Leny BERNARD",
-                    "email": "leny@victoire.io"
-                }
-            ],
-            "description": "Victoire DCMS SimpleContactForm widget",
-            "homepage": "http://victoire.io",
-            "keywords": [
-                "DCMS",
-                "FoV",
-                "FriendsofVictoire",
-                "SimpleContactForm",
-                "cms",
-                "dynamic",
-                "victoire",
-                "widget"
-            ],
-            "time": "2015-11-13 13:23:42"
         },
         {
             "name": "friendsofvictoire/sitemap-widget",
@@ -2664,6 +2831,118 @@
                 "widget"
             ],
             "time": "2015-11-27 14:30:28"
+        },
+        {
+            "name": "friendsofvictoire/socialbuttons-widget",
+            "version": "dev-master",
+            "target-dir": "Victoire/Widget/SocialButtonsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfVictoire/WidgetSocialButtonsBundle.git",
+                "reference": "e014faac9b5416bc1a1d9f8b576f454484d0ff2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetSocialButtonsBundle/zipball/e014faac9b5416bc1a1d9f8b576f454484d0ff2f",
+                "reference": "e014faac9b5416bc1a1d9f8b576f454484d0ff2f",
+                "shasum": ""
+            },
+            "require": {
+                "friendsofvictoire/listing-widget": "1.3.x-dev",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.3",
+                "victoire/victoire": "~1.3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Victoire\\Widget\\SocialButtonsBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leny BERNARD",
+                    "email": "leny@victoire.io"
+                }
+            ],
+            "description": "Victoire DCMS social buttons widget",
+            "homepage": "http://victoire.io",
+            "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
+                "button",
+                "cms",
+                "dynamic",
+                "socialbuttons",
+                "victoire",
+                "widget"
+            ],
+            "time": "2015-11-12 15:41:03"
+        },
+        {
+            "name": "friendsofvictoire/statistic-widget",
+            "version": "dev-master",
+            "target-dir": "Victoire/Widget/StatisticBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfVictoire/WidgetStatisticBundle.git",
+                "reference": "afcfc3cfbbe97128ac90acc1dceb43beb7956de0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfVictoire/WidgetStatisticBundle/zipball/afcfc3cfbbe97128ac90acc1dceb43beb7956de0",
+                "reference": "afcfc3cfbbe97128ac90acc1dceb43beb7956de0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.3",
+                "victoire/victoire": "~1.3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Victoire\\Widget\\StatisticBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leny Bernard",
+                    "email": "leny@victoire.io"
+                }
+            ],
+            "description": "Victoire DCMS Statistics widget",
+            "homepage": "http://victoire.io",
+            "keywords": [
+                "DCMS",
+                "FoV",
+                "FriendsofVictoire",
+                "cms",
+                "dynamic",
+                "statistics",
+                "victoire",
+                "widget"
+            ],
+            "time": "2015-11-12 15:39:29"
         },
         {
             "name": "friendsofvictoire/tab-widget",
@@ -3346,21 +3625,22 @@
         },
         {
             "name": "jms/i18n-routing-bundle",
-            "version": "dev-master",
+            "version": "1.1.1",
             "target-dir": "JMS/I18nRoutingBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSI18nRoutingBundle.git",
-                "reference": "eda6c5ff06c9100e5cad143b8a74224e0038a97c"
+                "reference": "c58e4d99ae867f8b64a481c84cad89e1df03d1c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSI18nRoutingBundle/zipball/eda6c5ff06c9100e5cad143b8a74224e0038a97c",
-                "reference": "eda6c5ff06c9100e5cad143b8a74224e0038a97c",
+                "url": "https://api.github.com/repos/schmittjoh/JMSI18nRoutingBundle/zipball/c58e4d99ae867f8b64a481c84cad89e1df03d1c6",
+                "reference": "c58e4d99ae867f8b64a481c84cad89e1df03d1c6",
                 "shasum": ""
             },
             "require": {
-                "symfony/framework-bundle": "~2.3|~3.0"
+                "jms/translation-bundle": "~1.0",
+                "symfony/framework-bundle": "~2.1"
             },
             "require-dev": {
                 "jms/di-extra-bundle": "*",
@@ -3396,8 +3676,10 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com"
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "https://github.com/schmittjoh",
+                    "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
             "description": "This bundle allows you to create i18n routes.",
@@ -3407,7 +3689,7 @@
                 "routing",
                 "translation"
             ],
-            "time": "2015-02-20 16:41:04"
+            "time": "2013-12-05 21:19:53"
         },
         {
             "name": "jms/metadata",
@@ -4192,6 +4474,54 @@
             "time": "2015-11-12 13:51:40"
         },
         {
+            "name": "kriswallsmith/buzz",
+            "version": "v0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/Buzz.git",
+                "reference": "d4041666c3ffb379af02a92dabe81c904b35fab8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/d4041666c3ffb379af02a92dabe81c904b35fab8",
+                "reference": "d4041666c3ffb379af02a92dabe81c904b35fab8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Buzz": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Lightweight HTTP client",
+            "homepage": "https://github.com/kriswallsmith/Buzz",
+            "keywords": [
+                "curl",
+                "http client"
+            ],
+            "time": "2015-06-25 17:26:56"
+        },
+        {
             "name": "lexik/form-filter-bundle",
             "version": "v3.0.8",
             "target-dir": "Lexik/Bundle/FormFilterBundle",
@@ -4622,6 +4952,52 @@
                 "php"
             ],
             "time": "2015-09-19 14:15:08"
+        },
+        {
+            "name": "ornicar/akismet-bundle",
+            "version": "dev-master",
+            "target-dir": "Ornicar/AkismetBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ornicar/OrnicarAkismetBundle.git",
+                "reference": "008cb4503ef79ef82a780fce6763d2f86e1860ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ornicar/OrnicarAkismetBundle/zipball/008cb4503ef79ef82a780fce6763d2f86e1860ec",
+                "reference": "008cb4503ef79ef82a780fce6763d2f86e1860ec",
+                "shasum": ""
+            },
+            "require": {
+                "kriswallsmith/buzz": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Ornicar\\AkismetBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thibault Duplessis",
+                    "email": "thibault.duplessis@gmail.com",
+                    "homepage": "http://ornicar.github.com"
+                }
+            ],
+            "description": "Akismet Integration for symfony",
+            "homepage": "https://github.com/ornicar/OrnicarAkismetBundle",
+            "keywords": [
+                "Akismet",
+                "package",
+                "spam",
+                "symfony"
+            ],
+            "time": "2013-01-29 16:41:33"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -5900,6 +6276,7 @@
         "white-october/pagerfanta-bundle": 20,
         "beberlei/doctrineextensions": 20,
         "infinite-networks/form-bundle": 20,
+        "ornicar/akismet-bundle": 20,
         "victoire/victoire": 20,
         "friendsofvictoire/breadcrumb-widget": 20,
         "friendsofvictoire/button-widget": 20,
@@ -5907,14 +6284,13 @@
         "friendsofvictoire/image-widget": 20,
         "friendsofvictoire/listing-widget": 20,
         "friendsofvictoire/menu-widget": 20,
-        "friendsofvictoire/simplecontactform-widget": 20,
+        "friendsofvictoire/form-widget": 20,
         "friendsofvictoire/slider-widget": 20,
         "friendsofvictoire/text-widget": 20,
         "friendsofvictoire/title-widget": 20,
         "friendsofvictoire/ckeditor-widget": 20,
         "friendsofvictoire/file-widget": 20,
         "friendsofvictoire/layout-widget": 20,
-        "friendsofvictoire/cover-widget": 20,
         "friendsofvictoire/html-widget": 20,
         "friendsofvictoire/markdown-widget": 20,
         "friendsofvictoire/articlelist-widget": 20,
@@ -5922,7 +6298,13 @@
         "friendsofvictoire/disqus-widget": 20,
         "friendsofvictoire/sitemap-widget": 20,
         "friendsofvictoire/tab-widget": 20,
-        "friendsofvictoire/sharethis-widget": 20
+        "friendsofvictoire/sharethis-widget": 20,
+        "friendsofvictoire/cookielaw-widget": 20,
+        "friendsofvictoire/date-widget": 20,
+        "friendsofvictoire/richlist-widget": 20,
+        "friendsofvictoire/socialbuttons-widget": 20,
+        "friendsofvictoire/statistic-widget": 20,
+        "friendsofvictoire/localeswitcher-widget": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

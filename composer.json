@@ -1,83 +1,115 @@
 {
-    "name": "victoire/demo",
-    "license": "MIT",
-    "type": "project",
-    "description": "Kickstart you project with the Victoire demo",
-    "autoload": {
-        "psr-4": { "": "src/", "SymfonyStandard\\": "app/" }
+    "name"        : "victoire/demo",
+    "license"     : "MIT",
+    "type"        : "project",
+    "description" : "Kickstart you project with the Victoire DCMS demo",
+    "keywords"         : [
+        "DCMS",
+        "Victoire",
+        "FriendsofVictoire",
+        "FoV",
+        "Dynamic",
+        "CMS",
+        "Demo",
+        "test"
+    ],
+    "homepage"         : "http://victoire.io",
+    "authors"          : [
+        {
+            "name" : "Leny BERNARD",
+            "email": "leny@victoire.io"
+        },
+        {
+            "name" : "Paul ANDRIEUX",
+            "email": "paul@victoire.io"
+        },
+        {
+            "name": "Core Team Victoire",
+            "email": "contact@victoire.io"
+        }
+    ],
+    "autoload"    : {
+        "psr-4": {
+            ""                 : "src/",
+            "SymfonyStandard\\": "app/"
+        }
     },
-    "require": {
-        "php": ">=5.3.3",
-        "symfony/symfony": "2.6.*",
-        "doctrine/orm": "~2.2,>=2.2.3",
-        "doctrine/doctrine-bundle": "~1.2",
-        "twig/extensions": "~1.0",
-        "symfony/assetic-bundle": "~2.3",
-        "symfony/swiftmailer-bundle": "~2.3",
-        "symfony/monolog-bundle": "~2.4",
-        "sensio/distribution-bundle": "~3.0",
-        "sensio/framework-extra-bundle": "~3.0",
-        "incenteev/composer-parameter-handler": "~2.0",
-
-        "appventus/assetic-injector-bundle" : "dev-master",
-        "appventus/ajax-bundle"             : "dev-master",
-        "appventus/alertify-bundle"         : "dev-master",
-        "appventus/avlist-bundle"           : "dev-master",
-        "appventus/swiftmailerdbbundle"     : "dev-master",
-        "appventus/spoolmailerbundle"       : "dev-master",
-        "appventus/shortcuts-bundle"        : "dev-master",
-        "appventus/datamigration-bundle"    : "dev-master",
-        "doctrine/doctrine-fixtures-bundle" : "dev-master",
-        "doctrine/data-fixtures"            : "dev-master",
-        "friendsofsymfony/user-bundle"      : "2.0.*dev",
-        "friendsofsymfony/jsrouting-bundle" : "2.0.*@dev",
-        "jms/i18n-routing-bundle"           : "~1.1@dev",
-        "jms/security-extra-bundle"         : "1.5.*@dev",
-        "jms/translation-bundle"            : "1.1.*@dev",
-        "knplabs/knp-menu"                  : "2.1.x-dev",
-        "knplabs/knp-menu-bundle"           : "2.1.x-dev",
-        "knplabs/gaufrette"                 : "v0.1.7",
-        "knplabs/knp-gaufrette-bundle"      : "v0.1.7",
-        "knplabs/knp-components"            : "1.3.*@dev",
-        "lexik/form-filter-bundle"          : "3.*@dev",
-        "liip/imagine-bundle"               : "1.0.*@dev",
-        "mopa/bootstrap-bundle"             : "3.x-dev",
-        "nelmio/alice"                      : "1.5.2",
-        "pagerfanta/pagerfanta"             : "1.0.*@dev",
-        "stof/doctrine-extensions-bundle"   : "1.2.*@dev",
-        "twbs/bootstrap"                    : "3.*@dev",
-        "white-october/pagerfanta-bundle"   : "1.0.*@dev",
-        "beberlei/doctrineextensions"       : "1.0.x-dev",
-        "infinite-networks/form-bundle"     : "dev-master",
-
-        "victoire/victoire"                 : "1.3.x-dev",
-        "friendsofvictoire/breadcrumb-widget"        : "1.3.x-dev",
-        "friendsofvictoire/button-widget"            : "1.3.x-dev",
-        "friendsofvictoire/filter-widget"            : "1.3.x-dev",
-        "friendsofvictoire/image-widget"             : "1.3.x-dev",
-        "friendsofvictoire/listing-widget"           : "1.3.x-dev",
-        "friendsofvictoire/menu-widget"              : "1.3.x-dev",
-        "friendsofvictoire/simplecontactform-widget" : "1.3.x-dev",
-        "friendsofvictoire/slider-widget"            : "1.3.x-dev",
-        "friendsofvictoire/text-widget"              : "1.3.x-dev",
-        "friendsofvictoire/title-widget"             : "1.3.x-dev",
-        "friendsofvictoire/ckeditor-widget"          : "1.3.x-dev",
-        "friendsofvictoire/file-widget"              : "1.3.x-dev",
-        "friendsofvictoire/layout-widget"            : "1.3.x-dev",
-        "friendsofvictoire/cover-widget"             : "1.3.x-dev",
-        "friendsofvictoire/html-widget"              : "1.3.x-dev",
-        "friendsofvictoire/markdown-widget"          : "1.3.x-dev",
-        "friendsofvictoire/articlelist-widget"       : "1.3.x-dev",
-        "friendsofvictoire/render-widget"            : "1.3.x-dev",
-        "friendsofvictoire/disqus-widget"            : "1.3.x-dev",
-        "friendsofvictoire/sitemap-widget"           : "1.3.x-dev",
-        "friendsofvictoire/tab-widget"               : "1.3.x-dev",
-        "friendsofvictoire/sharethis-widget"         : "1.3.x-dev"
+    "require"     : {
+        "php"                                    : ">=5.3.3",
+        "symfony/symfony"                        : "2.6.*",
+        "doctrine/orm"                           : "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle"               : "~1.2",
+        "twig/extensions"                        : "~1.0",
+        "symfony/assetic-bundle"                 : "~2.3",
+        "symfony/swiftmailer-bundle"             : "~2.3",
+        "symfony/monolog-bundle"                 : "~2.4",
+        "sensio/distribution-bundle"             : "~3.0",
+        "sensio/framework-extra-bundle"          : "~3.0",
+        "incenteev/composer-parameter-handler"   : "~2.0",
+        "appventus/assetic-injector-bundle"      : "dev-master",
+        "appventus/ajax-bundle"                  : "dev-master",
+        "appventus/alertify-bundle"              : "dev-master",
+        "appventus/avlist-bundle"                : "dev-master",
+        "appventus/swiftmailerdbbundle"          : "dev-master",
+        "appventus/spoolmailerbundle"            : "dev-master",
+        "appventus/shortcuts-bundle"             : "dev-master",
+        "appventus/datamigration-bundle"         : "dev-master",
+        "doctrine/doctrine-fixtures-bundle"      : "2.2.x-dev",
+        "doctrine/data-fixtures"                 : "1.1.x-dev",
+        "friendsofsymfony/user-bundle"           : "2.0.*dev",
+        "friendsofsymfony/jsrouting-bundle"      : "2.0.*@dev",
+        "jms/i18n-routing-bundle"                : "~1.1@dev",
+        "jms/security-extra-bundle"              : "1.5.*@dev",
+        "jms/translation-bundle"                 : "1.1.*@dev",
+        "knplabs/knp-menu"                       : "2.1.x-dev",
+        "knplabs/knp-menu-bundle"                : "2.1.x-dev",
+        "knplabs/gaufrette"                      : "v0.1.7",
+        "knplabs/knp-gaufrette-bundle"           : "v0.1.7",
+        "knplabs/knp-components"                 : "1.3.*@dev",
+        "lexik/form-filter-bundle"               : "3.*@dev",
+        "liip/imagine-bundle"                    : "1.0.*@dev",
+        "mopa/bootstrap-bundle"                  : "3.x-dev",
+        "nelmio/alice"                           : "1.5.2",
+        "pagerfanta/pagerfanta"                  : "1.0.*@dev",
+        "stof/doctrine-extensions-bundle"        : "1.2.*@dev",
+        "twbs/bootstrap"                         : "3.*@dev",
+        "white-october/pagerfanta-bundle"        : "1.0.*@dev",
+        "beberlei/doctrineextensions"            : "1.0.x-dev",
+        "infinite-networks/form-bundle"          : "dev-master",
+        "ornicar/akismet-bundle"                 : "dev-master",
+        "victoire/victoire"                      : "1.3.x-dev",
+        "friendsofvictoire/breadcrumb-widget"    : "1.3.x-dev",
+        "friendsofvictoire/button-widget"        : "1.3.x-dev",
+        "friendsofvictoire/filter-widget"        : "1.3.x-dev",
+        "friendsofvictoire/image-widget"         : "1.3.x-dev",
+        "friendsofvictoire/listing-widget"       : "1.3.x-dev",
+        "friendsofvictoire/menu-widget"          : "1.3.x-dev",
+        "friendsofvictoire/form-widget"          : "1.3.x-dev",
+        "friendsofvictoire/slider-widget"        : "1.3.x-dev",
+        "friendsofvictoire/text-widget"          : "1.3.x-dev",
+        "friendsofvictoire/title-widget"         : "1.3.x-dev",
+        "friendsofvictoire/ckeditor-widget"      : "1.3.x-dev",
+        "friendsofvictoire/file-widget"          : "1.3.x-dev",
+        "friendsofvictoire/layout-widget"        : "1.3.x-dev",
+        "friendsofvictoire/html-widget"          : "1.3.x-dev",
+        "friendsofvictoire/markdown-widget"      : "1.3.x-dev",
+        "friendsofvictoire/articlelist-widget"   : "1.3.x-dev",
+        "friendsofvictoire/render-widget"        : "1.3.x-dev",
+        "friendsofvictoire/disqus-widget"        : "1.3.x-dev",
+        "friendsofvictoire/sitemap-widget"       : "1.3.x-dev",
+        "friendsofvictoire/tab-widget"           : "1.3.x-dev",
+        "friendsofvictoire/sharethis-widget"     : "1.3.x-dev",
+        "friendsofvictoire/cookielaw-widget"     : "1.3.x-dev",
+        "friendsofvictoire/date-widget"          : "1.3.x-dev",
+        "friendsofvictoire/richlist-widget"      : "1.3.x-dev",
+        "friendsofvictoire/socialbuttons-widget" : "1.3.x-dev",
+        "friendsofvictoire/statistic-widget"     : "1.3.x-dev",
+        "friendsofvictoire/localeswitcher-widget": "1.3.x-dev"
     },
-    "require-dev": {
+    "require-dev" : {
         "sensio/generator-bundle": "~2.3"
     },
-    "scripts": {
+    "scripts"     : {
         "post-create-project-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
@@ -86,7 +118,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
         ],
-        "post-install-cmd": [
+        "post-install-cmd"       : [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
@@ -95,34 +127,35 @@
             "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap",
             "cd vendor && if [ ! -f selenium-server-standalone-2.35.0.jar ]; then curl -O http://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar; fi"
         ],
-        "post-update-cmd": [
+        "post-update-cmd"        : [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap",
-            "cd vendor && if [ ! -f selenium-server-standalone-2.35.0.jar ]; then curl -O http://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar; fi"
+            "cd vendor && if [ ! -f selenium-server-standalone-2.35.0.jar ]; then curl -O http://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar; fi",
+            "bin/console doctrine:schema:update --force"
         ]
     },
-    "config": {
+    "config"      : {
         "bin-dir": "bin"
     },
-    "repositories"     : [
+    "repositories": [
         {
             "type": "vcs",
             "url" : "https://github.com/Charlie-Lucas/InfiniteFormBundle"
         }
     ],
-    "extra": {
-        "symfony-app-dir": "app",
-        "symfony-bin-dir": "bin",
-        "symfony-var-dir": "var",
-        "symfony-web-dir": "web",
+    "extra"       : {
+        "symfony-app-dir"     : "app",
+        "symfony-bin-dir"     : "bin",
+        "symfony-var-dir"     : "var",
+        "symfony-web-dir"     : "web",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         },
-        "branch-alias": {
+        "branch-alias"        : {
             "dev-master": "1.1-dev"
         }
     }

@@ -3,13 +3,12 @@
 namespace Front\AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Gedmo\Timestampable\Traits\TimestampableEntity;
 use Victoire\Bundle\BusinessEntityBundle\Entity\Traits\BusinessEntityTrait;
 use Victoire\Bundle\CoreBundle\Annotations as VIC;
-use Gedmo\Timestampable\Traits\TimestampableEntity;
-use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
- *
  * @ORM\Entity()
  * @VIC\BusinessEntity({"Listing", "Title", "Text", "Image", "Cover", "Button"})
  **/
@@ -19,10 +18,10 @@ class Rental
     use TimestampableEntity;
 
     /**
-    * @ORM\Id
-    * @ORM\Column(type="integer")
-    * @ORM\GeneratedValue(strategy="AUTO")
-    */
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
     protected $id;
 
     /**
@@ -63,7 +62,6 @@ class Rental
      * @ORM\ManyToOne(targetEntity="\Victoire\Bundle\MediaBundle\Entity\Media")
      * @ORM\JoinColumn(name="picture", referencedColumnName="id", onDelete="CASCADE")
      * @VIC\BusinessProperty("imageable")
-     *
      */
     private $picture;
 
@@ -73,7 +71,6 @@ class Rental
      * @ORM\ManyToOne(targetEntity="\Victoire\Bundle\MediaBundle\Entity\Media")
      * @ORM\JoinColumn(name="emission_of_greenhouse", referencedColumnName="id", onDelete="CASCADE")
      * @VIC\BusinessProperty("imageable")
-     *
      */
     private $emissionOfGreenhouse;
 
@@ -84,14 +81,13 @@ class Rental
      */
     private $slug;
 
-
     public function __toString()
     {
         return $this->title;
     }
 
     /**
-     * Get id
+     * Get id.
      *
      * @return string
      */
@@ -101,7 +97,7 @@ class Rental
     }
 
     /**
-     * Set id
+     * Set id.
      *
      * @param string $id
      *
@@ -113,8 +109,9 @@ class Rental
 
         return $this;
     }
+
    /**
-    * Get title
+    * Get title.
     *
     * @return string
     */
@@ -124,7 +121,7 @@ class Rental
    }
 
    /**
-    * Set title
+    * Set title.
     *
     * @param string $title
     *
@@ -138,7 +135,7 @@ class Rental
    }
 
    /**
-    * Get shortDescription
+    * Get shortDescription.
     *
     * @return string
     */
@@ -146,9 +143,9 @@ class Rental
    {
        return $this->shortDescription;
    }
-   
+
    /**
-    * Set shortDescription
+    * Set shortDescription.
     *
     * @param string $shortDescription
     *
@@ -157,12 +154,12 @@ class Rental
    public function setShortDescription($shortDescription)
    {
        $this->shortDescription = $shortDescription;
-   
+
        return $this;
    }
 
    /**
-    * Get description
+    * Get description.
     *
     * @return string
     */
@@ -170,9 +167,9 @@ class Rental
    {
        return $this->description;
    }
-   
+
    /**
-    * Set description
+    * Set description.
     *
     * @param string $description
     *
@@ -181,12 +178,12 @@ class Rental
    public function setDescription($description)
    {
        $this->description = $description;
-   
+
        return $this;
    }
 
    /**
-    * Get surface
+    * Get surface.
     *
     * @return string
     */
@@ -194,9 +191,9 @@ class Rental
    {
        return $this->surface;
    }
-   
+
    /**
-    * Set surface
+    * Set surface.
     *
     * @param string $surface
     *
@@ -205,13 +202,12 @@ class Rental
    public function setSurface($surface)
    {
        $this->surface = $surface;
-   
+
        return $this;
    }
 
-
-   /**
-     * Get picture
+    /**
+     * Get picture.
      *
      * @return string
      */
@@ -221,7 +217,7 @@ class Rental
     }
 
     /**
-     * Set picture
+     * Set picture.
      *
      * @param string $picture
      *
@@ -235,7 +231,7 @@ class Rental
     }
 
     /**
-     * Get emissionOfGreenhouse
+     * Get emissionOfGreenhouse.
      *
      * @return string
      */
@@ -243,9 +239,9 @@ class Rental
     {
         return $this->emissionOfGreenhouse;
     }
-    
+
     /**
-     * Set emissionOfGreenhouse
+     * Set emissionOfGreenhouse.
      *
      * @param string $emissionOfGreenhouse
      *
@@ -254,12 +250,12 @@ class Rental
     public function setEmissionOfGreenhouse($emissionOfGreenhouse)
     {
         $this->emissionOfGreenhouse = $emissionOfGreenhouse;
-    
+
         return $this;
     }
 
     /**
-     * Get slug
+     * Get slug.
      *
      * @return string
      */
@@ -267,9 +263,9 @@ class Rental
     {
         return $this->slug;
     }
-    
+
     /**
-     * Set slug
+     * Set slug.
      *
      * @param string $slug
      *
@@ -278,8 +274,7 @@ class Rental
     public function setSlug($slug)
     {
         $this->slug = $slug;
-    
+
         return $this;
     }
-
 }

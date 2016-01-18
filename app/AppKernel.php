@@ -1,13 +1,13 @@
 <?php
 
-use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
+use Symfony\Component\HttpKernel\Kernel;
 
 class AppKernel extends Kernel
 {
     public function registerBundles()
     {
-        $bundles = array(
+        $bundles = [
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
@@ -64,7 +64,6 @@ class AppKernel extends Kernel
             new Victoire\Widget\BreadcrumbBundle\VictoireWidgetBreadcrumbBundle(),
             new Victoire\Widget\ButtonBundle\VictoireWidgetButtonBundle(),
             new Victoire\Widget\FileBundle\VictoireWidgetFileBundle(),
-            new Victoire\Widget\CoverBundle\VictoireWidgetCoverBundle(),
             new Victoire\Widget\DisqusBundle\VictoireWidgetDisqusBundle(),
             new Victoire\Widget\FilterBundle\VictoireWidgetFilterBundle(),
             new Victoire\Widget\HtmlBundle\VictoireWidgetHtmlBundle(),
@@ -78,16 +77,22 @@ class AppKernel extends Kernel
             new Victoire\Widget\TitleBundle\VictoireWidgetTitleBundle(),
             new Victoire\Widget\SliderBundle\VictoireWidgetSliderBundle(),
             new Victoire\Widget\SitemapBundle\VictoireWidgetSitemapBundle(),
-            new Victoire\Widget\SimpleContactFormBundle\VictoireWidgetSimpleContactFormBundle(),
             new Victoire\Widget\CKEditorBundle\VictoireWidgetCKEditorBundle(),
             new Victoire\Widget\TabBundle\VictoireWidgetTabBundle(),
             new Victoire\Widget\ShareThisBundle\VictoireWidgetShareThisBundle(),
+            new Victoire\Widget\FormBundle\VictoireWidgetFormBundle(),
+            new Victoire\Widget\CookieLawBundle\VictoireWidgetCookieLawBundle(),
+            new Victoire\Widget\DateBundle\VictoireWidgetDateBundle(),
+            new Victoire\Widget\RichListBundle\VictoireWidgetRichListBundle(),
+            new Victoire\Widget\SocialButtonsBundle\VictoireWidgetSocialButtonsBundle(),
+            new Victoire\Widget\StatisticBundle\VictoireWidgetStatisticBundle(),
+            new Victoire\Widget\LocaleSwitcherBundle\VictoireWidgetLocaleSwitcherBundle(),
 
             new Front\TemplateBundle\FrontTemplateBundle(),
             new Front\AppBundle\AppBundle(),
-        );
+        ];
 
-        if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+        if (in_array($this->getEnvironment(), ['dev', 'test'])) {
             $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
