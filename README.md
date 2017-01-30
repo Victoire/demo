@@ -7,7 +7,7 @@ Please, follow the install instructions to start.
 ##Install
 
 ```
-composer create-project victoire/demo myVictoire "1.3.*@dev"
+composer create-project victoire/demo myVictoire "2.2.*"
 ```
 
 ###Set your parameters
